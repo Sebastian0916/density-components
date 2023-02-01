@@ -1,11 +1,15 @@
 @use "@material/textfield" with($height: 52px);
-
+@use "@material/tab" with($height: 40px);
+@use "@material/data-table" with($row-height: 50px);
+// @use "@material/icon-button" with($size:20px);
+// @use '@material/icon-button/icon-button-theme'with($size:10px);
 @import "./theme/theme";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
 }
 html {

@@ -1,65 +1,18 @@
-
-<div
-style="
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 3;
-  "
->
-<p>Buttons</p>
-
-<button mat-raised-button color="accent">Button</button>
+<mat-tab-group>
+  <mat-tab label="First"> Content 1 </mat-tab>
+  <mat-tab label="Second"> Content 2 </mat-tab>
+  <mat-tab label="Third"> Content 3 </mat-tab>
+</mat-tab-group>
+<mat-chip-option>One fish</mat-chip-option>
+<mat-chip-option>Two fish</mat-chip-option>
+<mat-chip-option color="accent" selected>Accent fish</mat-chip-option>
+<mat-chip-option color="warn">Warn fish</mat-chip-option>
 <br>
-<button mat-raised-button color="accent">
-  Button <mat-icon>people</mat-icon>
-</button>
-
-<p>Button toggle</p>
-
-<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-  <mat-button-toggle >Bold</mat-button-toggle>
-  <mat-button-toggle >Italic</mat-button-toggle>
-  <mat-button-toggle >Underline</mat-button-toggle>
-</mat-button-toggle-group>
-
+<button mat-raised-button >Hola</button>
+<button mat-raised-button >Hola</button>
+<button mat-raised-button >Hola</button>
 <br>
-<mat-button-toggle-group #group="matButtonToggleGroup">
-  <mat-button-toggle value="left" aria-label="Text align left">
-    <mat-icon>format_align_left</mat-icon>
-  </mat-button-toggle>
-  <mat-button-toggle value="center" aria-label="Text align center">
-    <mat-icon>format_align_center</mat-icon>
-  </mat-button-toggle>
-  <mat-button-toggle value="right" aria-label="Text align right">
-    <mat-icon>format_align_right</mat-icon>
-  </mat-button-toggle>
-  <mat-button-toggle value="justify" disabled aria-label="Text align justify">
-    <mat-icon>format_align_justify</mat-icon>
-  </mat-button-toggle>
-</mat-button-toggle-group>
-<div class="example-selected-value">Selected value: {{group.value}}</div>
-
-<br>
-<p>Form field</p>
-
-<mat-form-field appearance="outline" class="form-field-density">
-  <mat-label>Fill form field</mat-label>
-  <input matInput placeholder="Placeholder" />
-  <mat-icon matSuffix>menu</mat-icon>
-</mat-form-field>
-
-<p>Chips</p>
-
-<mat-chip-listbox aria-label="Fish selection">
-  <mat-chip-option color="primary">Chips</mat-chip-option>
-  <mat-chip-option color="primary">Chips</mat-chip-option>
-  <mat-chip-option color="accent" selected>Chips</mat-chip-option>
-  <mat-chip-option color="warn">Chips</mat-chip-option>
-</mat-chip-listbox>
-
-</div>
-
+<mat-radio-group aria-label="Select an option">
+  <mat-radio-button value="1">Option 1</mat-radio-button>
+  <mat-radio-button value="2">Option 2</mat-radio-button>
+</mat-radio-group>
