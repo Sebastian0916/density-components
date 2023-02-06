@@ -3,8 +3,7 @@ export enum Colors {
     accent  = 'accent',
     warn    = 'warn',
     success = 'success',
-    info    = 'info',
-    warning = 'warning ',
+    caption    = 'caption',
 };
 
 export enum TypographyLevels{
