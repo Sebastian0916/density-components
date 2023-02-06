@@ -1,5 +1,7 @@
 @use "sass:map";
 @use "@angular/material" as mat;
+@use "@material/tab" as mdc-tab;
+
 @include mat.core();
 @import "./colors";
 @import "./typography";
@@ -24,39 +26,10 @@ $bitakora-light-theme: mat.define-light-theme(
 );
 @include mat.core-theme($bitakora-light-theme);
 @include mat.all-component-themes($bitakora-light-theme);
+@include mat.button-density(-2);
 
-@include mat.button-toggle-density(
-  map.merge(
-    $bitakora-light-theme,
-    (
-      density: -3,
-    )
-  )
-);
-@include mat.button-density(
-  map.merge(
-    $bitakora-light-theme,
-    (
-      density: -3,
-    )
-  )
-);
-@include mat.form-field-theme(
-  map.merge(
-    $bitakora-light-theme,
-    (
-      density: -3,
-    )
-  )
-);
-@include mat.icon-theme(
-  map.merge(
-    $bitakora-light-theme,
-    (
-      density: -20,
-    )
-  )
-);
+@include mat.button-toggle-density(-3);
+@include mat.form-field-density(-4);
 @include mat.chips-density(
   map.merge(
     $bitakora-light-theme,
@@ -65,20 +38,15 @@ $bitakora-light-theme: mat.define-light-theme(
     )
   )
 );
-@include mat.tabs-theme(
-  map.merge(
-    $bitakora-light-theme,
-    (
-      density: -1,
-    )
-  )
-);
 
-@include mat.radio-theme(
+@include mat.radio-density(-3);
+
+@include mat.tabs-density(-2);
+@include mat.chips-density(
   map.merge(
     $bitakora-light-theme,
     (
-      density: -3,
+      density: 0,
     )
   )
 );

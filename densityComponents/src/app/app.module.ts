@@ -7,16 +7,24 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
+    MatListModule,
+    MatFormFieldModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatTabsModule,
+    MatInputModule,
     MatChipsModule,
     MatButtonModule,
     MatRadioModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
