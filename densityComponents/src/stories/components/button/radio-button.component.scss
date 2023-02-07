@@ -1,0 +1,24 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+
+.radioButton-small{
+
+    .mdc-radio__background {
+        width: 1.143rem;
+        height: 1.143rem;
+      }
+      .mdc-radio__inner-circle {
+        left: -2.5px;
+        top: -2.5px;
+        // transform: scale(0.4);
+      }
+      
+    @include mat.button-density(-1.5);
+    @include mat.button-toggle-density(-3);
+    @include mat.form-field-density(-4);
+    @include mat.chips-density(-2);
+    
+    @include mat.radio-density(-3);
+    @include mat.tabs-density(-2);
+  }
+  

@@ -5,7 +5,11 @@ export enum Colors {
     success = 'success',
     caption    = 'caption',
 };
-
+export enum Sizes {
+    small = 'small',
+    medium = 'medium',
+    large= 'large'
+};
 export enum TypographyLevels{
     h1='h1',
     h2='h2',

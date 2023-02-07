@@ -19,7 +19,10 @@ import { MatDividerModule         } from '@angular/material/divider';
 import { MatFormFieldModule       } from '@angular/material/form-field';
 import { MatSelectModule          } from '@angular/material/select';
 import { MatDatepickerModule      } from '@angular/material/datepicker';
+import { MatListModule            } from '@angular/material/list';
+import { MatMenuModule            } from '@angular/material/menu';
 import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
+
 const components = [
   CommonModule,
   MatButtonModule,
@@ -42,8 +45,9 @@ const components = [
   MatSelectModule,
   MatDatepickerModule,
   MatRippleModule,
+  MatListModule,
+  MatMenuModule,
   MatNativeDateModule
-  
 ];
 
 @NgModule({

@@ -1,6 +1,5 @@
 @use "sass:map";
 @use "@angular/material" as mat;
-@use "@material/tab" as mdc-tab;
 
 @include mat.core();
 @import "./colors";
@@ -26,27 +25,46 @@ $bitakora-light-theme: mat.define-light-theme(
 );
 @include mat.core-theme($bitakora-light-theme);
 @include mat.all-component-themes($bitakora-light-theme);
-@include mat.button-density(-2);
 
-@include mat.button-toggle-density(-3);
-@include mat.form-field-density(-4);
-@include mat.chips-density(
-  map.merge(
-    $bitakora-light-theme,
-    (
-      density: -2,
-    )
-  )
-);
-
-@include mat.radio-density(-3);
-
-@include mat.tabs-density(-2);
-@include mat.chips-density(
-  map.merge(
-    $bitakora-light-theme,
-    (
-      density: 0,
-    )
-  )
-);
+.small {
+  // CHIP
+  .mat-mdc-standard-chip {
+    height: var(--mdc-chip-container-height, 24px);
+  };
+  .mat-icon {
+    font-size: 1.428571428571429rem !important;
+    height: 1.428571428571429rem !important;
+    width: 1.428571428571429rem !important ;
+    padding: 0.7142857142857143rem !important;
+  };
+  @include mat.radio-density(-3);
+  .mdc-radio__background {
+    width: 1.143rem;
+    height: 1.143rem;
+  }
+  .mdc-radio__inner-circle {
+    left: -0.179rem;
+    top: -0.179rem;
+  }
+  .mdc-radio__native-control:checked
+    + .mdc-radio__background
+    .mdc-radio__inner-circle {
+    transform: scale(0.4);
+  }
+  .mat-mdc-radio-button .mat-radio-ripple {
+    top: -3px;
+    left: -3px;
+  };
+  .mat-mdc-tab.mdc-tab {
+    @include mat.tabs-density(-2);
+    height: 2.857142857142857rem !important;
+  };
+  @include mat.menu-density(-5.5);
+  .mat-mdc-menu-item {
+    min-height: 1.857rem;
+  };
+  @include mat.button-density(-1.5);
+  @include mat.button-toggle-density(-3);
+  @include mat.form-field-density(-4);
+  @include mat.list-density(-3);
+}
