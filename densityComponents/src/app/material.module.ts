@@ -19,6 +19,10 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatListModule            } from '@angular/material/list';
+import { MatMenuModule            } from '@angular/material/menu';
+import { MatButtonToggleModule    } from '@angular/material/button-toggle';
+import { MatExpansionModule       } from '@angular/material/expansion';
 import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatMenuModule } from '@angular/material/menu';
@@ -47,7 +51,8 @@ const components = [
   MatSelectModule,
   MatDatepickerModule,
   MatRippleModule,
-  MatNativeDateModule,
+  MatNativeDateModule
+
 ];
 
 @NgModule({

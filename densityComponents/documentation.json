@@ -1,6 +1,7 @@
 {
     "pipes": [],
     "interfaces": [],
+    "interfaces": [],
     "injectables": [],
     "guards": [],
     "interceptors": [],
@@ -76,27 +77,45 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<mat-tab-group>\r\n  <mat-tab label=\"First\"> Content 1 </mat-tab>\r\n  <mat-tab label=\"Second\"> Content 2 </mat-tab>\r\n  <mat-tab label=\"Third\"> Content 3 </mat-tab>\r\n</mat-tab-group>\r\n<mat-chip>One fish</mat-chip>\r\n<mat-chip>Two fish</mat-chip>\r\n<mat-chip-option color=\"accent\" selected>Accent fish</mat-chip-option>\r\n<mat-chip-option color=\"warn\">Warn fish</mat-chip-option>\r\n<br />\r\n<button mat-raised-button>Hola</button>\r\n<button mat-raised-button>Hola</button>\r\n<button mat-raised-button>Hola</button>\r\n<br />\r\n<mat-radio-group aria-label=\"Select an option\">\r\n  <mat-radio-button value=\"1\">Option 1</mat-radio-button>\r\n  <mat-radio-button value=\"2\">Option 2</mat-radio-button>\r\n</mat-radio-group>\r\n<br />\r\n<mat-form-field appearance=\"outline\">\r\n  <mat-label>Fill form field</mat-label>\r\n  <input matInput placeholder=\"Placeholder\" />\r\n  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>\r\n  <mat-hint>Hint</mat-hint>\r\n</mat-form-field>\r\n<br />\r\n<form class=\"example-form\">\r\n  <mat-form-field class=\"example-full-width\" appearance=\"fill\">\r\n    <mat-label>Number</mat-label>\r\n    <input type=\"text\"\r\n           placeholder=\"Pick one\"\r\n           aria-label=\"Number\"\r\n           matInput\r\n           [matAutocomplete]=\"auto\">\r\n    <mat-autocomplete #auto=\"matAutocomplete\">\r\n      <mat-option *ngFor=\"let option of options\" [value]=\"option\">\r\n        {{option}}\r\n      </mat-option>\r\n    </mat-autocomplete>\r\n  </mat-form-field>\r\n</form>\r\n"
+            "templateData": "<mat-tab-group>\r\n  <mat-tab label=\"First\"> Content 1 </mat-tab>\r\n  <mat-tab label=\"Second\"> Content 2 </mat-tab>\r\n  <mat-tab label=\"Third\"> Content 3 </mat-tab>\r\n</mat-tab-group>\r\n<mat-chip>One fish</mat-chip>\r\n<mat-chip>Two fish</mat-chip>\r\n<mat-chip-option color=\"accent\" selected>Accent fish</mat-chip-option>\r\n<mat-chip-option color=\"warn\">Warn fish</mat-chip-option>\r\n<br />\r\n<button mat-raised-buttoncolor=\"primary\">Hola</button>\r\n<button mat-raised-buttoncolor=\"primary\">Hola</button>\r\n<button mat-raised-buttoncolor=\"primary\">Hola</button>\r\n<br />\r\n<mat-radio-group aria-label=\"Select an option\">\r\n  <mat-radio-button value=\"1\">Option 1</mat-radio-button>\r\n  <mat-radio-button value=\"2\">Option 2</mat-radio-button>\r\n</mat-radio-group>\r\n<br />\r\n<mat-form-field appearance=\"outline\">\r\n  <mat-label>Fill form field</mat-label>\r\n  <input matInput placeholder=\"Placeholder\" />\r\n  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>\r\n  <mat-hint>Hint</mat-hint>\r\n</mat-form-field>\r\n<br />\r\n<form class=\"example-form\">\r\n  <mat-form-field class=\"example-full-width\" appearance=\"fill\">\r\n    <mat-label>Number</mat-label>\r\n    <input type=\"text\"\r\n           placeholder=\"Pick one\"\r\n           aria-label=\"Number\"\r\n           matInput\r\n           [matAutocomplete]=\"auto\">\r\n    <mat-autocomplete #auto=\"matAutocomplete\">\r\n      <mat-option *ngFor=\"let option of options\" [value]=\"option\">\r\n        {{option}}\r\n      </mat-option>\r\n    </mat-autocomplete>\r\n  </mat-form-field>\r\n</form>\r\n"
         },
         {
-            "name": "ButtonComponent",
-            "id": "component-ButtonComponent-5ca728580fcb80198da6b09d12ee9401b9ab7f00eb56e58cf0cf8cc249a59e5d1798cf4a7b17e0f7d885ae0bb1a7e3aa3e025a45b21199d7780054157ed5420c",
-            "file": "src/stories/components/button/button.component.ts",
+            "name": "RadioButtonComponent",
+            "id": "component-RadioButtonComponent-8060e76e47460f81a06f82fc4d9a4c48d806e0ef110cc6ae1dcb8396f575428d1445a923a5e6d2c052e8acecb687360eb5d6cc9289c823ff9099d11b972e81b5",
+            "file": "src/stories/components/button/radio-button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "app-button",
+            "selector": "radio-button",
             "styleUrls": [
-                "./button.component.scss"
+                "./radio-button.component.scss"
             ],
             "styles": [],
             "templateUrl": [
-                "./button.component.html"
+                "./radio-button.component.html"
             ],
             "viewProviders": [],
-            "inputsClass": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "\"primary\" | \"accent\" | \"warn\" | \"success\" | \"info\" | \"warning\"",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "Sizes",
+                    "decorators": []
+                }
+            ],
             "outputsClass": [],
             "propertiesClass": [],
             "methodsClass": [],
@@ -107,28 +126,39 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss']\r\n})\r\nexport class ButtonComponent {\r\n\r\n}\r\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { Sizes } from '../../assets/model/modelo.model';\n@Component({\n  selector: 'radio-button',\n  templateUrl: './radio-button.component.html',\n  styleUrls: ['./radio-button.component.scss']\n})\nexport class RadioButtonComponent {\n  @Input() \n  color?: 'primary'|'accent'|'warn'|'success'|'info'|'warning' = 'primary' ;\n  @Input ()\n  size ?: Sizes;\n\n  public get colorOption(): string[] {\n    return [`radio-button--${this.color}`]\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "",
-                    "styleUrl": "./button.component.scss"
+                    "data": ".radio-button--small{\r\n    \r\n}",
+                    "styleUrl": "./radio-button.component.scss"
                 }
             ],
             "stylesData": "",
-            "templateData": "<p>button works!</p>\r\n"
+            "accessors": {
+                "colorOption": {
+                    "name": "colorOption",
+                    "getSignature": {
+                        "name": "colorOption",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 14
+                    }
+                }
+            },
+            "templateData": "<mat-radio-group >\r\n    <mat-radio-button >Option 1</mat-radio-button>\r\n    <mat-radio-button >Option 2</mat-radio-button>\r\n </mat-radio-group>"
         }
     ],
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-0ab063eea25d3b19e2253eeb3a4bb8bc4e95bed08078416375e331abf2ce63bfec6ac323c22320778ca414979cd046b21960ce156fb3ef845772d36396910df9",
+            "id": "module-AppModule-7686417782b3437edc26a7402a8cc89016964c75317f6219aed6bbf1cec5e16a3575b8f491f7f7a51e7de447c7cf18265b671c9d25bf2eb0d91cbfbf889fce09",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppComponent            } from './app.component';\r\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\r\nimport { MaterialModule          } from './material.module';\r\n@NgModule({\r\n  declarations: [AppComponent],\r\n  imports: [\r\n    MaterialModule,   \r\n    BrowserModule,\r\n    BrowserAnimationsModule,\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent],\r\n})\r\nexport class AppModule {}\r\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppComponent            } from './app.component';\r\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\r\nimport { MaterialModule          } from './material.module';\r\n@NgModule({\r\n  declarations: [AppComponent],\r\n  imports: [\r\n    BrowserModule,\r\n    BrowserAnimationsModule,\r\n    MaterialModule,   \r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent],\r\n})\r\nexport class AppModule {}\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -161,6 +191,46 @@
                             "name": "AppComponent"
                         }
                     ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "MaterialModule",
+            "id": "module-MaterialModule-799cd738d74fc0db09c202a0f5731df530b6f0f866db66ca09803f8f3fe40dc1bd5940a5adcf08e58a068bf1009c57cfdbd0417bd58ac86aa6be76b1caea0f87",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/material.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule                 } from '@angular/core';\r\nimport { CommonModule             } from '@angular/common';\r\nimport { MatButtonModule          } from '@angular/material/button';\r\nimport { MatProgressBarModule     } from '@angular/material/progress-bar';\r\nimport { MatChipsModule           } from '@angular/material/chips';\r\nimport { MatToolbarModule         } from '@angular/material/toolbar';\r\nimport { MatProgressSpinnerModule } from '@angular/material/progress-spinner';\r\nimport { MatSliderModule          } from '@angular/material/slider';\r\nimport { MatBadgeModule           } from '@angular/material/badge';\r\nimport { MatSlideToggleModule     } from '@angular/material/slide-toggle';\r\nimport { MatStepperModule         } from '@angular/material/stepper';\r\nimport { MatInputModule           } from '@angular/material/input';\r\nimport { MatSnackBarModule        } from '@angular/material/snack-bar';\r\nimport { MatIconModule            } from '@angular/material/icon';\r\nimport { MatTabsModule            } from '@angular/material/tabs';\r\nimport { MatCheckboxModule        } from '@angular/material/checkbox';\r\nimport { MatRadioModule           } from '@angular/material/radio';\r\nimport { MatDividerModule         } from '@angular/material/divider';\r\nimport { MatFormFieldModule       } from '@angular/material/form-field';\r\nimport { MatSelectModule          } from '@angular/material/select';\r\nimport { MatDatepickerModule      } from '@angular/material/datepicker';\r\nimport { MatNativeDateModule, MatRippleModule } from '@angular/material/core';\r\n\r\nconst components = [\r\n  CommonModule,\r\n  MatButtonModule,\r\n  MatProgressBarModule,\r\n  MatToolbarModule,\r\n  MatChipsModule,\r\n  MatProgressSpinnerModule,\r\n  MatSliderModule,\r\n  MatBadgeModule,\r\n  MatRadioModule,\r\n  MatSlideToggleModule,\r\n  MatCheckboxModule,\r\n  MatStepperModule,\r\n  MatFormFieldModule,\r\n  MatSnackBarModule,\r\n  MatInputModule,\r\n  MatIconModule,\r\n  MatTabsModule,\r\n  MatDividerModule,\r\n  MatSelectModule,\r\n  MatDatepickerModule,\r\n  MatRippleModule,\r\n  MatNativeDateModule\r\n  \r\n];\r\n\r\n@NgModule({\r\n  declarations: [],\r\n  imports: [components],\r\n  exports: [components]\r\n})\r\nexport class MaterialModule {}",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "MaterialModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
                 },
                 {
                     "type": "classes",
@@ -208,16 +278,6 @@
     "miscellaneous": {
         "variables": [
             {
-                "name": "Button",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/components/button/button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
                 "name": "components",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -225,7 +285,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
-                "defaultValue": "[\r\n  MatAutocompleteModule,\r\n  CommonModule,\r\n  MatButtonModule,\r\n  MatProgressBarModule,\r\n  MatToolbarModule,\r\n  MatChipsModule,\r\n  MatProgressSpinnerModule,\r\n  MatSliderModule,\r\n  MatBadgeModule,\r\n  MatRadioModule,\r\n  MatSlideToggleModule,\r\n  MatCheckboxModule,\r\n  MatStepperModule,\r\n  MatFormFieldModule,\r\n  MatSnackBarModule,\r\n  MatInputModule,\r\n  MatIconModule,\r\n  MatTabsModule,\r\n  MatDividerModule,\r\n  MatSelectModule,\r\n  MatDatepickerModule,\r\n  MatRippleModule,\r\n  MatNativeDateModule,\r\n]"
+                "defaultValue": "[\r\n  CommonModule,\r\n  MatButtonModule,\r\n  MatProgressBarModule,\r\n  MatToolbarModule,\r\n  MatChipsModule,\r\n  MatProgressSpinnerModule,\r\n  MatSliderModule,\r\n  MatBadgeModule,\r\n  MatRadioModule,\r\n  MatSlideToggleModule,\r\n  MatCheckboxModule,\r\n  MatStepperModule,\r\n  MatFormFieldModule,\r\n  MatSnackBarModule,\r\n  MatInputModule,\r\n  MatIconModule,\r\n  MatTabsModule,\r\n  MatDividerModule,\r\n  MatSelectModule,\r\n  MatDatepickerModule,\r\n  MatRippleModule,\r\n  MatNativeDateModule\r\n  \r\n]"
             },
             {
                 "name": "descripcionComponent",
@@ -238,14 +298,24 @@
                 "defaultValue": "'componente usa por defecto el color primary, para hacer uso de los otros colores solo debe cambiar la propiedad `color=\" \" ` por cualquiera de los siguientes opciones : '"
             },
             {
+                "name": "RadioButton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/button/radio-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "string",
+                "defaultValue": "'componente usa por defecto el color primary, para hacer uso de los otros colores solo debe cambiar la propiedad `color=\" \" ` por cualquiera de los siguientes opciones : '"
+            },
+            {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/button/button.stories.ts",
+                "file": "src/stories/components/button/radio-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<ButtonComponent>",
-                "defaultValue": "( args: ButtonComponent ) => ({ props: args })"
+                "type": "Story<RadioButtonComponent>",
+                "defaultValue": "( args: RadioButtonComponent ) => ({ props: args })"
             }
         ],
         "functions": [],
@@ -283,6 +353,35 @@
                         "deprecated": false,
                         "deprecationMessage": "",
                         "value": "caption"
+                    }
+                ],
+                "ctype": "miscellaneous",
+                "subtype": "enum",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "file": "src/stories/assets/model/modelo.model.ts"
+            },
+            {
+                "name": "Sizes",
+                "childs": [
+                    {
+                        "name": "small",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "small"
+                    },
+                    {
+                        "name": "medium",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "medium"
+                    },
+                    {
+                        "name": "large",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "large"
                     }
                 ],
                 "ctype": "miscellaneous",
@@ -383,28 +482,6 @@
             }
         ],
         "groupedVariables": {
-            "src/stories/components/button/button.stories.ts": [
-                {
-                    "name": "Button",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/components/button/button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/components/button/button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ButtonComponent>",
-                    "defaultValue": "( args: ButtonComponent ) => ({ props: args })"
-                }
-            ],
             "src/app/material.module.ts": [
                 {
                     "name": "components",
@@ -414,7 +491,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "[]",
-                    "defaultValue": "[\r\n  MatAutocompleteModule,\r\n  CommonModule,\r\n  MatButtonModule,\r\n  MatProgressBarModule,\r\n  MatToolbarModule,\r\n  MatChipsModule,\r\n  MatProgressSpinnerModule,\r\n  MatSliderModule,\r\n  MatBadgeModule,\r\n  MatRadioModule,\r\n  MatSlideToggleModule,\r\n  MatCheckboxModule,\r\n  MatStepperModule,\r\n  MatFormFieldModule,\r\n  MatSnackBarModule,\r\n  MatInputModule,\r\n  MatIconModule,\r\n  MatTabsModule,\r\n  MatDividerModule,\r\n  MatSelectModule,\r\n  MatDatepickerModule,\r\n  MatRippleModule,\r\n  MatNativeDateModule,\r\n]"
+                    "defaultValue": "[\r\n  CommonModule,\r\n  MatButtonModule,\r\n  MatProgressBarModule,\r\n  MatToolbarModule,\r\n  MatChipsModule,\r\n  MatProgressSpinnerModule,\r\n  MatSliderModule,\r\n  MatBadgeModule,\r\n  MatRadioModule,\r\n  MatSlideToggleModule,\r\n  MatCheckboxModule,\r\n  MatStepperModule,\r\n  MatFormFieldModule,\r\n  MatSnackBarModule,\r\n  MatInputModule,\r\n  MatIconModule,\r\n  MatTabsModule,\r\n  MatDividerModule,\r\n  MatSelectModule,\r\n  MatDatepickerModule,\r\n  MatRippleModule,\r\n  MatNativeDateModule\r\n  \r\n]"
                 }
             ],
             "src/stories/assets/model/modelo.model.ts": [
@@ -427,6 +504,33 @@
                     "deprecationMessage": "",
                     "type": "string",
                     "defaultValue": "'componente usa por defecto el color primary, para hacer uso de los otros colores solo debe cambiar la propiedad `color=\" \" ` por cualquiera de los siguientes opciones : '"
+                }
+            ],
+            "src/stories/components/button/radio-button.stories.ts": [
+                {
+                    "name": "RadioButton",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/button/radio-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "defaultValue": "'componente usa por defecto el color primary, para hacer uso de los otros colores solo debe cambiar la propiedad `color=\" \" ` por cualquiera de los siguientes opciones : '"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {
+            "src/stories/assets/model/modelo.model.ts": [
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/button/radio-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<RadioButtonComponent>",
+                    "defaultValue": "( args: RadioButtonComponent ) => ({ props: args })"
                 }
             ]
         },
@@ -465,6 +569,35 @@
                             "deprecated": false,
                             "deprecationMessage": "",
                             "value": "caption"
+                        }
+                    ],
+                    "ctype": "miscellaneous",
+                    "subtype": "enum",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "file": "src/stories/assets/model/modelo.model.ts"
+                },
+                {
+                    "name": "Sizes",
+                    "childs": [
+                        {
+                            "name": "small",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "small"
+                        },
+                        {
+                            "name": "medium",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "medium"
+                        },
+                        {
+                            "name": "large",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "large"
                         }
                     ],
                     "ctype": "miscellaneous",
@@ -602,26 +735,26 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/components/button/button.component.ts",
+                "filePath": "src/stories/components/button/radio-button.component.ts",
                 "type": "component",
                 "linktype": "component",
-                "name": "ButtonComponent",
+                "name": "RadioButtonComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/1",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
-                "filePath": "src/stories/components/button/button.stories.ts",
+                "filePath": "src/stories/components/button/radio-button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Button",
+                "name": "RadioButton",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
             },
             {
-                "filePath": "src/stories/components/button/button.stories.ts",
+                "filePath": "src/stories/components/button/radio-button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
