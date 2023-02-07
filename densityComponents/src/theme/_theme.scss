@@ -29,14 +29,25 @@ $bitakora-light-theme: mat.define-light-theme(
 .small {
   // CHIP
   .mat-mdc-standard-chip {
-    height: var(--mdc-chip-container-height, 24px);
-  };
+    height: var(--mdc-chip-container-height, 1.71428571rem);
+  }
+  .mat-mdc-standard-chip .mdc-evolution-chip__graphic {
+    height: var(--mdc-chip-with-avatar-avatar-size, 1.28571429rem);
+    width: var(--mdc-chip-with-avatar-avatar-size, 1.28571429rem);
+  }
+  .mat-mdc-standard-chip .mdc-evolution-chip__checkmark {
+    height: 1.14285714rem;
+    width: 1.14285714rem;
+  }
   .mat-icon {
     font-size: 1.428571428571429rem !important;
     height: 1.428571428571429rem !important;
     width: 1.428571428571429rem !important ;
     padding: 0.7142857142857143rem !important;
-  };
+  }
+  .mat-mdc-progress-spinner {
+    height: 2.857rem !important;
+  }
   @include mat.radio-density(-3);
   .mdc-radio__background {
     width: 1.143rem;
@@ -52,19 +63,47 @@ $bitakora-light-theme: mat.define-light-theme(
     transform: scale(0.4);
   }
   .mat-mdc-radio-button .mat-radio-ripple {
-    top: -3px;
-    left: -3px;
-  };
+    top: -0.21428571rem;
+    left: -0.21428571rem;
+  }
+  .mat-expansion-panel-header {
+    height: 3.14285714rem;
+    padding: 0rem 1.14285714rem;
+  }
+  // SWITCH
+  @include mat.slide-toggle-density(-5);
+  .mat-mdc-slide-toggle .mdc-switch {
+    width: var(--mdc-switch-track-width, 26px);
+  }
+  .mat-mdc-slide-toggle .mdc-switch .mdc-switch__track {
+    height: var(--mdc-switch-track-height, 10px);
+  }
+  .mat-mdc-slide-toggle .mdc-switch .mdc-switch__handle {
+    height: var(--mdc-switch-handle-height, 16px);
+    width: var(--mdc-switch-handle-width, 16px);
+  }
+  .mat-mdc-slide-toggle .mdc-switch .mdc-switch__handle-track {
+    width: calc(100% - var(--mdc-switch-handle-width, 15px));
+  }
   .mat-mdc-tab.mdc-tab {
     @include mat.tabs-density(-2);
     height: 2.857142857142857rem !important;
-  };
+  }
   @include mat.menu-density(-5.5);
   .mat-mdc-menu-item {
     min-height: 1.857rem;
-  };
+  }
+  @include mat.checkbox-density(-0.5);
+  .mat-mdc-checkbox-touch-target {
+    height: 2.71428571rem;
+  }
+  .mdc-checkbox__background {
+    width: 1.07142857rem;
+    height: 1.07142857rem;
+  }
   @include mat.button-density(-1.5);
-  @include mat.button-toggle-density(-3);
+  @include mat.button-toggle-density(-4.5);
   @include mat.form-field-density(-4);
   @include mat.list-density(-3);
+  @include mat.slider-density(-4);
 }

@@ -1,10 +1,6 @@
 @use "@material/textfield" with($height: 52px);
-// @use "@material/list" with ($deprecated-single-line-height: 48px,$deprecated-single-line-minimum-height: 24px);
 @use "@material/radio" with ($minimum-size: 16px, $ripple-size: 28px);
-
-// @use "@material/tab" with($height: 52px);
-// @use "@material/data-table" with($row-height: 50px);
-// @use "@material/density/variables" as density-variables;
+@use "@material/switch/deprecated";
 @import "./theme/theme";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 
