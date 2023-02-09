@@ -1,0 +1,160 @@
+<!-- SLIDE TOGGLE -->
+<mat-slide-toggle> Slide me! </mat-slide-toggle>
+<!-- CHECKBOX -->
+<mat-checkbox class="example-margin" size="small" (ngModel)="(checked)">
+  Checked
+</mat-checkbox>
+<br />
+<!-- SLIDER -->
+<mat-slider size="small">
+  <input matSliderThumb />
+</mat-slider>
+<mat-slider>
+  <input matSliderThumb />
+</mat-slider>
+<br />
+<!-- SPINNER -->
+<mat-spinner size="small"></mat-spinner>
+<!-- --EXPANSION PANEL y/o Accordion -->
+<br />
+
+<!-- ---- BUTON GROUP -->
+<br />
+<br />
+<!-- -------BUTTON -->
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu size="small" #menu="matMenu">
+  <button size="small" mat-menu-item>Item 1</button>
+  <button size="small" mat-menu-item>Item 2</button>
+</mat-menu>
+<br />
+<!-- -----LISTAS -->
+
+<br />
+<!-- ------------CHIPS -->
+<mat-chip size="small">One fish</mat-chip>
+<mat-chip>Two fish</mat-chip>
+<mat-chip>
+  <img
+    matChipAvatar
+    src="https://material.angular.io/assets/img/examples/shiba1.jpg"
+    alt="Photo of a Shiba Inu"
+  />
+  Dog one
+</mat-chip>
+<mat-chip-option size="small" color="accent" selected
+  >Accent fish</mat-chip-option
+>
+<mat-chip-option color="warn">Warn fish</mat-chip-option>
+<br />
+
+<!-- RADIO BUTTON  -->
+<mat-radio-group class="small">
+  <mat-radio-button>Option 1</mat-radio-button>
+  <mat-radio-button>Option 2</mat-radio-button>
+</mat-radio-group>
+<br />
+<button
+  mat-fab
+  color="accent"
+  extended
+  size="small"
+  aria-label="Example icon button with a bookmark icon"
+>
+  hola
+  <mat-icon>add</mat-icon>
+</button>
+<button
+  mat-fab
+  color="accent"
+  extended
+  size="medium"
+  aria-label="Example icon button with a bookmark icon"
+>
+  <mat-icon>add</mat-icon>
+  hola
+</button>
+<button
+  mat-fab
+  color="accent"
+  extended
+  size="large"
+  aria-label="Example icon button with a bookmark icon"
+>
+  <mat-icon>add</mat-icon>
+  hola
+</button>
+<button
+  mat-fab
+  size="small"
+  color="accent"
+  aria-label="Example icon button with a bookmark icon"
+>
+  <mat-icon>bookmark</mat-icon>
+</button>
+<button
+  mat-fab
+  color="accent"
+  size="medium"
+  aria-label="Example icon button with a bookmark icon"
+>
+  <mat-icon>bookmark</mat-icon>
+</button>
+<button
+  mat-fab
+  color="accent"
+  size="large"
+  aria-label="Example icon button with a bookmark icon"
+>
+  <mat-icon>bookmark</mat-icon>
+</button>
+<br />
+<mat-form-field appearance="outline">
+  <mat-label>Fill form field</mat-label>
+  <input matInput placeholder="Placeholder" />
+  <mat-icon matSuffix size="small">sentiment_very_satisfied</mat-icon>
+  <mat-hint>Hint</mat-hint>
+</mat-form-field>
+<br />
+<mat-radio-group aria-label="Select an option">
+  <mat-radio-button size="small" value="1">Option 1</mat-radio-button>
+  <mat-radio-button value="2">Option 2</mat-radio-button>
+</mat-radio-group>
+<br />
+<mat-icon size="small">house</mat-icon>
+<mat-icon size="medium">house</mat-icon>
+<mat-icon size="large">house</mat-icon>
+<br />
+<mat-button-toggle-group size="small" #group="matButtonToggleGroup">
+  <mat-button-toggle value="left" aria-label="Text align left">
+    <mat-icon>format_align_left</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="center" aria-label="Text align center">
+    <mat-icon>format_align_center</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="right" aria-label="Text align right">
+    <mat-icon>format_align_right</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="justify" disabled aria-label="Text align justify">
+    <mat-icon>format_align_justify</mat-icon>
+  </mat-button-toggle>
+</mat-button-toggle-group>
+<br />
+<button mat-raised-button color="accent" size="small">
+  <mat-icon size="small">home</mat-icon>
+  Small
+</button>
+<button mat-raised-button color="accent" size="medium">
+  Medium
+  <mat-icon size="medium">home</mat-icon>
+</button>
+<button mat-raised-button color="accent">
+  <mat-icon size="medium">home</mat-icon>
+  Large
+</button>
+<br />
+<mat-list  role="list">
+  <mat-list-item role="listitem">Item 1</mat-list-item>
+  <mat-list-item role="listitem">Item 2</mat-list-item>
+  <mat-list-item role="listitem">Item 3</mat-list-item>
+</mat-list>

@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { SizeDirective } from 'src/theme/size.directive';
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent,SizeDirective],
   imports: [
     MaterialModule,
     BrowserModule,

@@ -1,0 +1,189 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+@use "@material/button";
+@use "@material/chips";
+@include mat.core();
+/////////////// SMALL////////////////
+
+////////////// CHIPS ////////////////
+mat-chip.small:not(.large),
+mat-chip-option.small:not(.large) {
+  @include chips.density(-2);
+}
+////////////// BUTTON ////////////////
+button.small:not(button.large) {
+  @include button.density(-3);
+}
+.small {
+  ////////////// BUTTON TOGGLE ////////////////
+  @include mat.button-toggle-density(-4.5);
+  ////////////// LIST ////////////////
+  @include mat.list-density(-3);
+  ////////////// EXPASION PANEL ////////////////
+  &.mat-expansion-panel-header {
+    height: 3.14285714rem;
+    padding: 0rem 1.14285714rem;
+  }
+  ////////////// ICONS ////////////////
+  &.mat-mdc-button-base > .mat-icon {
+    font-size: 1.285714285714286rem !important;
+    height: 1.285714285714286rem !important;
+    width: 1.285714285714286rem !important;
+  }
+  //////////////// SUFFIX ////////////////
+  SUFFIX .mat-mdc-form-field-icon-suffix > .mat-icon {
+    padding: 0.5714285714285714rem !important;
+  }
+  ////////////////ICON ////////////////
+  &.mat-icon {
+    font-size: 1.428571428571429rem !important;
+    height: 1.428571428571429rem !important;
+    width: 1.428571428571429rem !important ;
+  }
+  ////////////////PROGRES SPINER ////////////////
+  &.mat-mdc-progress-spinner {
+    height: 50px !important;
+    width: 50px !important;
+  }
+  //////////////// SLIDER ////////////////
+  &.mat-mdc-slider .mdc-slider__thumb-knob {
+    border-width: 0.4285714285714286rem !important;
+    width: 0.8571428571428571rem !important;
+    height: 0.8571428571428571rem !important;
+  }
+  .mat-mdc-slider-visual-thumb .mat-ripple {
+    height: 2rem !important;
+    width: 2rem !important;
+    margin: 0.7142857142857143rem;
+    border-radius: 1rem;
+  }
+  &.mat-mdc-slider .mdc-slider__track--inactive {
+    --mdc-slider-inactive-track-height: 0.1428571428571429rem !important;
+  }
+  &.mat-mdc-slider .mdc-slider__track {
+    --mdc-slider-inactive-track-height: 0.1428571428571429rem !important;
+  }
+  &.mat-mdc-slider .mdc-slider__track--active {
+    --mdc-slider-inactive-track-height: 0.2857142857142857rem !important;
+  }
+  //////////////// FAB ////////////////
+  &.mdc-fab:not(.mdc-fab--extended) {
+    height: 40px !important;
+    width: 40px !important;
+  }
+  &.mat-mdc-extended-fab {
+    height: 2.428571428571429rem !important;
+    gap: 0.7142857142857143rem !important;
+  }
+  &.mat-mdc-extended-fab .mdc-button__label {
+    font-size: 1rem;
+  }
+  //////////////// CHECKBOX ////////////////
+  .mdc-checkbox__background {
+    width: 15px;
+    height: 15px;
+    top: calc((var(--mdc-checkbox-ripple-size, 31px) - 18px) / 2) !important;
+    left: calc((var(--mdc-checkbox-ripple-size, 31.5px) - 18px) / 2) !important;
+  }
+  &.mat-mdc-checkbox .mdc-checkbox {
+    padding: calc(
+      (var(--mdc-checkbox-state-layer-size, 28.5px) - 18px) / 2
+    ) !important;
+  }
+  //////////////// MENU ////////////////
+  &.mat-mdc-menu-item {
+    min-height: 2rem !important;
+  }
+  //////////////// RADIO ////////////////
+  .mdc-radio__background {
+    width: 1.143rem !important;
+    height: 1.143rem !important;
+  }
+  .mdc-radio__inner-circle {
+    left: -0.179rem !important;
+    top: -0.179rem !important;
+  }
+  .mdc-radio__native-control:checked
+    + .mdc-radio__background
+    .mdc-radio__inner-circle {
+    transform: scale(0.4) !important;
+  }
+  .mdc-radio__outer-circle,
+  .mdc-radio__inner-circle {
+    margin: 2px;
+  }
+}
+
+//////////////// MEDIUM ////////////////
+.medium {
+  @include mat.button-toggle-density(-3);
+}
+//////////////// EXPANSION PANEL ////////////////
+.mat-expansion-panel-header {
+  height: 3.714285714285714rem;
+  padding: 0rem 1.14285714rem;
+}
+//////////////// BUTTON ////////////////
+button.medium:not(button.large) {
+  @include button.density(-1.5);
+}
+/// ICONS
+//////////////// ICON BUTTON ////////////////
+.mat-mdc-button-base > .mat-icon {
+  font-size: 1.428571428571429rem !important;
+  height: 1.428571428571429rem !important;
+  width: 1.428571428571429rem !important;
+}
+//////////////// SUFFIX ////////////////
+.mat-mdc-form-field-icon-suffix > .mat-icon {
+  padding: 0.5714285714285714rem !important;
+}
+//////////////// TAB ////////////////
+.mat-mdc-tab.mdc-tab {
+  height: 2.857142857142857rem !important;
+}
+//////////////// SLIDER ////////////////
+.mat-mdc-slider .mdc-slider__track--inactive {
+  height: var(--mdc-slider-inactive-track-height, 4px) !important;
+}
+.mat-mdc-slider .mdc-slider__track {
+  height: var(--mdc-slider-inactive-track-height, 4px) !important;
+}
+.mat-mdc-slider .mdc-slider__track--active {
+  height: var(--mdc-slider-inactive-track-height, 6px) !important;
+}
+//////////////// FAB ////////////////
+.mat-mdc-extended-fab.medium {
+  height: 2.857142857142857rem;
+  gap: 0.7142857142857143rem;
+}
+.mat-mdc-extended-fab.medium .mdc-button__label {
+  font-size: 1rem;
+}
+.mdc-fab:not(.mdc-fab--extended).medium {
+  height: 48px !important;
+  width: 48px !important;
+}
+//////////////// MENU ////////////////
+.large {
+  //////////////// MENU ////////////////
+  @include mat.button-toggle-density(-1.5);
+  &.mat-mdc-button-base > .mat-icon {
+    font-size: 1.571428571428571rem !important;
+    height: 1.571428571428571rem !important;
+    width: 1.571428571428571rem !important;
+  }
+    //////////////// ICON ////////////////
+  &.mat-icon.large {
+    font-size: 2.5rem !important;
+    height: 2.5rem !important;
+    width: 2.5rem !important ;
+  }
+    //////////////// FAB ////////////////
+  .mat-mdc-extended-fab.large {
+    gap: 0.7142857142857143rem;
+  }
+  .mat-mdc-extended-fab.large .mdc-button__label {
+    font-size: 1.071428571428571rem;
+  }
+}
