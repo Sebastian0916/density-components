@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone");
+
+.mat-icon--small {
+  font-size: 18px !important;
+  width: 20px !important;
+  height: 18px !important;
+}
+.mat-icon--medium {
+  font-size: 22px !important;
+  width: 24px !important;
+  height: 22px !important;
+}
+.mat-icon--large {
+  font-size: 33px !important;
+  width: 35px !important;
+  height: 33px !important;
+}
+.mat-icon--primary {
+  color: #1e62a1 !important;
+}
+.mat-icon--accent {
+  color: #0cbbe2 !important;
+}
+.mat-icon--warn {
+  color: #d14343 !important;
+}
+.mat-icon--success {
+  color: #8fc93a !important;
+}
+
+.mat-icon--caution {
+  color: #fb8500 !important;
+}
+.mat-icon--info {
+  color: #2d9fc5 !important;
+}
+///////////// SMALL////////////////
+.small {
+  // MAT-ICON
+  .mat-icon .mat-icon--small {
+    font-size: 18px !important;
+    height: 1.428571428571429rem !important;
+    width: 1.428571428571429rem !important ;
+  }
+}
+//////////////// LARGE ////////////////
+.large {
+  // ICON
+  &.mat-icon.large {
+    font-size: 33px !important;
+    height: 31px !important;
+    width: 35px !important ;
+  }
+}

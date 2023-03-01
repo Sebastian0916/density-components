@@ -1,0 +1,144 @@
+.slide-small {
+  &::ng-deep {
+    .mdc-switch__track {
+      height: 10px !important;
+      width: 28px !important;
+    }
+    .mdc-switch__handle {
+      height: 16px !important;
+      width: 16px !important;
+    }
+    .mdc-switch.mdc-switch--unselected .mdc-switch__icon {
+      height: 14px !important;
+      width: 14px !important;
+    }
+    .mdc-switch.mdc-switch--selected .mdc-switch__icon {
+      height: 14px !important;
+      width: 14px !important;
+    }
+    .mdc-switch .mdc-switch__handle-track {
+      width: calc(100% - var(--mdc-switch-handle-width, 23px));
+    }
+    .mdc-switch__ripple{
+      height: 24px !important;
+      width: 24px !important;
+    }
+  }
+}
+.slide-primary {
+  &::ng-deep {
+    .mdc-switch__track {
+      opacity: 0.76;
+      --mdc-switch-selected-track-color: #1e62a1 !important;
+      --mdc-switch-selected-focus-track-color: #1e62a1 !important;
+      --mdc-switch-selected-pressed-track-color: #1e62a1 !important;
+      --mdc-switch-selected-hover-track-color: #1e62a1 !important;
+    }
+    .mdc-switch__handle {
+      --mdc-switch-selected-focus-state-layer-color: #1e62a1 !important;
+      --mdc-switch-selected-handle-color: #1e62a1 !important;
+      --mdc-switch-selected-pressed-state-layer-color: #1e62a1 !important;
+      --mdc-switch-selected-focus-handle-color: #1e62a1 !important;
+      --mdc-switch-selected-hover-handle-color: #1e62a1 !important;
+      --mdc-switch-selected-pressed-handle-color: #1e62a1 !important;
+    }
+  }
+}
+.slide-accent {
+  &::ng-deep {
+    .mdc-switch__track {
+      opacity: 0.56 !important;
+      --mdc-switch-selected-track-color: #0cbbe2 !important;
+      --mdc-switch-selected-focus-track-color: #0cbbe2 !important;
+      --mdc-switch-selected-pressed-track-color: #0cbbe2 !important;
+      --mdc-switch-selected-hover-track-color: #0cbbe2 !important;
+    }
+    .mdc-switch__handle {
+      --mdc-switch-selected-handle-color: #0cbbe2 !important;
+      --mdc-switch-selected-focus-state-layer-color: #0cbbe2 !important;
+      --mdc-switch-selected-pressed-state-layer-color: #0cbbe2 !important;
+
+      --mdc-switch-selected-focus-handle-color: #0cbbe2 !important;
+      --mdc-switch-selected-hover-handle-color: #0cbbe2 !important;
+      --mdc-switch-selected-pressed-handle-color: #0cbbe2 !important;
+    }
+  }
+}
+.slide-warn {
+  &::ng-deep {
+    .mdc-switch__track {
+      opacity: 0.76;
+      --mdc-switch-selected-track-color: #d14343 !important;
+      --mdc-switch-selected-focus-track-color: #d14343 !important;
+      --mdc-switch-selected-pressed-track-color: #d14343 !important;
+      --mdc-switch-selected-hover-track-color: #d14343 !important;
+    }
+    .mdc-switch__handle {
+      --mdc-switch-selected-handle-color: #d14343 !important;
+      --mdc-switch-selected-focus-state-layer-color: #d14343 !important;
+      --mdc-switch-selected-pressed-state-layer-color: #d14343 !important;
+      --mdc-switch-selected-focus-handle-color: #d14343 !important;
+      --mdc-switch-selected-hover-handle-color: #d14343 !important;
+      --mdc-switch-selected-pressed-handle-color: #d14343 !important;
+    }
+  }
+}
+.slide-caution {
+  &::ng-deep {
+    .mdc-switch__track {
+      opacity: 0.76;
+      --mdc-switch-selected-track-color: #fb8500 !important;
+      --mdc-switch-selected-focus-track-color: #fb8500 !important;
+      --mdc-switch-selected-pressed-track-color: #fb8500 !important;
+      --mdc-switch-selected-hover-track-color: #fb8500 !important;
+    }
+    .mdc-switch__handle {
+      --mdc-switch-selected-handle-color: #fb8500 !important;
+      --mdc-switch-selected-pressed-state-layer-color: #fb8500 !important;
+
+      --mdc-switch-selected-focus-state-layer-color: #fb8500 !important;
+      --mdc-switch-selected-focus-handle-color: #fb8500 !important;
+      --mdc-switch-selected-hover-handle-color: #fb8500 !important;
+      --mdc-switch-selected-pressed-handle-color: #fb8500 !important;
+    }
+  }
+}
+.slide-success {
+  &::ng-deep {
+    .mdc-switch__track {
+      opacity: 0.76;
+      --mdc-switch-selected-track-color: #8fc93a !important;
+      --mdc-switch-selected-focus-track-color: #8fc93a !important;
+      --mdc-switch-selected-pressed-track-color: #8fc93a !important;
+      --mdc-switch-selected-hover-track-color: #8fc93a !important;
+    }
+    .mdc-switch__handle {
+      --mdc-switch-selected-handle-color: #8fc93a !important;
+      --mdc-switch-selected-pressed-state-layer-color: #8fc93a !important;
+      --mdc-switch-selected-focus-state-layer-color: #8fc93a !important;
+      --mdc-switch-selected-focus-handle-color: #8fc93a !important;
+      --mdc-switch-selected-hover-handle-color: #8fc93a !important;
+      --mdc-switch-selected-pressed-handle-color: #8fc93a !important;
+    }
+  }
+}
+.slide-info {
+  &::ng-deep {
+    .mdc-switch__track {
+      opacity: 0.76;
+      --mdc-switch-selected-track-color: #2d9fc5 !important;
+      --mdc-switch-selected-focus-track-color: #2d9fc5 !important;
+      --mdc-switch-selected-pressed-track-color: #2d9fc5 !important;
+      --mdc-switch-selected-hover-track-color: #2d9fc5 !important;
+    }
+    .mdc-switch__handle {
+      --mdc-switch-selected-handle-color: #2d9fc5 !important;
+      --mdc-switch-selected-pressed-state-layer-color: #2d9fc5 !important;
+
+      --mdc-switch-selected-focus-state-layer-color: #2d9fc5 !important;
+      --mdc-switch-selected-focus-handle-color: #2d9fc5 !important;
+      --mdc-switch-selected-hover-handle-color: #2d9fc5 !important;
+      --mdc-switch-selected-pressed-handle-color: #2d9fc5 !important;
+    }
+  }
+}

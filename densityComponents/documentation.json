@@ -1,167 +1,15 @@
 {
     "pipes": [],
-    "interfaces": [
-        {
-            "name": "PeriodicElement",
-            "id": "interface-PeriodicElement-029c8fda0ebf82391aea8d964ab44597fedcf0df4c5ed209173df3071b1ae009cd520c6b00526de5b77d9201c181c94435dd3e082125ecd0e0db26ae20bfee10",
-            "file": "src/app/app.component.ts",
-            "deprecated": false,
-            "deprecationMessage": "",
-            "type": "interface",
-            "sourceCode": "import { Component } from '@angular/core';\r\nimport { Validators, FormBuilder } from '@angular/forms';\r\nimport { ThemePalette } from '@angular/material/core';\r\n\r\nexport interface PeriodicElement {\r\n  name: string;\r\n  position: number;\r\n  weight: number;\r\n  symbol: string;\r\n}\r\nexport interface Section {\r\n  name: string;\r\n  updated: Date;\r\n}\r\nconst ELEMENT_DATA: PeriodicElement[] = [\r\n  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},\r\n  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},\r\n  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},\r\n  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},\r\n  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},\r\n  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},\r\n  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},\r\n  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},\r\n  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},\r\n  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},\r\n];\r\n@Component({\r\n  selector: 'app-root',\r\n  templateUrl: './app.component.html',\r\n  styleUrls: ['./app.component.scss'],\r\n})\r\nexport class AppComponent {\r\n  constructor(private _FormBuilder: FormBuilder) {}\r\n  title = 'densityComponents';\r\n\r\n  folders: Section[] = [\r\n    {\r\n      name: 'Photos',\r\n      updated: new Date('1/1/16'),\r\n    },\r\n    {\r\n      name: 'Recipes',\r\n      updated: new Date('1/17/16'),\r\n    },\r\n    {\r\n      name: 'Work',\r\n      updated: new Date('1/28/16'),\r\n    },\r\n  ];\r\n  notes: Section[] = [\r\n    {\r\n      name: 'Vacation Itinerary',\r\n      updated: new Date('2/20/16'),\r\n    },\r\n    {\r\n      name: 'Kitchen Remodel',\r\n      updated: new Date('1/18/16'),\r\n    },\r\n  ];\r\n\r\n  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];\r\n  dataSource = ELEMENT_DATA;\r\n  \r\n  panelOpenState = false;\r\n  checked = false;\r\n  indeterminate = false;\r\n  labelPosition: 'before' | 'after' = 'after';\r\n  disabled = false;\r\n\r\n  firstFormGroup = this._FormBuilder.group({\r\n    firstCtrl: ['', Validators.required],\r\n  });\r\n  secondFormGroup = this._FormBuilder.group({\r\n    secondCtrl: ['', Validators.required],\r\n  });\r\n\r\n  typesOfShoes: string[] = [\r\n    'Boots',\r\n    'Clogs',\r\n    'Loafers',\r\n    'Moccasins',\r\n    'Sneakers',\r\n  ];\r\n\r\n\r\n}\r\n",
-            "properties": [
-                {
-                    "name": "name",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "string",
-                    "optional": false,
-                    "description": "",
-                    "line": 6
-                },
-                {
-                    "name": "position",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "number",
-                    "optional": false,
-                    "description": "",
-                    "line": 7
-                },
-                {
-                    "name": "symbol",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "string",
-                    "optional": false,
-                    "description": "",
-                    "line": 9
-                },
-                {
-                    "name": "weight",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "number",
-                    "optional": false,
-                    "description": "",
-                    "line": 8
-                }
-            ],
-            "indexSignatures": [],
-            "kind": 165,
-            "methods": []
-        },
-        {
-            "name": "Section",
-            "id": "interface-Section-029c8fda0ebf82391aea8d964ab44597fedcf0df4c5ed209173df3071b1ae009cd520c6b00526de5b77d9201c181c94435dd3e082125ecd0e0db26ae20bfee10",
-            "file": "src/app/app.component.ts",
-            "deprecated": false,
-            "deprecationMessage": "",
-            "type": "interface",
-            "sourceCode": "import { Component } from '@angular/core';\r\nimport { Validators, FormBuilder } from '@angular/forms';\r\nimport { ThemePalette } from '@angular/material/core';\r\n\r\nexport interface PeriodicElement {\r\n  name: string;\r\n  position: number;\r\n  weight: number;\r\n  symbol: string;\r\n}\r\nexport interface Section {\r\n  name: string;\r\n  updated: Date;\r\n}\r\nconst ELEMENT_DATA: PeriodicElement[] = [\r\n  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},\r\n  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},\r\n  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},\r\n  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},\r\n  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},\r\n  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},\r\n  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},\r\n  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},\r\n  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},\r\n  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},\r\n];\r\n@Component({\r\n  selector: 'app-root',\r\n  templateUrl: './app.component.html',\r\n  styleUrls: ['./app.component.scss'],\r\n})\r\nexport class AppComponent {\r\n  constructor(private _FormBuilder: FormBuilder) {}\r\n  title = 'densityComponents';\r\n\r\n  folders: Section[] = [\r\n    {\r\n      name: 'Photos',\r\n      updated: new Date('1/1/16'),\r\n    },\r\n    {\r\n      name: 'Recipes',\r\n      updated: new Date('1/17/16'),\r\n    },\r\n    {\r\n      name: 'Work',\r\n      updated: new Date('1/28/16'),\r\n    },\r\n  ];\r\n  notes: Section[] = [\r\n    {\r\n      name: 'Vacation Itinerary',\r\n      updated: new Date('2/20/16'),\r\n    },\r\n    {\r\n      name: 'Kitchen Remodel',\r\n      updated: new Date('1/18/16'),\r\n    },\r\n  ];\r\n\r\n  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];\r\n  dataSource = ELEMENT_DATA;\r\n  \r\n  panelOpenState = false;\r\n  checked = false;\r\n  indeterminate = false;\r\n  labelPosition: 'before' | 'after' = 'after';\r\n  disabled = false;\r\n\r\n  firstFormGroup = this._FormBuilder.group({\r\n    firstCtrl: ['', Validators.required],\r\n  });\r\n  secondFormGroup = this._FormBuilder.group({\r\n    secondCtrl: ['', Validators.required],\r\n  });\r\n\r\n  typesOfShoes: string[] = [\r\n    'Boots',\r\n    'Clogs',\r\n    'Loafers',\r\n    'Moccasins',\r\n    'Sneakers',\r\n  ];\r\n\r\n\r\n}\r\n",
-            "properties": [
-                {
-                    "name": "name",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "string",
-                    "optional": false,
-                    "description": "",
-                    "line": 12
-                },
-                {
-                    "name": "updated",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Date",
-                    "optional": false,
-                    "description": "",
-                    "line": 13
-                }
-            ],
-            "indexSignatures": [],
-            "kind": 165,
-            "methods": []
-        }
-    ],
+    "interfaces": [],
     "injectables": [],
     "guards": [],
     "interceptors": [],
     "classes": [],
-    "directives": [
-        {
-            "name": "SizeDirective",
-            "id": "directive-SizeDirective-3772dcc1021729cd4b3b5641f38839574293a3934b1152e5e2169c4e5ece6e27f44cbd932ab1df6c36b2448f25d121f6adbc0da8a6b699e0cc438916e503721c",
-            "file": "src/theme/size.directive.ts",
-            "type": "directive",
-            "description": "",
-            "rawdescription": "\n",
-            "sourceCode": "import { Directive, ElementRef, Input, OnChanges } from '@angular/core';\r\n\r\nexport type Size = 'small' | 'medium' | 'large';\r\n\r\n@Directive({\r\n  selector: `[size]`,\r\n})\r\nexport class SizeDirective implements OnChanges {\r\n  constructor(private el: ElementRef<HTMLElement>) {}\r\n\r\n  @Input() size !: Size ;\r\n\r\n  ngOnChanges() {\r\n    this.el.nativeElement.classList.add(this.size);\r\n  }\r\n}\r\n",
-            "selector": "[size]",
-            "providers": [],
-            "inputsClass": [
-                {
-                    "name": "size",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 11,
-                    "type": "Size",
-                    "decorators": []
-                }
-            ],
-            "outputsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnChanges",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 13,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
-            "implements": [
-                "OnChanges"
-            ],
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [
-                    {
-                        "name": "el",
-                        "type": "ElementRef<HTMLElement>",
-                        "deprecated": false,
-                        "deprecationMessage": ""
-                    }
-                ],
-                "line": 8,
-                "jsdoctags": [
-                    {
-                        "name": "el",
-                        "type": "ElementRef<HTMLElement>",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "tagName": {
-                            "text": "param"
-                        }
-                    }
-                ]
-            }
-        }
-    ],
+    "directives": [],
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-029c8fda0ebf82391aea8d964ab44597fedcf0df4c5ed209173df3071b1ae009cd520c6b00526de5b77d9201c181c94435dd3e082125ecd0e0db26ae20bfee10",
+            "id": "component-AppComponent-070da78334849a78e3024b1a97fffae0ce3e95a5208553851cb3976948efb8a1e8f92bede11061a5637967b6c94b0d7affdcd497c30b92db6156e0cb13634ebc",
             "file": "src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -188,7 +36,189 @@
                     "type": "",
                     "optional": false,
                     "description": "",
-                    "line": 65
+                    "line": 15
+                },
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                },
+                {
+                    "name": "firstFormGroup",
+                    "defaultValue": "this._FormBuilder.group({\r\n    firstCtrl: ['', Validators.required],\r\n  })",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "indeterminate",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "labelPosition",
+                    "defaultValue": "'after'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "\"before\" | \"after\"",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                },
+                {
+                    "name": "panelOpenState",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "secondFormGroup",
+                    "defaultValue": "this._FormBuilder.group({\r\n    secondCtrl: ['', Validators.required],\r\n  })",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                },
+                {
+                    "name": "title",
+                    "defaultValue": "'densityComponents'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "typesOfShoes",
+                    "defaultValue": "[\r\n    'Boots',\r\n    'Clogs',\r\n    'Loafers',\r\n    'Moccasins',\r\n    'Sneakers',\r\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 27
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport { Validators, FormBuilder } from '@angular/forms';\r\nimport { ThemePalette } from '@angular/material/core';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  templateUrl: './app.component.html',\r\n  styleUrls: ['./app.component.scss'],\r\n})\r\nexport class AppComponent {\r\n  constructor(private _FormBuilder: FormBuilder) {}\r\n  title = 'densityComponents';\r\n\r\n  panelOpenState = false;\r\n  checked = false;\r\n  indeterminate = false;\r\n  labelPosition: 'before' | 'after' = 'after';\r\n  disabled = false;\r\n\r\n  firstFormGroup = this._FormBuilder.group({\r\n    firstCtrl: ['', Validators.required],\r\n  });\r\n  secondFormGroup = this._FormBuilder.group({\r\n    secondCtrl: ['', Validators.required],\r\n  });\r\n\r\n  typesOfShoes: string[] = [\r\n    'Boots',\r\n    'Clogs',\r\n    'Loafers',\r\n    'Moccasins',\r\n    'Sneakers',\r\n  ];\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "\r\n\r\n",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "_FormBuilder",
+                        "type": "FormBuilder",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 10,
+                "jsdoctags": [
+                    {
+                        "name": "_FormBuilder",
+                        "type": "FormBuilder",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "templateData": "<div style=\"margin: 100px\">\r\n  <button color=\"primary\" mat-raised-button size=\"small\">\r\n    small\r\n    <mat-icon>favorite</mat-icon>\r\n  </button>\r\n  <button color=\"primary\" mat-raised-button size=\"medium\">\r\n    medium\r\n    <mat-icon>favorite</mat-icon>\r\n  </button>\r\n  <button color=\"primary\" mat-raised-button size=\"large\">\r\n    large\r\n    <mat-icon>favorite</mat-icon>\r\n  </button>\r\n  <button color=\"primary\" mat-icon-button size=\"small\">\r\n    <mat-icon>close</mat-icon>\r\n  </button>\r\n  <button color=\"primary\" mat-icon-button size=\"medium\">\r\n    <mat-icon>favorite</mat-icon>\r\n  </button>\r\n  <button color=\"primary\" mat-icon-button size=\"large\">\r\n    <mat-icon>favorite</mat-icon>\r\n  </button>\r\n  <mat-list role=\"list\" size=\"small\">\r\n    <mat-list-item role=\"listitem\">\r\n      Item 1\r\n      <button mat-icon-button matListItemMeta>\r\n        <mat-icon>folder</mat-icon>\r\n      </button>\r\n    </mat-list-item>\r\n    <mat-list-item role=\"listitem\">Item 2</mat-list-item>\r\n    <mat-list-item role=\"listitem\">Item 3</mat-list-item>\r\n  </mat-list>\r\n  <mat-toolbar color=\"primary\">\r\n    <button mat-icon-button>\r\n      <mat-icon>menu</mat-icon>\r\n    </button>\r\n    <span>My App</span>\r\n    <span class=\"example-spacer\"></span>\r\n    <button mat-icon-button>\r\n      <mat-icon>favorite</mat-icon>\r\n    </button>\r\n    <button mat-icon-button>\r\n      <mat-icon>share</mat-icon>\r\n    </button>\r\n  </mat-toolbar>\r\n  <mat-icon size=\"small\">folder</mat-icon>\r\n  <mat-icon size=\"medium\">folder</mat-icon>\r\n  <mat-icon size=\"large\">folder</mat-icon>\r\n\r\n</div>\r\n"
+        },
+        {
+            "name": "AutocompleteComponent",
+            "id": "component-AutocompleteComponent-4b802b564dbfb34af0e00969ff455136aa4ff10330e49d5925c18081cbeda5646569c5bc595b05876e16f283678a9eaaf8a08c0ebc9d28482d10d487df96c0ea",
+            "file": "src/stories/components/mat-autocomplete/autocomplete.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-autcomplete",
+            "styleUrls": [
+                "../../../theme/stylesStorybook/_autocomplete.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./autocomplete.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "checked",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
                 },
                 {
                     "name": "dataSource",
@@ -218,97 +248,28 @@
                     "type": "string[]",
                     "optional": false,
                     "description": "",
-                    "line": 61
-                },
-                {
-                    "name": "firstFormGroup",
-                    "defaultValue": "this._FormBuilder.group({\r\n    firstCtrl: ['', Validators.required],\r\n  })",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 70
-                },
-                {
-                    "name": "folders",
-                    "defaultValue": "[\r\n    {\r\n      name: 'Photos',\r\n      updated: new Date('1/1/16'),\r\n    },\r\n    {\r\n      name: 'Recipes',\r\n      updated: new Date('1/17/16'),\r\n    },\r\n    {\r\n      name: 'Work',\r\n      updated: new Date('1/28/16'),\r\n    },\r\n  ]",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Section[]",
-                    "optional": false,
-                    "description": "",
-                    "line": 36
-                },
-                {
-                    "name": "indeterminate",
-                    "defaultValue": "false",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 66
-                },
-                {
-                    "name": "labelPosition",
-                    "defaultValue": "'after'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "\"before\" | \"after\"",
-                    "optional": false,
-                    "description": "",
-                    "line": 67
-                },
-                {
-                    "name": "notes",
-                    "defaultValue": "[\r\n    {\r\n      name: 'Vacation Itinerary',\r\n      updated: new Date('2/20/16'),\r\n    },\r\n    {\r\n      name: 'Kitchen Remodel',\r\n      updated: new Date('1/18/16'),\r\n    },\r\n  ]",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Section[]",
-                    "optional": false,
-                    "description": "",
-                    "line": 50
-                },
-                {
-                    "name": "panelOpenState",
-                    "defaultValue": "false",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 64
-                },
-                {
-                    "name": "secondFormGroup",
-                    "defaultValue": "this._FormBuilder.group({\r\n    secondCtrl: ['', Validators.required],\r\n  })",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 73
+                    "line": 13
                 },
                 {
                     "name": "title",
                     "defaultValue": "'densityComponents'",
                     "deprecated": false,
                     "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 34
-                },
-                {
-                    "name": "typesOfShoes",
-                    "defaultValue": "[\r\n    'Boots',\r\n    'Clogs',\r\n    'Loafers',\r\n    'Moccasins',\r\n    'Sneakers',\r\n  ]",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "string[]",
-                    "optional": false,
-                    "description": "",
-                    "line": 77
+                    "line": 10
                 }
             ],
             "methodsClass": [],
@@ -319,47 +280,21 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\r\nimport { Validators, FormBuilder } from '@angular/forms';\r\nimport { ThemePalette } from '@angular/material/core';\r\n\r\nexport interface PeriodicElement {\r\n  name: string;\r\n  position: number;\r\n  weight: number;\r\n  symbol: string;\r\n}\r\nexport interface Section {\r\n  name: string;\r\n  updated: Date;\r\n}\r\nconst ELEMENT_DATA: PeriodicElement[] = [\r\n  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},\r\n  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},\r\n  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},\r\n  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},\r\n  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},\r\n  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},\r\n  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},\r\n  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},\r\n  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},\r\n  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},\r\n];\r\n@Component({\r\n  selector: 'app-root',\r\n  templateUrl: './app.component.html',\r\n  styleUrls: ['./app.component.scss'],\r\n})\r\nexport class AppComponent {\r\n  constructor(private _FormBuilder: FormBuilder) {}\r\n  title = 'densityComponents';\r\n\r\n  folders: Section[] = [\r\n    {\r\n      name: 'Photos',\r\n      updated: new Date('1/1/16'),\r\n    },\r\n    {\r\n      name: 'Recipes',\r\n      updated: new Date('1/17/16'),\r\n    },\r\n    {\r\n      name: 'Work',\r\n      updated: new Date('1/28/16'),\r\n    },\r\n  ];\r\n  notes: Section[] = [\r\n    {\r\n      name: 'Vacation Itinerary',\r\n      updated: new Date('2/20/16'),\r\n    },\r\n    {\r\n      name: 'Kitchen Remodel',\r\n      updated: new Date('1/18/16'),\r\n    },\r\n  ];\r\n\r\n  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];\r\n  dataSource = ELEMENT_DATA;\r\n  \r\n  panelOpenState = false;\r\n  checked = false;\r\n  indeterminate = false;\r\n  labelPosition: 'before' | 'after' = 'after';\r\n  disabled = false;\r\n\r\n  firstFormGroup = this._FormBuilder.group({\r\n    firstCtrl: ['', Validators.required],\r\n  });\r\n  secondFormGroup = this._FormBuilder.group({\r\n    secondCtrl: ['', Validators.required],\r\n  });\r\n\r\n  typesOfShoes: string[] = [\r\n    'Boots',\r\n    'Clogs',\r\n    'Loafers',\r\n    'Moccasins',\r\n    'Sneakers',\r\n  ];\r\n\r\n\r\n}\r\n",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { FormControl } from '@angular/forms';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss'],\n})\nexport class AppComponent {\n  title = 'densityComponents';\n\n  myControl = new FormControl('');\n  options: string[] = ['One', 'Two', 'Three'];\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "table {\r\n    min-width: 80%;\r\n  }",
+                    "data": "",
                     "styleUrl": "./app.component.scss"
                 }
             ],
             "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [
-                    {
-                        "name": "_FormBuilder",
-                        "type": "FormBuilder",
-                        "deprecated": false,
-                        "deprecationMessage": ""
-                    }
-                ],
-                "line": 32,
-                "jsdoctags": [
-                    {
-                        "name": "_FormBuilder",
-                        "type": "FormBuilder",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "tagName": {
-                            "text": "param"
-                        }
-                    }
-                ]
-            },
-            "templateData": "<!-- ICON BUTTON -->\r\n<br>\r\n<br>\r\n<button mat-icon-button size=\"small\">\r\n  <mat-icon>add</mat-icon>\r\n</button>\r\n<button mat-icon-button >\r\n  <mat-icon>add</mat-icon>\r\n</button>\r\n<button mat-icon-button size=\"large\">\r\n  <mat-icon>add</mat-icon>\r\n</button>\r\n<br>\r\n<br>\r\n\r\n\r\n\r\n<!-- SLIDE TOGGLE -->\r\n<mat-slide-toggle size=\"small\"> Slide me! </mat-slide-toggle\r\n><!-- CHECKBOX -->\r\n<mat-checkbox class=\"example-margin\" size=\"small\" (ngModel)=\"(checked)\">\r\n  Checked\r\n</mat-checkbox>\r\n<br />\r\n<!-- SLIDER -->\r\n<mat-slider size=\"small\"> <input matSliderThumb /></mat-slider\r\n><mat-slider> <input matSliderThumb /></mat-slider>\r\n<br />\r\n<!-- SPINNER -->\r\n<mat-spinner aria-valuemin=\"40\" aria-valuemax=\"40\"></mat-spinner\r\n><!-- --EXPANSION PANEL y/o Accordion -->\r\n<br />\r\n<!-- ---- BUTON GROUP -->\r\n<br />\r\n<!-- -------BUTTON -->\r\n<button mat-button [matMenuTriggerFor]=\"menu\">Menu</button>\r\n<mat-menu size=\"small\" #menu=\"matMenu\">\r\n  <button size=\"small\" mat-menu-item>Item 1</button>\r\n  <button size=\"small\" mat-menu-item>Item 2</button></mat-menu\r\n>\r\n<br />\r\n<!-- -----LISTAS -->\r\n<br />\r\n\r\n<mat-list role=\"list\" size=\"small\" ap>\r\n  <mat-list-item role=\"listitem\">\r\n    <p>Hello world</p>\r\n    <button mat-icon-button matListItemMeta>\r\n      <mat-icon >note</mat-icon>\r\n    </button>\r\n  </mat-list-item>\r\n  <mat-list-item role=\"listitem\">\r\n    <p>Hello world</p>\r\n    <button mat-icon-button matListItemMeta>\r\n      <mat-icon matListItemIcon>note</mat-icon>\r\n    </button>\r\n  </mat-list-item>  \r\n  <mat-list-item role=\"listitem\">\r\n    <p>Hello world</p>\r\n    <button mat-icon-button matListItemMeta>\r\n      <mat-icon matListItemIcon>note</mat-icon>\r\n    </button>\r\n  </mat-list-item>\r\n  <mat-list />\r\n<br />\r\n<!-- ------------CHIPS -->\r\n<mat-chip size=\"small\"\r\n  >Small <button matChipRemove><mat-icon>cancel</mat-icon></button></mat-chip\r\n>\r\n<mat-chip \r\n  >Medium<button matChipRemove><mat-icon>cancel</mat-icon></button></mat-chip\r\n>\r\n<mat-chip >\r\n  <img\r\n    matChipAvatar\r\n    src=\"https://material.angular.io/assets/img/examples/shiba1.jpg\"\r\n    alt=\"Photo of a Shiba Inu\"\r\n  />\r\n  Medium example\r\n</mat-chip>\r\n<br />\r\n<!-- RADIO BUTTON  -->\r\n<mat-radio-group class=\"small\">\r\n  <mat-radio-button>Option 1</mat-radio-button>\r\n  <mat-radio-button>Option 2</mat-radio-button></mat-radio-group\r\n>\r\n<br /><button\r\n  mat-fab\r\n  color=\"accent\"\r\n  extended\r\n  size=\"small\"\r\n  aria-label=\"Example icon button with a bookmark icon\"\r\n>\r\n  hola <mat-icon>add</mat-icon></button\r\n><button\r\n  mat-fab\r\n  color=\"accent\"\r\n  extended\r\n  size=\"medium\"\r\n  aria-label=\"Example icon button with a bookmark icon\"\r\n>\r\n  <mat-icon>add</mat-icon> hola\r\n</button>\r\n<button\r\n  mat-fab\r\n  color=\"accent\"\r\n  extended\r\n  size=\"large\"\r\n  aria-label=\"Example icon button with a bookmark icon\"\r\n>\r\n  <mat-icon>add</mat-icon> hola\r\n</button>\r\n<button\r\n  mat-fab\r\n  size=\"small\"\r\n  color=\"accent\"\r\n  aria-label=\"Example icon button with a bookmark icon\"\r\n>\r\n  <mat-icon>bookmark</mat-icon>\r\n</button>\r\n<button\r\n  mat-fab\r\n  color=\"accent\"\r\n  aria-label=\"Example icon button with a bookmark icon\"\r\n>\r\n  <mat-icon>bookmark</mat-icon>\r\n</button>\r\n<button\r\n  mat-fab\r\n  color=\"accent\"\r\n  size=\"large\"\r\n  aria-label=\"Example icon button with a bookmark icon\"\r\n>\r\n  <mat-icon>bookmark</mat-icon>\r\n</button>\r\n<br />\r\n<mat-form-field appearance=\"fill\" size=\"small\">\r\n  <mat-label>Fill form field</mat-label>\r\n  <input matInput placeholder=\"Placeholder\" />\r\n  <!-- <mat-icon matSuffix size=\"small\">sentiment_very_satisfied</mat-icon>  <mat-hint>Hint</mat-hint> --></mat-form-field\r\n>\r\n<br />\r\n<mat-radio-group aria-label=\"Select an option\">\r\n  <mat-radio-button size=\"small\" value=\"1\">Option 1</mat-radio-button>\r\n  <mat-radio-button value=\"2\">Option 2</mat-radio-button></mat-radio-group\r\n>\r\n<br />\r\n<mat-icon size=\"small\">house</mat-icon>\r\n<mat-icon >house</mat-icon>\r\n<mat-icon size=\"large\">house</mat-icon>\r\n<br />\r\n<mat-button-toggle-group size=\"large\" #group=\"matButtonToggleGroup\">\r\n  <mat-button-toggle value=\"left\" aria-label=\"Text align left\">\r\n    <mat-icon>format_align_left</mat-icon>\r\n  </mat-button-toggle>\r\n  <mat-button-toggle value=\"center\" aria-label=\"Text align center\">\r\n    <mat-icon>format_align_center</mat-icon>\r\n  </mat-button-toggle>\r\n  <mat-button-toggle value=\"right\" aria-label=\"Text align right\">\r\n    <mat-icon>format_align_right</mat-icon>\r\n  </mat-button-toggle>\r\n  <mat-button-toggle value=\"justify\" disabled aria-label=\"Text align justify\">\r\n    <mat-icon>format_align_justify</mat-icon>\r\n  </mat-button-toggle></mat-button-toggle-group\r\n>\r\n<br />\r\n<button mat-raised-button color=\"accent\" size=\"small\">\r\n  <mat-icon>home</mat-icon> Small\r\n</button>\r\n<button mat-raised-button color=\"accent\" size=\"medium\">\r\n  Medium <mat-icon>home</mat-icon>\r\n</button>\r\n<button mat-raised-button color=\"accent\" >\r\n  Medium <mat-icon>home</mat-icon>\r\n</button>\r\n<button mat-raised-button color=\"accent\" size=\"large\">\r\n  <mat-icon>home</mat-icon> Large\r\n</button>\r\n\r\n<br />\r\n<mat-tab-group>\r\n  <mat-tab label=\"First\"> Content 1 </mat-tab>\r\n  <mat-tab label=\"Second\"> Content 2 </mat-tab>\r\n  <mat-tab label=\"Third\"> Content 3 </mat-tab></mat-tab-group\r\n>\r\n"
+            "templateData": "<mat-tab-group>\r\n  <mat-tab label=\"First\"> Content 1 </mat-tab>\r\n  <mat-tab label=\"Second\"> Content 2 </mat-tab>\r\n  <mat-tab label=\"Third\"> Content 3 </mat-tab>\r\n</mat-tab-group>\r\n<mat-chip>One fish</mat-chip>\r\n<mat-chip>Two fish</mat-chip>\r\n<mat-chip-option color=\"accent\" selected>Accent fish</mat-chip-option>\r\n<mat-chip-option color=\"warn\">Warn fish</mat-chip-option>\r\n<br />\r\n<button mat-raised-buttoncolor=\"primary\">Hola</button>\r\n<button mat-raised-buttoncolor=\"primary\">Hola</button>\r\n<button mat-raised-buttoncolor=\"primary\">Hola</button>\r\n<br />\r\n<mat-radio-group aria-label=\"Select an option\">\r\n  <mat-radio-button value=\"1\">Option 1</mat-radio-button>\r\n  <mat-radio-button value=\"2\">Option 2</mat-radio-button>\r\n</mat-radio-group>\r\n<br />\r\n<mat-form-field appearance=\"outline\">\r\n  <mat-label>Fill form field</mat-label>\r\n  <input matInput placeholder=\"Placeholder\" />\r\n  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>\r\n  <mat-hint>Hint</mat-hint>\r\n</mat-form-field>\r\n<br />\r\n<form class=\"example-form\">\r\n  <mat-form-field class=\"example-full-width\" appearance=\"fill\">\r\n    <mat-label>Number</mat-label>\r\n    <input type=\"text\"\r\n           placeholder=\"Pick one\"\r\n           aria-label=\"Number\"\r\n           matInput\r\n           [matAutocomplete]=\"auto\">\r\n    <mat-autocomplete #auto=\"matAutocomplete\">\r\n      <mat-option *ngFor=\"let option of options\" [value]=\"option\">\r\n        {{option}}\r\n      </mat-option>\r\n    </mat-autocomplete>\r\n  </mat-form-field>\r\n</form>\r\n"
         },
         {
-            "name": "BadgeComponent",
-            "id": "component-BadgeComponent-f8f085efa4af5b021e57631499b6db48c99ab9d0a54fb87f0b31a4d24aaa8e22694a2cb8fb528d94223849d72998c1d8bbc2b4d5e0490710c47b3f9828c88ee0",
-            "file": "src/stories/components/badge/badge.component.ts",
+            "name": "RadioButtonComponent",
+            "id": "component-RadioButtonComponent-8060e76e47460f81a06f82fc4d9a4c48d806e0ef110cc6ae1dcb8396f575428d1445a923a5e6d2c052e8acecb687360eb5d6cc9289c823ff9099d11b972e81b5",
+            "file": "src/stories/components/button/radio-button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -367,7 +302,7 @@
             "providers": [],
             "selector": "app-badge",
             "styleUrls": [
-                "./badge.component.scss"
+                "./radio-button.component.scss"
             ],
             "styles": [],
             "templateUrl": [
@@ -389,32 +324,23 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "",
-                    "styleUrl": "./badge.component.scss"
+                    "name": "color",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "\"primary\" | \"accent\" | \"warn\" | \"success\" | \"info\" | \"warning\"",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
                 }
             ],
-            "stylesData": "",
-            "templateData": "<p>badge works!</p>\n"
-        },
-        {
-            "name": "ButtonToggleComponent",
-            "id": "component-ButtonToggleComponent-1110a61d817d1271843caf1f0be4be8c6247f2cda660404284787be3e7e5480994269ddaf5ebcac2d27dceff5c5720ea99c4c43e34cdcbcdbc448fbe49b228e7",
-            "file": "src/stories/components/button-toggle/button-toggle.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "app-button-toggle",
-            "styleUrls": [
-                "./button-toggle.component.scss"
-            ],
-            "styles": [],
-            "templateUrl": [
-                "./button-toggle.component.html"
-            ],
-            "viewProviders": [],
-            "inputsClass": [],
             "outputsClass": [],
             "propertiesClass": [],
             "methodsClass": [],
@@ -425,42 +351,67 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-button-toggle',\n  templateUrl: './button-toggle.component.html',\n  styleUrls: ['./button-toggle.component.scss']\n})\nexport class ButtonToggleComponent {\n\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'Mat-slider',\r\n  template: `<mat-slider [ngClass]=\"sizes\"\r\n    ><input matSliderThumb\r\n  /></mat-slider>`,\r\n  styleUrls: ['../../../theme/stylesStorybook/_slider.component.scss'],\r\n})\r\nexport class SliderComponent {\r\n  @Input() size!: string;\r\n  @Input() color!: string;\r\n  public get sizes(): string[] {\r\n    return [\r\n      'mat-slider',\r\n      `slider--${this.size}`,\r\n      'mat-slider',\r\n      `slider--${this.color}`,\r\n    ];\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "",
-                    "styleUrl": "./button-toggle.component.scss"
+                    "data": ".slider--small {\r\n  height: 47px;\r\n  &::ng-deep {\r\n    .mdc-slider__thumb-knob {\r\n      width: var(--mdc-slider-handle-width, 12px);\r\n      height: var(--mdc-slider-handle-height, 12px);\r\n      border-width: calc(var(--mdc-slider-handle-height, 12px) / 2)\r\n        calc(var(--mdc-slider-handle-width, 12px) / 2);\r\n    }\r\n    .mat-mdc-slider-visual-thumb .mat-ripple {\r\n      height: 28px !important;\r\n      width: 28px !important;\r\n      margin: 0.7142857142857143rem;\r\n      border-radius: 14px;\r\n    }\r\n    .mdc-slider__track--inactive {\r\n      height: var(--mdc-slider-inactive-track-height, 2px) !important;\r\n    }\r\n    .mdc-slider__track {\r\n      --mdc-slider-inactive-track-height: 2px !important;\r\n    }\r\n    .mdc-slider__track--active {\r\n      height: var(--mdc-slider-active-track-height, 4px);\r\n      top: calc(\r\n        (\r\n            var(--mdc-slider-inactive-track-height, 4px) -\r\n              var(--mdc-slider-active-track-height, 3px)\r\n          ) / 2\r\n      );\r\n    }\r\n  }\r\n}\r\n.slider--primary {\r\n  &::ng-deep {\r\n    .mdc-slider__track--inactive {\r\n      background-color: #1e62a1;\r\n      opacity: 0.24;\r\n    }\r\n    .mdc-slider__thumb-knob {\r\n      border-color: #1e62a1 !important;\r\n      background-color: #1e62a1 !important;\r\n    }\r\n    .mdc-slider__track--active_fill {\r\n      border-color: #1e62a1 !important;\r\n    }\r\n  }\r\n}\r\n.slider--accent {\r\n  &::ng-deep {\r\n    .mdc-slider__track--inactive {\r\n      background-color: #0cbbe2;\r\n      opacity: 0.24;\r\n    }\r\n    .mdc-slider__thumb-knob {\r\n      border-color: #0cbbe2 !important;\r\n      background-color: #0cbbe2 !important;\r\n    }\r\n    .mdc-slider__track--active_fill {\r\n      border-color: #0cbbe2 !important;\r\n    }\r\n  }\r\n}\r\n.slider--warn {\r\n  &::ng-deep {\r\n    .mdc-slider__track--inactive {\r\n      background-color: #d14343;\r\n      opacity: 0.24;\r\n    }\r\n    .mdc-slider__thumb-knob {\r\n      border-color: #d14343 !important;\r\n      background-color: #d14343 !important;\r\n    }\r\n    .mdc-slider__track--active_fill {\r\n      border-color: #d14343 !important;\r\n    }\r\n  }\r\n}\r\n.slider--success {\r\n  &::ng-deep {\r\n    .mdc-slider__track--inactive {\r\n      background-color: #8fc93a;\r\n      opacity: 0.24;\r\n    }\r\n    .mdc-slider__thumb-knob {\r\n      border-color: #8fc93a !important;\r\n      background-color: #8fc93a !important;\r\n    }\r\n    .mdc-slider__track--active_fill {\r\n      border-color: #8fc93a !important;\r\n    }\r\n  }\r\n}\r\n.slider--caution {\r\n  &::ng-deep {\r\n    .mdc-slider__track--inactive {\r\n      background-color: #fb8500;\r\n      opacity: 0.24;\r\n    }\r\n    .mdc-slider__thumb-knob {\r\n      border-color: #fb8500 !important;\r\n      background-color: #fb8500 !important;\r\n    }\r\n    .mdc-slider__track--active_fill {\r\n      border-color: #fb8500 !important;\r\n    }\r\n  }\r\n}\r\n.slider--info {\r\n  &::ng-deep {\r\n    .mdc-slider__track--inactive {\r\n      background-color: #2d9fc5;\r\n      opacity: 0.24;\r\n    }\r\n    .mdc-slider__thumb-knob {\r\n      border-color: #2d9fc5 !important;\r\n      background-color: #2d9fc5 !important;\r\n    }\r\n    .mdc-slider__track--active_fill {\r\n      border-color: #2d9fc5 !important;\r\n    }\r\n  }\r\n}\r\n",
+                    "styleUrl": "../../../theme/stylesStorybook/_slider.component.scss"
                 }
             ],
             "stylesData": "",
-            "templateData": "<!-- <mat-button-toggle-group name=\"fontStyle\" aria-label=\"Font Style\">\n    <mat-button-toggle value=\"bold\">Bold</mat-button-toggle>\n    <mat-button-toggle value=\"italic\">Italic</mat-button-toggle>\n    <mat-button-toggle value=\"underline\">Underline</mat-button-toggle>\n</mat-button-toggle-group> -->"
+            "accessors": {
+                "sizes": {
+                    "name": "sizes",
+                    "getSignature": {
+                        "name": "sizes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 13
+                    }
+                }
+            }
         },
         {
-            "name": "ExpansionPanelComponent",
-            "id": "component-ExpansionPanelComponent-30457a6d48972174a96875d95240172fd018c44bb015feca75bc634992823f78756e398333197b90d76dd752960d4e86928c691a38c17cd0b90898cbf7e4c6fa",
-            "file": "src/stories/components/expansion-panel/expansion-panel.component.ts",
+            "name": "SlideToggleComponent",
+            "id": "component-SlideToggleComponent-688838ad74ab87de9bb6459edd09dd397edd4570ed8ab3f1c93f14991a6bceac597789dddafa7148f3679048ed91f9a16c36802fe97f0a9ba283d2da09ed95e6",
+            "file": "src/stories/components/mat-slide-toggle/slide-toggle.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "app-expansion-panel",
+            "selector": "app-slide-toggle",
             "styleUrls": [
-                "./expansion-panel.component.scss"
+                "../../../theme/stylesStorybook/_slide-toggle.component.scss"
             ],
             "styles": [],
-            "templateUrl": [
-                "./expansion-panel.component.html"
-            ],
+            "template": "<mat-slide-toggle [ngClass]=\"sizes\">{{    label\n  }}</mat-slide-toggle>",
+            "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
+                {
+                    "name": "color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
                 {
                     "name": "size",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 12,
-                    "type": "Sizes",
+                    "line": 11,
+                    "type": "string",
                     "decorators": []
                 }
             ],
@@ -496,269 +447,39 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, ElementRef, OnChanges } from '@angular/core';\nimport { Sizes } from '../../assets/model/modelo.model';\n@Component({\n  selector: 'app-expansion-panel',\n  templateUrl: './expansion-panel.component.html',\n  styleUrls: ['./expansion-panel.component.scss']\n})\nexport class ExpansionPanelComponent {\n  panelOpenState = false;\n  constructor(private el: ElementRef<HTMLElement>) {}\n  @Input()\n  size!: Sizes;\n\n  ngOnChanges() {\n    this.el.nativeElement.classList.add(this.size);\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { Sizes } from '../../assets/model/modelo.model';\n@Component({\n  selector: 'radio-button',\n  templateUrl: './radio-button.component.html',\n  styleUrls: ['./radio-button.component.scss']\n})\nexport class RadioButtonComponent {\n  @Input() \n  color?: 'primary'|'accent'|'warn'|'success'|'info'|'warning' = 'primary' ;\n  @Input ()\n  size ?: Sizes;\n\n  public get colorOption(): string[] {\n    return [`radio-button--${this.color}`]\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "",
-                    "styleUrl": "./expansion-panel.component.scss"
+                    "data": ".radio-button--small{\r\n    \r\n}",
+                    "styleUrl": "./radio-button.component.scss"
                 }
             ],
             "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [
-                    {
-                        "name": "el",
-                        "type": "ElementRef<HTMLElement>",
-                        "deprecated": false,
-                        "deprecationMessage": ""
+            "accessors": {
+                "colorOption": {
+                    "name": "colorOption",
+                    "getSignature": {
+                        "name": "colorOption",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 14
                     }
-                ],
-                "line": 9,
-                "jsdoctags": [
-                    {
-                        "name": "el",
-                        "type": "ElementRef<HTMLElement>",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "tagName": {
-                            "text": "param"
-                        }
-                    }
-                ]
+                }
             },
-            "templateData": "<div class=\"example\">\n  <mat-accordion>\n    <mat-expansion-panel hideToggle>\n      <mat-expansion-panel-header size=\"small\">\n        <mat-panel-title> This is the expansion title </mat-panel-title>\n        <mat-panel-description>\n          This is a summary of the content\n        </mat-panel-description>\n      </mat-expansion-panel-header>\n      <p>This is the primary content of the panel.</p>\n    </mat-expansion-panel>\n    <mat-expansion-panel\n      (opened)=\"panelOpenState = true\"\n      (closed)=\"panelOpenState = false\"\n    >\n      <mat-expansion-panel-header>\n        <mat-panel-title> Self aware panel </mat-panel-title>\n        <mat-panel-description>\n          Currently I am {{ panelOpenState ? \"open\" : \"closed\" }}\n        </mat-panel-description>\n      </mat-expansion-panel-header>\n      <p>I'm visible because I am open</p>\n    </mat-expansion-panel>\n  </mat-accordion>\n</div>\n"
-        },
-        {
-            "name": "ListComponent",
-            "id": "component-ListComponent-737f681bc8b660b34ab4c27a4fd9c20330c9f8a50a0fc414d4a134f3ae231328b6c4757c9f5722578ac8576009cdaf82bc56ada8a0bd68d6e7ad93f91e921194",
-            "file": "src/stories/components/list/list.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "app-list",
-            "styleUrls": [
-                "../../../theme/refactor-density.scss"
-            ],
-            "styles": [],
-            "templateUrl": [
-                "./list.component.html"
-            ],
-            "viewProviders": [],
-            "inputsClass": [
-                {
-                    "name": "size",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 11,
-                    "type": "Sizes",
-                    "decorators": []
-                }
-            ],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnChanges",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 13,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component, Input, ElementRef, OnChanges } from '@angular/core';\nimport { Sizes } from '../../assets/model/modelo.model';\n@Component({\n  selector: 'app-list',\n  templateUrl: './list.component.html',\n  styleUrls: ['../../../theme/refactor-density.scss']\n})\nexport class ListComponent {\n  constructor(private el: ElementRef<HTMLElement>) {}\n  @Input()\n  size!: Sizes;\n\n  ngOnChanges() {\n    this.el.nativeElement.classList.add(this.size);\n  }\n}\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "@use \"sass:map\";\r\n@use \"@angular/material\" as mat;\r\n@use \"@material/button\";\r\n@use \"@material/chips\";\r\n@import \"./mixins\";\r\n\r\n@include mat.core();\r\n// Eliminacion hint elemento de form field componente\r\n[class*=\"mat-mdc-form-field-subscript-wrapper\"] {\r\n  &:not(:has(:only-child mat-hint)) {\r\n    display: none;\r\n  }\r\n}\r\n\r\n/////////////// SMALL////////////////\r\n\r\n.small {\r\n  // Componentes con pseudo-clase  :not()\r\n  // Brinda dar mayor especificidad al aplicar densidad   ( BUTTONS , MAT-CHIP, MAT-CHIP-OPTION, TEXTFIELD )\r\n  &:not(.large) {\r\n    &.mdc-button {\r\n      @include button.density(-3);\r\n    }\r\n    &.mat-mdc-chip,\r\n    &.mat-md-chip-option {\r\n      @include chips.density(-2);\r\n      .mat-mdc-standard-chip .mdc-evolution-chip__checkmark {\r\n        width: 1.142857142857143rem;\r\n        height: 1.142857142857143rem;\r\n      }\r\n      .mat-icon {\r\n        @include icon-size(1.142857142857143rem, 1.142857142857143rem);\r\n      }\r\n    }\r\n  }\r\n  //FORM FIELD STANDARD\r\n  &.mat-mdc-form-field {\r\n    &:not(.mat-form-field-appearance-fill) {\r\n      @include mat.form-field-density(-5);\r\n      & .mat-mdc-form-field-infix {\r\n        display: flex;\r\n      }\r\n    }\r\n    &:not(.mat-form-field-appearance-outline) {\r\n      @include mat.form-field-density(-3.25);\r\n    }\r\n    &.standard:not(.mat-form-field-appearance-outline) {\r\n      @include mat.form-field-density(-4);\r\n    }\r\n  }\r\n\r\n  // ICON BUTTON\r\n  &.mat-mdc-button-base > .mat-icon {\r\n    @include icon-size(1.142857142857143rem, 1.142a857142857143rem);\r\n  }\r\n  &.mat-mdc-form-field {\r\n    &:not(.mat-form-field-appearance-fill) {\r\n      @include mat.form-field-density(-4);\r\n      & .mat-mdc-form-field-infix {\r\n        display: flex;\r\n      }\r\n    }\r\n    &:not(.mat-form-field-appearance-outline) {\r\n      @include mat.form-field-density(-2);\r\n    }\r\n  }\r\n\r\n  // LIST with icon\r\n  .mdc-list {\r\n    @include mat.list-density(-3);\r\n    &.mdc-list-item {\r\n      .mat-mdc-icon-button.mat-mdc-button-base {\r\n        padding: .5rem !important;\r\n      }\r\n    }\r\n  }\r\n\r\n  // BUTTON TOGGLE\r\n  @include mat.button-toggle-density(-4.5);\r\n\r\n  // MAT-ICON\r\n  &.mat-icon {\r\n    @include icon-size(\r\n      1.285714285714286rem !important,\r\n      1.142857142857143rem !important\r\n    );\r\n  }\r\n  // SWITCH y/o SLIDE TOGGLE\r\n  @include mat.slide-toggle-density(-5);\r\n  &.mat-mdc-slide-toggle .mdc-switch {\r\n    --mdc-switch-track-width: 1.857142857142857rem;\r\n  }\r\n  &.mat-mdc-slide-toggle .mdc-switch .mdc-switch__track {\r\n    --mdc-switch-track-height: 0.7142857142857143rem;\r\n  }\r\n  &.mat-mdc-slide-toggle .mdc-switch .mdc-switch__handle {\r\n    --mdc-switch-handle-height: 1.142857142857143rem;\r\n    --mdc-switch-handle-width: 1.142857142857143rem;\r\n  }\r\n  &.mat-mdc-slide-toggle .mdc-switch .mdc-switch__handle-track {\r\n    width: calc(100% - var(--mdc-switch-handle-width, 1.071428571428571rem));\r\n  }\r\n\r\n  // CHECKBOX\r\n  @include mat.checkbox-density(-3);\r\n  &.mat-mdc-checkbox .mdc-checkbox {\r\n    padding: calc(\r\n      (\r\n          var(--mdc-checkbox-state-layer-size, 2.214285714285714rem) -\r\n            1.285714285714286rem\r\n        ) / 2\r\n    ) !important;\r\n  }\r\n  .mdc-checkbox__background {\r\n    width: 1.07142857rem;\r\n    height: 1.07142857rem;\r\n    margin: -0.2142857142857143rem;\r\n  }\r\n  // RADIO\r\n  .mdc-radio__background {\r\n    @include icon-size(1.142857142857143rem, 1.142857142857143rem);\r\n  }\r\n  .mdc-radio__native-control:checked\r\n    + .mdc-radio__background\r\n    .mdc-radio__inner-circle {\r\n    transform: scale(0.4);\r\n  }\r\n  .mdc-radio__outer-circle {\r\n    margin: 0.1428571428571429rem;\r\n  }\r\n\r\n  // FAB\r\n  &.mdc-fab:not(.mdc-fab--extended) {\r\n    width: 2.857142857142857rem;\r\n    height: 2.857142857142857rem;\r\n  }\r\n  &.mat-mdc-extended-fab {\r\n    height: 2.428571428571429rem;\r\n  }\r\n  // EXPASION PANEL\r\n  &.mat-expansion-panel-header {\r\n    height: 3.14285714rem; //o 44 px\r\n    padding: 0px 16px;\r\n  }\r\n\r\n  // SUFFIX\r\n  .mat-mdc-form-field-icon-suffix > .mat-icon {\r\n    padding: 8px;\r\n  }\r\n\r\n  // SLIDER\r\n  &.mat-mdc-slider .mdc-slider__thumb-knob {\r\n    width: 0.8571428571428571rem;\r\n    height: 0.8571428571428571rem;\r\n    border-width: 0.4285714285714286rem;\r\n  }\r\n  &.mat-mdc-slider-visual-thumb .mat-ripple {\r\n    width: 2rem;\r\n    height: 2rem;\r\n    margin: 0.7142857142857143rem;\r\n    border-radius: 1rem;\r\n  }\r\n  &.mat-mdc-slider .mdc-slider__track--inactive {\r\n    --mdc-slider-inactive-track-height: 0.1428571428571429rem;\r\n  }\r\n  &.mat-mdc-slider .mdc-slider__track {\r\n    --mdc-slider-inactive-track-height: 0.1428571428571429rem;\r\n  }\r\n  &.mat-mdc-slider .mdc-slider__track--active {\r\n    --mdc-slider-inactive-track-height: 0.2857142857142857rem;\r\n  }\r\n  // MENU\r\n  &.mat-mdc-menu-item {\r\n    min-height: 2rem;\r\n  }\r\n}\r\n\r\n//////////////// MEDIUM ////////////////\r\n// Componentes con pseudo-clase  :not()\r\n// Brinda dar mayor especificidad al aplicar densidad   ( BUTTONS , MAT-CHIP, MAT-CHIP-OPTION )\r\n:not(.medium) {\r\n  &.mat-mdc-chip,\r\n  &.mat-md-chip-option {\r\n    @include chips.density(0);\r\n    &.mat-mdc-standard-chip .mdc-evolution-chip__checkmark {\r\n      width: 1.714285714285714rem;\r\n      height: 1.714285714285714rem;\r\n    }\r\n    &.mat-icon {\r\n      @include icon-size(1.428571428571429rem, 1.285714285714286rem);\r\n    }\r\n  }\r\n}\r\n//TEXTFIELD STANDDAR\r\n.mat-mdc-form-field {\r\n  &:not(.mat-form-field-appearance-fill) {\r\n    @include mat.form-field-density(-1);\r\n  }\r\n  &:not(.mat-form-field-appearance-outline) {\r\n    @include mat.form-field-density(-1);\r\n  }\r\n}\r\n\r\n// BUTTON\r\n.mdc-button {\r\n  &:not(.large, .small) {\r\n    &.mdc-button {\r\n      @include button.density(-1.5);\r\n    }\r\n  }\r\n}\r\n\r\n//PROGRES SPINER\r\n.mat-mdc-progress-spinner {\r\n  width: 3.571428571428571rem;\r\n  height: 3.571428571428571rem !important;\r\n}\r\n/// LIST with icon\r\n@include mat.list-density(-1);\r\n// ICON\r\n.mat-icon {\r\n  @include icon-size(\r\n    1.428571428571429rem !important,\r\n    1.285714285714286rem !important\r\n  );\r\n}\r\n//BUTTON TOGGLE\r\n@include mat.button-toggle-density(-3);\r\n// EXPANSION PANEL\r\n.mat-expansion-panel-header {\r\n  height: 3.714285714285714rem;\r\n  padding: 0rem 1.14285714rem;\r\n}\r\n\r\n// ICON BUTTON\r\n@include mat.icon-button-density(-1);\r\n\r\n.mat-mdc-button-base > .mat-icon {\r\n  @include icon-size(1.285714285714286rem, 1.285714285714286rem);\r\n}\r\n// // LISTAS CON ICONO\r\n// .mdc-list {\r\n//   & .material-icons {\r\n//     line-height: 1.3;\r\n//   }\r\n// }\r\n// SUFFIX\r\n.mat-mdc-form-field-icon-suffix > .mat-icon {\r\n  padding: 0.5714285714285714rem;\r\n}\r\n// TAB\r\n.mat-mdc-tab.mdc-tab {\r\n  height: 2.857142857142857rem;\r\n}\r\n// SLIDER\r\n.mat-mdc-slider\r\n  .mdc-slider__track--inactive\r\n  .mat-mdc-slider\r\n  .mdc-slider__track {\r\n  --mdc-slider-inactive-track-height: 0.2857142857142857rem;\r\n}\r\n.mat-mdc-slider .mdc-slider__track--active {\r\n  --mdc-slider-inactive-track-height: 0.4285714285714286rem;\r\n}\r\n\r\n// FAB\r\n.mat-mdc-extended-fab {\r\n  height: 2.857142857142857rem;\r\n}\r\n.mdc-fab:not(.mdc-fab--extended) {\r\n  width: 3.428571428571429rem;\r\n  height: 3.428571428571429rem;\r\n}\r\n\r\n//////////////// LARGE ////////////////\r\n\r\n.large {\r\n  // Componentes con pseudo-clase  :not()\r\n  // Brinda dar mayor especificidad al aplicar densidad   ( BUTTONS , MAT-CHIP, MAT-CHIP-OPTION, TEXTFIELD )\r\n  &:not(.small) {\r\n    &.mdc-button {\r\n      @include button.density(0);\r\n    }\r\n  }\r\n  .mat-button-toggle > .mat-icon {\r\n    @include icon-size(1.285714285714286rem, 1.285714285714286rem);\r\n  }\r\n  &.mat-mdc-chip .mat-icon {\r\n    @include icon-size(1.714285714285714rem, 1.714285714285714rem);\r\n  }\r\n  // BUTTON TOGGLE\r\n  &.mat-mdc-button-base > .mat-icon {\r\n    @include icon-size(1.285714285714286rem, 1.285714285714286rem);\r\n  }\r\n  // ICON\r\n  &.mat-icon {\r\n    @include icon-size(\r\n      1.714285714285714rem !important,\r\n      1.714285714285714rem!important\r\n    );\r\n  }\r\n  // FAB\r\n  &.mat-mdc-extended-fab {\r\n    height: 3.571428571428571rem;\r\n  }\r\n  &.mdc-fab:not(.mdc-fab--extended) {\r\n    width: 4rem;\r\n    height: 4rem;\r\n  }\r\n}\r\n",
-                    "styleUrl": "../../../theme/refactor-density.scss"
-                }
-            ],
-            "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [
-                    {
-                        "name": "el",
-                        "type": "ElementRef<HTMLElement>",
-                        "deprecated": false,
-                        "deprecationMessage": ""
-                    }
-                ],
-                "line": 8,
-                "jsdoctags": [
-                    {
-                        "name": "el",
-                        "type": "ElementRef<HTMLElement>",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "tagName": {
-                            "text": "param"
-                        }
-                    }
-                ]
-            },
-            "templateData": "<mat-list role=\"list\" size=\"small\">\n    <mat-list-item role=\"listitem\">\n      <p>Hello world</p>\n      <button mat-icon-button>\n        <mat-icon >note</mat-icon>\n      </button>\n    </mat-list-item>\n    <mat-list-item role=\"listitem\">\n      <p>Hello world</p>\n      <button mat-icon-button>\n        <mat-icon matListItemIcon>note</mat-icon>\n      </button>\n    </mat-list-item>  \n    <mat-list-item role=\"listitem\">\n      <p>Hello world</p>\n      <button mat-icon-button>\n        <mat-icon matListItemIcon>note</mat-icon>\n      </button>\n    </mat-list-item>\n<mat-list />"
-        },
-        {
-            "name": "RadioButtonComponent",
-            "id": "component-RadioButtonComponent-cb902fd55691ffb6b6b706234d3c04f9035a14fd0bb60e8a5a4faa1ca6a04235b788f970728c88d6b2ffa424b0016e4f3a279a96f3895b30f66d3039873c5f38",
-            "file": "src/stories/components/radio-button/radio-button.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "radio-button",
-            "styleUrls": [
-                "../../../theme/refactor-density.scss"
-            ],
-            "styles": [],
-            "templateUrl": [
-                "./radio-button.component.html"
-            ],
-            "viewProviders": [],
-            "inputsClass": [
-                {
-                    "name": "size",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 10,
-                    "type": "\"small\" | \"medium\"",
-                    "decorators": []
-                }
-            ],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnChanges",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 11,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component, Input, ElementRef, OnChanges } from '@angular/core';\r\n@Component({\r\n  selector: 'radio-button',\r\n  templateUrl: './radio-button.component.html',\r\n  styleUrls: ['../../../theme/refactor-density.scss']\r\n})\r\nexport class RadioButtonComponent implements OnChanges {\r\n  constructor(private el: ElementRef<HTMLElement>) {}\r\n  @Input ()\r\n  size !: 'small' | 'medium';\r\n  ngOnChanges() {\r\n    this.el.nativeElement.classList.add(this.size);\r\n  }\r\n}\r\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "@use \"sass:map\";\r\n@use \"@angular/material\" as mat;\r\n@use \"@material/button\";\r\n@use \"@material/chips\";\r\n@import \"./mixins\";\r\n\r\n@include mat.core();\r\n// Eliminacion hint elemento de form field componente\r\n[class*=\"mat-mdc-form-field-subscript-wrapper\"] {\r\n  &:not(:has(:only-child mat-hint)) {\r\n    display: none;\r\n  }\r\n}\r\n\r\n/////////////// SMALL////////////////\r\n\r\n.small {\r\n  // Componentes con pseudo-clase  :not()\r\n  // Brinda dar mayor especificidad al aplicar densidad   ( BUTTONS , MAT-CHIP, MAT-CHIP-OPTION, TEXTFIELD )\r\n  &:not(.large) {\r\n    &.mdc-button {\r\n      @include button.density(-3);\r\n    }\r\n    &.mat-mdc-chip,\r\n    &.mat-md-chip-option {\r\n      @include chips.density(-2);\r\n      .mat-mdc-standard-chip .mdc-evolution-chip__checkmark {\r\n        width: 1.142857142857143rem;\r\n        height: 1.142857142857143rem;\r\n      }\r\n      .mat-icon {\r\n        @include icon-size(1.142857142857143rem, 1.142857142857143rem);\r\n      }\r\n    }\r\n  }\r\n  //FORM FIELD STANDARD\r\n  &.mat-mdc-form-field {\r\n    &:not(.mat-form-field-appearance-fill) {\r\n      @include mat.form-field-density(-5);\r\n      & .mat-mdc-form-field-infix {\r\n        display: flex;\r\n      }\r\n    }\r\n    &:not(.mat-form-field-appearance-outline) {\r\n      @include mat.form-field-density(-3.25);\r\n    }\r\n    &.standard:not(.mat-form-field-appearance-outline) {\r\n      @include mat.form-field-density(-4);\r\n    }\r\n  }\r\n\r\n  // ICON BUTTON\r\n  &.mat-mdc-button-base > .mat-icon {\r\n    @include icon-size(1.142857142857143rem, 1.142a857142857143rem);\r\n  }\r\n  &.mat-mdc-form-field {\r\n    &:not(.mat-form-field-appearance-fill) {\r\n      @include mat.form-field-density(-4);\r\n      & .mat-mdc-form-field-infix {\r\n        display: flex;\r\n      }\r\n    }\r\n    &:not(.mat-form-field-appearance-outline) {\r\n      @include mat.form-field-density(-2);\r\n    }\r\n  }\r\n\r\n  // LIST with icon\r\n  .mdc-list {\r\n    @include mat.list-density(-3);\r\n    &.mdc-list-item {\r\n      .mat-mdc-icon-button.mat-mdc-button-base {\r\n        padding: .5rem !important;\r\n      }\r\n    }\r\n  }\r\n\r\n  // BUTTON TOGGLE\r\n  @include mat.button-toggle-density(-4.5);\r\n\r\n  // MAT-ICON\r\n  &.mat-icon {\r\n    @include icon-size(\r\n      1.285714285714286rem !important,\r\n      1.142857142857143rem !important\r\n    );\r\n  }\r\n  // SWITCH y/o SLIDE TOGGLE\r\n  @include mat.slide-toggle-density(-5);\r\n  &.mat-mdc-slide-toggle .mdc-switch {\r\n    --mdc-switch-track-width: 1.857142857142857rem;\r\n  }\r\n  &.mat-mdc-slide-toggle .mdc-switch .mdc-switch__track {\r\n    --mdc-switch-track-height: 0.7142857142857143rem;\r\n  }\r\n  &.mat-mdc-slide-toggle .mdc-switch .mdc-switch__handle {\r\n    --mdc-switch-handle-height: 1.142857142857143rem;\r\n    --mdc-switch-handle-width: 1.142857142857143rem;\r\n  }\r\n  &.mat-mdc-slide-toggle .mdc-switch .mdc-switch__handle-track {\r\n    width: calc(100% - var(--mdc-switch-handle-width, 1.071428571428571rem));\r\n  }\r\n\r\n  // CHECKBOX\r\n  @include mat.checkbox-density(-3);\r\n  &.mat-mdc-checkbox .mdc-checkbox {\r\n    padding: calc(\r\n      (\r\n          var(--mdc-checkbox-state-layer-size, 2.214285714285714rem) -\r\n            1.285714285714286rem\r\n        ) / 2\r\n    ) !important;\r\n  }\r\n  .mdc-checkbox__background {\r\n    width: 1.07142857rem;\r\n    height: 1.07142857rem;\r\n    margin: -0.2142857142857143rem;\r\n  }\r\n  // RADIO\r\n  .mdc-radio__background {\r\n    @include icon-size(1.142857142857143rem, 1.142857142857143rem);\r\n  }\r\n  .mdc-radio__native-control:checked\r\n    + .mdc-radio__background\r\n    .mdc-radio__inner-circle {\r\n    transform: scale(0.4);\r\n  }\r\n  .mdc-radio__outer-circle {\r\n    margin: 0.1428571428571429rem;\r\n  }\r\n\r\n  // FAB\r\n  &.mdc-fab:not(.mdc-fab--extended) {\r\n    width: 2.857142857142857rem;\r\n    height: 2.857142857142857rem;\r\n  }\r\n  &.mat-mdc-extended-fab {\r\n    height: 2.428571428571429rem;\r\n  }\r\n  // EXPASION PANEL\r\n  &.mat-expansion-panel-header {\r\n    height: 3.14285714rem; //o 44 px\r\n    padding: 0px 16px;\r\n  }\r\n\r\n  // SUFFIX\r\n  .mat-mdc-form-field-icon-suffix > .mat-icon {\r\n    padding: 8px;\r\n  }\r\n\r\n  // SLIDER\r\n  &.mat-mdc-slider .mdc-slider__thumb-knob {\r\n    width: 0.8571428571428571rem;\r\n    height: 0.8571428571428571rem;\r\n    border-width: 0.4285714285714286rem;\r\n  }\r\n  &.mat-mdc-slider-visual-thumb .mat-ripple {\r\n    width: 2rem;\r\n    height: 2rem;\r\n    margin: 0.7142857142857143rem;\r\n    border-radius: 1rem;\r\n  }\r\n  &.mat-mdc-slider .mdc-slider__track--inactive {\r\n    --mdc-slider-inactive-track-height: 0.1428571428571429rem;\r\n  }\r\n  &.mat-mdc-slider .mdc-slider__track {\r\n    --mdc-slider-inactive-track-height: 0.1428571428571429rem;\r\n  }\r\n  &.mat-mdc-slider .mdc-slider__track--active {\r\n    --mdc-slider-inactive-track-height: 0.2857142857142857rem;\r\n  }\r\n  // MENU\r\n  &.mat-mdc-menu-item {\r\n    min-height: 2rem;\r\n  }\r\n}\r\n\r\n//////////////// MEDIUM ////////////////\r\n// Componentes con pseudo-clase  :not()\r\n// Brinda dar mayor especificidad al aplicar densidad   ( BUTTONS , MAT-CHIP, MAT-CHIP-OPTION )\r\n:not(.medium) {\r\n  &.mat-mdc-chip,\r\n  &.mat-md-chip-option {\r\n    @include chips.density(0);\r\n    &.mat-mdc-standard-chip .mdc-evolution-chip__checkmark {\r\n      width: 1.714285714285714rem;\r\n      height: 1.714285714285714rem;\r\n    }\r\n    &.mat-icon {\r\n      @include icon-size(1.428571428571429rem, 1.285714285714286rem);\r\n    }\r\n  }\r\n}\r\n//TEXTFIELD STANDDAR\r\n.mat-mdc-form-field {\r\n  &:not(.mat-form-field-appearance-fill) {\r\n    @include mat.form-field-density(-1);\r\n  }\r\n  &:not(.mat-form-field-appearance-outline) {\r\n    @include mat.form-field-density(-1);\r\n  }\r\n}\r\n\r\n// BUTTON\r\n.mdc-button {\r\n  &:not(.large, .small) {\r\n    &.mdc-button {\r\n      @include button.density(-1.5);\r\n    }\r\n  }\r\n}\r\n\r\n//PROGRES SPINER\r\n.mat-mdc-progress-spinner {\r\n  width: 3.571428571428571rem;\r\n  height: 3.571428571428571rem !important;\r\n}\r\n/// LIST with icon\r\n@include mat.list-density(-1);\r\n// ICON\r\n.mat-icon {\r\n  @include icon-size(\r\n    1.428571428571429rem !important,\r\n    1.285714285714286rem !important\r\n  );\r\n}\r\n//BUTTON TOGGLE\r\n@include mat.button-toggle-density(-3);\r\n// EXPANSION PANEL\r\n.mat-expansion-panel-header {\r\n  height: 3.714285714285714rem;\r\n  padding: 0rem 1.14285714rem;\r\n}\r\n\r\n// ICON BUTTON\r\n@include mat.icon-button-density(-1);\r\n\r\n.mat-mdc-button-base > .mat-icon {\r\n  @include icon-size(1.285714285714286rem, 1.285714285714286rem);\r\n}\r\n// // LISTAS CON ICONO\r\n// .mdc-list {\r\n//   & .material-icons {\r\n//     line-height: 1.3;\r\n//   }\r\n// }\r\n// SUFFIX\r\n.mat-mdc-form-field-icon-suffix > .mat-icon {\r\n  padding: 0.5714285714285714rem;\r\n}\r\n// TAB\r\n.mat-mdc-tab.mdc-tab {\r\n  height: 2.857142857142857rem;\r\n}\r\n// SLIDER\r\n.mat-mdc-slider\r\n  .mdc-slider__track--inactive\r\n  .mat-mdc-slider\r\n  .mdc-slider__track {\r\n  --mdc-slider-inactive-track-height: 0.2857142857142857rem;\r\n}\r\n.mat-mdc-slider .mdc-slider__track--active {\r\n  --mdc-slider-inactive-track-height: 0.4285714285714286rem;\r\n}\r\n\r\n// FAB\r\n.mat-mdc-extended-fab {\r\n  height: 2.857142857142857rem;\r\n}\r\n.mdc-fab:not(.mdc-fab--extended) {\r\n  width: 3.428571428571429rem;\r\n  height: 3.428571428571429rem;\r\n}\r\n\r\n//////////////// LARGE ////////////////\r\n\r\n.large {\r\n  // Componentes con pseudo-clase  :not()\r\n  // Brinda dar mayor especificidad al aplicar densidad   ( BUTTONS , MAT-CHIP, MAT-CHIP-OPTION, TEXTFIELD )\r\n  &:not(.small) {\r\n    &.mdc-button {\r\n      @include button.density(0);\r\n    }\r\n  }\r\n  .mat-button-toggle > .mat-icon {\r\n    @include icon-size(1.285714285714286rem, 1.285714285714286rem);\r\n  }\r\n  &.mat-mdc-chip .mat-icon {\r\n    @include icon-size(1.714285714285714rem, 1.714285714285714rem);\r\n  }\r\n  // BUTTON TOGGLE\r\n  &.mat-mdc-button-base > .mat-icon {\r\n    @include icon-size(1.285714285714286rem, 1.285714285714286rem);\r\n  }\r\n  // ICON\r\n  &.mat-icon {\r\n    @include icon-size(\r\n      1.714285714285714rem !important,\r\n      1.714285714285714rem!important\r\n    );\r\n  }\r\n  // FAB\r\n  &.mat-mdc-extended-fab {\r\n    height: 3.571428571428571rem;\r\n  }\r\n  &.mdc-fab:not(.mdc-fab--extended) {\r\n    width: 4rem;\r\n    height: 4rem;\r\n  }\r\n}\r\n",
-                    "styleUrl": "../../../theme/refactor-density.scss"
-                }
-            ],
-            "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [
-                    {
-                        "name": "el",
-                        "type": "ElementRef<HTMLElement>",
-                        "deprecated": false,
-                        "deprecationMessage": ""
-                    }
-                ],
-                "line": 7,
-                "jsdoctags": [
-                    {
-                        "name": "el",
-                        "type": "ElementRef<HTMLElement>",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "tagName": {
-                            "text": "param"
-                        }
-                    }
-                ]
-            },
-            "implements": [
-                "OnChanges"
-            ],
             "templateData": "<mat-radio-group >\r\n    <mat-radio-button >Option 1</mat-radio-button>\r\n    <mat-radio-button >Option 2</mat-radio-button>\r\n </mat-radio-group>"
-        },
-        {
-            "name": "SnackbarComponent",
-            "id": "component-SnackbarComponent-9b43fd9811087b2bc2fec19cff813c26679b4e8278609fc0a5427e5a6a70d39719bf7acdb6817ddde122b0f30b0887c9c432de2c4ffab0013e2ca25907389b54",
-            "file": "src/stories/components/snackbar/snackbar.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "app-snackbar",
-            "styleUrls": [
-                "./snackbar.component.scss"
-            ],
-            "styles": [],
-            "templateUrl": [
-                "./snackbar.component.html"
-            ],
-            "viewProviders": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-snackbar',\n  templateUrl: './snackbar.component.html',\n  styleUrls: ['./snackbar.component.scss']\n})\nexport class SnackbarComponent {\n\n}\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "",
-                    "styleUrl": "./snackbar.component.scss"
-                }
-            ],
-            "stylesData": "",
-            "templateData": "<p>snackbar works!</p>\n"
         }
     ],
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-7389eb48e8ea1b9477e9b1ada75627009636e4e9f828e2b0bef9377a604e1fdc52a138eb977931b4b3d6399da0e57f5bbcc7f2bfd5f86cf23640bd3910f6f405",
+            "id": "module-AppModule-7686417782b3437edc26a7402a8cc89016964c75317f6219aed6bbf1cec5e16a3575b8f491f7f7a51e7de447c7cf18265b671c9d25bf2eb0d91cbfbf889fce09",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppComponent } from './app.component';\r\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\r\nimport { MaterialModule } from './material.module';\r\nimport { SizeDirective } from 'src/theme/size.directive';\r\nimport { RadioButtonComponent } from '../stories/components/radio-button/radio-button.component';\r\nimport { ListComponent } from 'src/stories/components/list/list.component';\r\nimport { ExpansionPanelComponent } from 'src/stories/components/expansion-panel/expansion-panel.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    SizeDirective, \r\n    RadioButtonComponent,\r\n    ListComponent,\r\n    ExpansionPanelComponent,\r\n  ],\r\n  imports: [\r\n    MaterialModule,\r\n    BrowserModule,\r\n    BrowserAnimationsModule,\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent],\r\n})\r\nexport class AppModule {}\r\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppComponent            } from './app.component';\r\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\r\nimport { MaterialModule          } from './material.module';\r\n@NgModule({\r\n  declarations: [AppComponent],\r\n  imports: [\r\n    BrowserModule,\r\n    BrowserAnimationsModule,\r\n    MaterialModule,   \r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent],\r\n})\r\nexport class AppModule {}\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -769,18 +490,6 @@
                     "elements": [
                         {
                             "name": "AppComponent"
-                        },
-                        {
-                            "name": "ExpansionPanelComponent"
-                        },
-                        {
-                            "name": "ListComponent"
-                        },
-                        {
-                            "name": "RadioButtonComponent"
-                        },
-                        {
-                            "name": "SizeDirective"
                         }
                     ]
                 },
@@ -812,13 +521,57 @@
         },
         {
             "name": "MaterialModule",
-            "id": "module-MaterialModule-db86a39f2a12a4a9c65a39f4c0de314e8d7d13caa045190adb54debd14d61fc6d4518429886123af0bc7161b6e5d93d250e6a910b2ebd32f101ac6e2125401bd",
+            "id": "module-MaterialModule-799cd738d74fc0db09c202a0f5731df530b6f0f866db66ca09803f8f3fe40dc1bd5940a5adcf08e58a068bf1009c57cfdbd0417bd58ac86aa6be76b1caea0f87",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/material.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\nimport { MatButtonModule } from '@angular/material/button';\r\nimport { MatProgressBarModule } from '@angular/material/progress-bar';\r\nimport { MatChipsModule } from '@angular/material/chips';\r\nimport { MatToolbarModule } from '@angular/material/toolbar';\r\nimport { MatProgressSpinnerModule } from '@angular/material/progress-spinner';\r\nimport { MatSliderModule } from '@angular/material/slider';\r\nimport { MatBadgeModule } from '@angular/material/badge';\r\nimport { MatSlideToggleModule } from '@angular/material/slide-toggle';\r\nimport { MatStepperModule } from '@angular/material/stepper';\r\nimport { MatInputModule } from '@angular/material/input';\r\nimport { MatSnackBarModule } from '@angular/material/snack-bar';\r\nimport { MatIconModule } from '@angular/material/icon';\r\nimport { MatTabsModule } from '@angular/material/tabs';\r\nimport { MatCheckboxModule } from '@angular/material/checkbox';\r\nimport { MatRadioModule } from '@angular/material/radio';\r\nimport { MatDividerModule } from '@angular/material/divider';\r\nimport { MatFormFieldModule } from '@angular/material/form-field';\r\nimport { MatSelectModule } from '@angular/material/select';\r\nimport { MatDatepickerModule } from '@angular/material/datepicker';\r\nimport { MatListModule            } from '@angular/material/list';\r\nimport { MatMenuModule            } from '@angular/material/menu';\r\nimport { MatButtonToggleModule    } from '@angular/material/button-toggle';\r\nimport { MatExpansionModule       } from '@angular/material/expansion';\r\nimport { MatNativeDateModule, MatRippleModule } from '@angular/material/core';\r\nimport { MatAutocompleteModule } from '@angular/material/autocomplete';\r\nimport { MatTableModule } from '@angular/material/table'\r\n\r\nconst components = [\r\n  MatMenuModule,\r\n  MatAutocompleteModule,\r\n  CommonModule,\r\n  MatTableModule,\r\n  MatButtonModule,\r\n  MatListModule,\r\n  MatExpansionModule,\r\n  MatButtonToggleModule,\r\n  MatProgressBarModule,\r\n  MatToolbarModule,\r\n  MatChipsModule,\r\n  MatProgressSpinnerModule,\r\n  MatSliderModule,\r\n  MatBadgeModule,\r\n  MatRadioModule,\r\n  MatSlideToggleModule,\r\n  MatCheckboxModule,\r\n  MatStepperModule,\r\n  MatFormFieldModule,\r\n  MatSnackBarModule,\r\n  MatInputModule,\r\n  MatIconModule,\r\n  MatTabsModule,\r\n  MatDividerModule,\r\n  MatSelectModule,\r\n  MatDatepickerModule,\r\n  MatRippleModule,\r\n  MatNativeDateModule\r\n\r\n];\r\n\r\n@NgModule({\r\n  declarations: [],\r\n  imports: [components],\r\n  exports: [components],\r\n})\r\nexport class MaterialModule {}\r\n",
+            "sourceCode": "import { NgModule                 } from '@angular/core';\r\nimport { CommonModule             } from '@angular/common';\r\nimport { MatButtonModule          } from '@angular/material/button';\r\nimport { MatProgressBarModule     } from '@angular/material/progress-bar';\r\nimport { MatChipsModule           } from '@angular/material/chips';\r\nimport { MatToolbarModule         } from '@angular/material/toolbar';\r\nimport { MatProgressSpinnerModule } from '@angular/material/progress-spinner';\r\nimport { MatSliderModule          } from '@angular/material/slider';\r\nimport { MatBadgeModule           } from '@angular/material/badge';\r\nimport { MatSlideToggleModule     } from '@angular/material/slide-toggle';\r\nimport { MatStepperModule         } from '@angular/material/stepper';\r\nimport { MatInputModule           } from '@angular/material/input';\r\nimport { MatSnackBarModule        } from '@angular/material/snack-bar';\r\nimport { MatIconModule            } from '@angular/material/icon';\r\nimport { MatTabsModule            } from '@angular/material/tabs';\r\nimport { MatCheckboxModule        } from '@angular/material/checkbox';\r\nimport { MatRadioModule           } from '@angular/material/radio';\r\nimport { MatDividerModule         } from '@angular/material/divider';\r\nimport { MatFormFieldModule       } from '@angular/material/form-field';\r\nimport { MatSelectModule          } from '@angular/material/select';\r\nimport { MatDatepickerModule      } from '@angular/material/datepicker';\r\nimport { MatNativeDateModule, MatRippleModule } from '@angular/material/core';\r\n\r\nconst components = [\r\n  CommonModule,\r\n  MatButtonModule,\r\n  MatProgressBarModule,\r\n  MatToolbarModule,\r\n  MatChipsModule,\r\n  MatProgressSpinnerModule,\r\n  MatSliderModule,\r\n  MatBadgeModule,\r\n  MatRadioModule,\r\n  MatSlideToggleModule,\r\n  MatCheckboxModule,\r\n  MatStepperModule,\r\n  MatFormFieldModule,\r\n  MatSnackBarModule,\r\n  MatInputModule,\r\n  MatIconModule,\r\n  MatTabsModule,\r\n  MatDividerModule,\r\n  MatSelectModule,\r\n  MatDatepickerModule,\r\n  MatRippleModule,\r\n  MatNativeDateModule\r\n  \r\n];\r\n\r\n@NgModule({\r\n  declarations: [],\r\n  imports: [components],\r\n  exports: [components]\r\n})\r\nexport class MaterialModule {}",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "MaterialModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "MaterialModule",
+            "id": "module-MaterialModule-04c202b3f2b4c3d119654977ea7ed9431fda1f97fc88096d2cfc7a963cfea04e958f95acfb8963c4de40c2ee842e5a9196b82a7f6c2e950c562a86e173faa287",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/material.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\nimport { MatButtonModule } from '@angular/material/button';\r\nimport { MatProgressBarModule } from '@angular/material/progress-bar';\r\nimport { MatChipsModule } from '@angular/material/chips';\r\nimport { MatToolbarModule } from '@angular/material/toolbar';\r\nimport { MatProgressSpinnerModule } from '@angular/material/progress-spinner';\r\nimport { MatSliderModule } from '@angular/material/slider';\r\nimport { MatBadgeModule } from '@angular/material/badge';\r\nimport { MatSlideToggleModule } from '@angular/material/slide-toggle';\r\nimport { MatStepperModule } from '@angular/material/stepper';\r\nimport { MatInputModule } from '@angular/material/input';\r\nimport { MatSnackBarModule } from '@angular/material/snack-bar';\r\nimport { MatIconModule } from '@angular/material/icon';\r\nimport { MatTabsModule } from '@angular/material/tabs';\r\nimport { MatCheckboxModule } from '@angular/material/checkbox';\r\nimport { MatRadioModule } from '@angular/material/radio';\r\nimport { MatDividerModule } from '@angular/material/divider';\r\nimport { MatFormFieldModule } from '@angular/material/form-field';\r\nimport { MatSelectModule } from '@angular/material/select';\r\nimport { MatDatepickerModule } from '@angular/material/datepicker';\r\nimport { MatNativeDateModule, MatRippleModule } from '@angular/material/core';\r\nimport { MatAutocompleteModule } from '@angular/material/autocomplete';\r\nconst components = [\r\n  MatAutocompleteModule,\r\n  CommonModule,\r\n  MatButtonModule,\r\n  MatProgressBarModule,\r\n  MatToolbarModule,\r\n  MatChipsModule,\r\n  MatProgressSpinnerModule,\r\n  MatSliderModule,\r\n  MatBadgeModule,\r\n  MatRadioModule,\r\n  MatSlideToggleModule,\r\n  MatCheckboxModule,\r\n  MatStepperModule,\r\n  MatFormFieldModule,\r\n  MatSnackBarModule,\r\n  MatInputModule,\r\n  MatIconModule,\r\n  MatTabsModule,\r\n  MatDividerModule,\r\n  MatSelectModule,\r\n  MatDatepickerModule,\r\n  MatRippleModule,\r\n  MatNativeDateModule,\r\n];\r\n\r\n@NgModule({\r\n  declarations: [],\r\n  imports: [components],\r\n  exports: [components],\r\n})\r\nexport class MaterialModule {}\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -850,6 +603,26 @@
     "miscellaneous": {
         "variables": [
             {
+                "name": "breakpoints",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/Clases/responsive/responsive.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Colores",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/colors/colors.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "components",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -857,7 +630,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
-                "defaultValue": "[\r\n  MatMenuModule,\r\n  MatAutocompleteModule,\r\n  CommonModule,\r\n  MatTableModule,\r\n  MatButtonModule,\r\n  MatListModule,\r\n  MatExpansionModule,\r\n  MatButtonToggleModule,\r\n  MatProgressBarModule,\r\n  MatToolbarModule,\r\n  MatChipsModule,\r\n  MatProgressSpinnerModule,\r\n  MatSliderModule,\r\n  MatBadgeModule,\r\n  MatRadioModule,\r\n  MatSlideToggleModule,\r\n  MatCheckboxModule,\r\n  MatStepperModule,\r\n  MatFormFieldModule,\r\n  MatSnackBarModule,\r\n  MatInputModule,\r\n  MatIconModule,\r\n  MatTabsModule,\r\n  MatDividerModule,\r\n  MatSelectModule,\r\n  MatDatepickerModule,\r\n  MatRippleModule,\r\n  MatNativeDateModule\r\n\r\n]"
+                "defaultValue": "[\r\n  CommonModule,\r\n  MatButtonModule,\r\n  MatProgressBarModule,\r\n  MatToolbarModule,\r\n  MatChipsModule,\r\n  MatProgressSpinnerModule,\r\n  MatSliderModule,\r\n  MatBadgeModule,\r\n  MatRadioModule,\r\n  MatSlideToggleModule,\r\n  MatCheckboxModule,\r\n  MatStepperModule,\r\n  MatFormFieldModule,\r\n  MatSnackBarModule,\r\n  MatInputModule,\r\n  MatIconModule,\r\n  MatTabsModule,\r\n  MatDividerModule,\r\n  MatSelectModule,\r\n  MatDatepickerModule,\r\n  MatRippleModule,\r\n  MatNativeDateModule\r\n  \r\n]"
             },
             {
                 "name": "descripcionComponent",
@@ -870,84 +643,154 @@
                 "defaultValue": "'componente usa por defecto el color primary, para hacer uso de los otros colores solo debe cambiar la propiedad `color=\" \" ` por cualquiera de los siguientes opciones : '"
             },
             {
-                "name": "ELEMENT_DATA",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/app.component.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "PeriodicElement[]",
-                "defaultValue": "[\r\n  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},\r\n  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},\r\n  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},\r\n  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},\r\n  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},\r\n  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},\r\n  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},\r\n  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},\r\n  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},\r\n  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},\r\n]"
-            },
-            {
-                "name": "ExpansionPanel",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/components/expansion-panel/expansion-panel.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "List",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/components/list/list.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
                 "name": "RadioButton",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/radio-button/radio-button.stories.ts",
+                "file": "src/stories/components/button/radio-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "string",
+                "defaultValue": "'componente usa por defecto el color primary, para hacer uso de los otros colores solo debe cambiar la propiedad `color=\" \" ` por cualquiera de los siguientes opciones : '"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/button/radio-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<RadioButtonComponent>",
+                "defaultValue": "(args: RadioButtonComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/tipografia/tipografia.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TipografiaComponent>",
+                "defaultValue": "(args: TipografiaComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/table/table.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TableComponent>",
+                "defaultValue": "(args: TableComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/Clases/clases-globales/clases.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ClasesGlobalesComponent>",
+                "defaultValue": "(\r\n  args: ClasesGlobalesComponent\r\n) => ({\r\n  props: args,\r\n  component: ClasesGlobalesComponent,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/Clases/icons/icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconComponent>",
+                "defaultValue": "(args: IconComponent) => ({\r\n  props: args,\r\n  component: IconComponent,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/Clases/responsive/responsive.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ResponsiveComponent>",
+                "defaultValue": "(args: ResponsiveComponent) => ({\r\n  props: args,\r\n  component: ResponsiveComponent,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/Clases/layoutt/layout.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<LayoutComponent>",
+                "defaultValue": "(args: LayoutComponent) => ({\r\n  props: args,\r\n  component: LayoutComponent,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/Clases/spacing/spacing.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<SpacingComponent>",
+                "defaultValue": "(args: SpacingComponent) => ({\r\n  props: args,\r\n  component: SpacingComponent,\r\n})"
+            },
+            {
+                "name": "templateFabButton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/mat-button/button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "(args) => ({\r\n  props: args,\r\n\r\n  template: ` <button mat-fab size=\"small\">\r\n  <mat-icon>favorite</mat-icon>\r\n</button>\r\n<button mat-fab size=\"medium\">\r\n<mat-icon>favorite</mat-icon>\r\n</button>\r\n<button mat-fab size=\"large\">\r\n<mat-icon>favorite</mat-icon>\r\n</button>`,\r\n})"
+            },
+            {
+                "name": "templateFabExtendButton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/mat-button/button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "(args) => ({\r\n  props: args,\r\n  styleUrls: ['./button.component.scss'],\r\n  template: ` <button mat-fab extended size=\"small\">\r\n  button\r\n  <mat-icon>favorite</mat-icon>\r\n</button>\r\n<button mat-fab  extended size=\"medium\">\r\nbutton\r\n<mat-icon>favorite</mat-icon>\r\n</button>\r\n<button extended mat-fab size=\"large\">\r\nbutton\r\n<mat-icon>favorite</mat-icon>\r\n</button>`,\r\n})"
+            },
+            {
+                "name": "templateIconButton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/mat-button/button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "(args) => ({\r\n  props: args,\r\n  styleUrls: ['./button.component.scss'],\r\n  template: `<button size=\"small\" mat-icon-button color=\"accent\" >\r\n  <mat-icon>home</mat-icon>\r\n</button>\r\n<button mat-icon-button color=\"accent\" >\r\n  <mat-icon>home</mat-icon>\r\n</button>`,\r\n})"
+            },
+            {
+                "name": "Tipografia",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/tipografia/tipografia.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "Sizedescripcion",
+                "name": "toolbar",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/assets/model/modelo.model.ts",
+                "file": "src/stories/components/mat-toolbar/toolbar.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "string",
-                "defaultValue": "'Size propiedad'"
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
-                "name": "Template",
+                "name": "variants",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/expansion-panel/expansion-panel.stories.ts",
+                "file": "src/stories/components/form-field/form-field.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<ExpansionPanelComponent>",
-                "defaultValue": "( args: ExpansionPanelComponent ) => ({ props: args })"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/components/list/list.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ListComponent>",
-                "defaultValue": "( args: ListComponent ) => ({ props: args })"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/components/radio-button/radio-button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<RadioButtonComponent>",
-                "defaultValue": "( args: RadioButtonComponent ) => ({ props: args })"
+                "type": "",
+                "defaultValue": "Template.bind({})"
             }
         ],
         "functions": [],
@@ -1126,6 +969,50 @@
             }
         ],
         "groupedVariables": {
+            "src/stories/components/Clases/responsive/responsive.stories.ts": [
+                {
+                    "name": "breakpoints",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/Clases/responsive/responsive.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/Clases/responsive/responsive.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ResponsiveComponent>",
+                    "defaultValue": "(args: ResponsiveComponent) => ({\r\n  props: args,\r\n  component: ResponsiveComponent,\r\n})"
+                }
+            ],
+            "src/stories/components/colors/colors.stories.ts": [
+                {
+                    "name": "Colores",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/colors/colors.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/colors/colors.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ColorsComponent>",
+                    "defaultValue": "( args: ColorsComponent ) => ({ props: args })"
+                }
+            ],
             "src/app/material.module.ts": [
                 {
                     "name": "components",
@@ -1135,7 +1022,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "[]",
-                    "defaultValue": "[\r\n  MatMenuModule,\r\n  MatAutocompleteModule,\r\n  CommonModule,\r\n  MatTableModule,\r\n  MatButtonModule,\r\n  MatListModule,\r\n  MatExpansionModule,\r\n  MatButtonToggleModule,\r\n  MatProgressBarModule,\r\n  MatToolbarModule,\r\n  MatChipsModule,\r\n  MatProgressSpinnerModule,\r\n  MatSliderModule,\r\n  MatBadgeModule,\r\n  MatRadioModule,\r\n  MatSlideToggleModule,\r\n  MatCheckboxModule,\r\n  MatStepperModule,\r\n  MatFormFieldModule,\r\n  MatSnackBarModule,\r\n  MatInputModule,\r\n  MatIconModule,\r\n  MatTabsModule,\r\n  MatDividerModule,\r\n  MatSelectModule,\r\n  MatDatepickerModule,\r\n  MatRippleModule,\r\n  MatNativeDateModule\r\n\r\n]"
+                    "defaultValue": "[\r\n  CommonModule,\r\n  MatButtonModule,\r\n  MatProgressBarModule,\r\n  MatToolbarModule,\r\n  MatChipsModule,\r\n  MatProgressSpinnerModule,\r\n  MatSliderModule,\r\n  MatBadgeModule,\r\n  MatRadioModule,\r\n  MatSlideToggleModule,\r\n  MatCheckboxModule,\r\n  MatStepperModule,\r\n  MatFormFieldModule,\r\n  MatSnackBarModule,\r\n  MatInputModule,\r\n  MatIconModule,\r\n  MatTabsModule,\r\n  MatDividerModule,\r\n  MatSelectModule,\r\n  MatDatepickerModule,\r\n  MatRippleModule,\r\n  MatNativeDateModule\r\n  \r\n]"
                 }
             ],
             "src/stories/assets/model/modelo.model.ts": [
@@ -1160,82 +1047,141 @@
                     "defaultValue": "'Size propiedad'"
                 }
             ],
-            "src/app/app.component.ts": [
+            "src/stories/components/button/radio-button.stories.ts": [
                 {
                     "name": "ELEMENT_DATA",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/app.component.ts",
+                    "file": "src/stories/components/button/radio-button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "PeriodicElement[]",
-                    "defaultValue": "[\r\n  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},\r\n  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},\r\n  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},\r\n  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},\r\n  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},\r\n  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},\r\n  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},\r\n  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},\r\n  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},\r\n  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},\r\n]"
+                    "type": "string",
+                    "defaultValue": "'componente usa por defecto el color primary, para hacer uso de los otros colores solo debe cambiar la propiedad `color=\" \" ` por cualquiera de los siguientes opciones : '"
                 }
-            ],
-            "src/stories/components/expansion-panel/expansion-panel.stories.ts": [
-                {
-                    "name": "ExpansionPanel",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/components/expansion-panel/expansion-panel.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {
+            "src/stories/assets/model/modelo.model.ts": [
                 {
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/components/expansion-panel/expansion-panel.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ExpansionPanelComponent>",
-                    "defaultValue": "( args: ExpansionPanelComponent ) => ({ props: args })"
-                }
-            ],
-            "src/stories/components/list/list.stories.ts": [
-                {
-                    "name": "List",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/components/list/list.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/components/list/list.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ListComponent>",
-                    "defaultValue": "( args: ListComponent ) => ({ props: args })"
-                }
-            ],
-            "src/stories/components/radio-button/radio-button.stories.ts": [
-                {
-                    "name": "RadioButton",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/components/radio-button/radio-button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/components/radio-button/radio-button.stories.ts",
+                    "file": "src/stories/components/button/radio-button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<RadioButtonComponent>",
-                    "defaultValue": "( args: RadioButtonComponent ) => ({ props: args })"
+                    "defaultValue": "(args: RadioButtonComponent) => ({\r\n  props: args,\r\n})"
+                }
+            ],
+            "src/stories/components/checkbox/checkbox.stories.ts": [
+                {
+                    "name": "table",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/checkbox/checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/checkbox/checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CheckboxComponent>",
+                    "defaultValue": "(args: CheckboxComponent) => ({\r\n  props: args,\r\n})"
+                }
+            ],
+            "src/stories/components/table/table.stories.ts": [
+                {
+                    "name": "table",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/table/table.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/table/table.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TableComponent>",
+                    "defaultValue": "(args: TableComponent) => ({\r\n  props: args,\r\n})"
+                }
+            ],
+            "src/stories/components/form-field/form-field.stories.ts": [
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/form-field/form-field.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<FormFieldComponent>",
+                    "defaultValue": "(args: FormFieldComponent) => ({\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "variants",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/form-field/form-field.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
+            "src/stories/components/mat-toolbar/toolbar.component.stories.ts": [
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/mat-toolbar/toolbar.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ToolbarComponent>",
+                    "defaultValue": "(args: ToolbarComponent) => ({\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "toolbar",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/mat-toolbar/toolbar.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
+            "src/stories/components/tipografia/tipografia.stories.ts": [
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/tipografia/tipografia.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TipografiaComponent>",
+                    "defaultValue": "(args: TipografiaComponent) => ({\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "Tipografia",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/tipografia/tipografia.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
                 }
             ]
         },
@@ -1430,35 +1376,7 @@
                 "linktype": "component",
                 "name": "AppComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/15",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/app.component.ts",
-                "type": "interface",
-                "linktype": "interface",
-                "name": "PeriodicElement",
-                "coveragePercent": 0,
-                "coverageCount": "0/5",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/app.component.ts",
-                "type": "interface",
-                "linktype": "interface",
-                "name": "Section",
-                "coveragePercent": 0,
-                "coverageCount": "0/3",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/app.component.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "ELEMENT_DATA",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
+                "coverageCount": "0/4",
                 "status": "low"
             },
             {
@@ -1482,93 +1400,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/assets/model/modelo.model.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Sizedescripcion",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/components/badge/badge.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "BadgeComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/components/button-toggle/button-toggle.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "ButtonToggleComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/components/expansion-panel/expansion-panel.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "ExpansionPanelComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/5",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/components/expansion-panel/expansion-panel.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "ExpansionPanel",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/components/expansion-panel/expansion-panel.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/components/list/list.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "ListComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/4",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/components/list/list.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "List",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/components/list/list.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/components/radio-button/radio-button.component.ts",
+                "filePath": "src/stories/components/button/radio-button.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "RadioButtonComponent",
@@ -1594,24 +1426,6 @@
                 "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/components/snackbar/snackbar.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "SnackbarComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/theme/size.directive.ts",
-                "type": "directive",
-                "linktype": "directive",
-                "name": "SizeDirective",
-                "coveragePercent": 0,
-                "coverageCount": "0/4",
                 "status": "low"
             }
         ]

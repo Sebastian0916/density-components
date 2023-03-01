@@ -1,4 +1,3 @@
-// @use "@material/list/_variables" with ($deprecated-single-line-minimum-height: 36px);
 @use "@material/textfield" with($minimum-height-for-filled-label:32px, $minimum-height:32px);
 @use "@material/radio" with ($minimum-size: 16px, $ripple-size: 50px, $icon-size: 17px);
 @use "@material/checkbox/_checkbox-theme.scss" with($icon-size: 14px);

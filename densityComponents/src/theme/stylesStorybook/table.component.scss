@@ -1,0 +1,29 @@
+table {
+  width: 100%;
+}
+
+.table-small {
+  &::ng-deep {
+    tr.mat-mdc-header-row.mdc-data-table__header-row.cdk-header-row {
+      height: 36px !important;
+    }
+  }
+  &::ng-deep {
+    tr.mat-mdc-row.mdc-data-table__row.cdk-row{
+      height: 28px !important;
+    }
+  }
+}
+
+.table-medium {
+  &::ng-deep {
+    tr.mat-mdc-header-row.mdc-data-table__header-row.cdk-header-row {
+      height: 56px !important;
+    }
+  }
+  &::ng-deep {
+    tr.mat-mdc-row.mdc-data-table__row.cdk-row{
+      height: 48px !important;
+    }
+  }
+}

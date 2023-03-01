@@ -1,11 +1,10 @@
 @use "sass:map";
 @use "@angular/material" as mat;
-
 @include mat.core();
 @import "./colors";
 @import "./typography";
-@import "./mixins.scss";
-@import "./refactor-density.scss";
+@import "./density.scss";
+@import "main.scss";
 
 // Define a light theme
 $light-primary: mat.define-palette($bitakora-primary);
