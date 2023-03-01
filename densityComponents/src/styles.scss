@@ -1,5 +1,7 @@
-@use "@material/textfield" with($height: 52px);
+@use "@material/textfield" with($height: 52px, $minimum-height-for-filled-label:32px, $minimum-height:32px);
+@use "@material/radio" with ($minimum-size: 16px, $ripple-size: 50px);
 @use "@material/button/_button-shared-theme.scss" with ($height: 42px, $minimum-height:30px);
+@use "@material/data-table/_data-table-theme.scss" with($row-height:48px, $minimum-row-height: 0);
 @use "@material/button";
 @use "@material/chips";
 

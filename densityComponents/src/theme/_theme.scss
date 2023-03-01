@@ -4,6 +4,7 @@
 @import "./colors";
 @import "./typography";
 @import "./density.scss";
+@import "main.scss";
 
 // Define a light theme
 $light-primary: mat.define-palette($bitakora-primary);
@@ -27,3 +28,5 @@ $bitakora-light-theme: mat.define-light-theme(
 
 @include mat.core-theme($bitakora-light-theme);
 @include mat.all-component-themes($bitakora-light-theme);
+
+@include mat.button-density(-1.5);

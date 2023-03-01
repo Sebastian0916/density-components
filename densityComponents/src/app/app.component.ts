@@ -10,7 +10,7 @@ import { ThemePalette } from '@angular/material/core';
 export class AppComponent {
   constructor(private _FormBuilder: FormBuilder) {}
   title = 'densityComponents';
-  
+
   panelOpenState = false;
   checked = false;
   indeterminate = false;

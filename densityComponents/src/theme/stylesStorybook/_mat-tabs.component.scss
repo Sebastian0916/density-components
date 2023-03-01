@@ -1,0 +1,46 @@
+
+.mat-mdc-tab.mdc-tab{
+  height: 40px !important;
+}
+.tabs-primary{
+  &::ng-deep{
+    span.mdc-tab-indicator__content.mdc-tab-indicator__content--underline{
+      border-color: #1e62a1;
+    }
+  }
+}
+.tabs-accent{
+  &::ng-deep{
+    span.mdc-tab-indicator__content.mdc-tab-indicator__content--underline{
+      border-color: #0cbbe2;
+    }
+  }
+}
+.tabs-warn{
+  &::ng-deep{
+    span.mdc-tab-indicator__content.mdc-tab-indicator__content--underline{
+      border-color: #d14343;
+    }
+  }
+}
+.tabs-success{
+  &::ng-deep{
+    span.mdc-tab-indicator__content.mdc-tab-indicator__content--underline{
+      border-color: #8fc93a;
+    }
+  }
+}
+.tabs-caution{
+  &::ng-deep{
+    span.mdc-tab-indicator__content.mdc-tab-indicator__content--underline{
+      border-color: #fb8500;
+    }
+  }
+}
+.tabs-info{
+  &::ng-deep{
+    span.mdc-tab-indicator__content.mdc-tab-indicator__content--underline{
+      border-color: #2d9fc5;
+    }
+  }
+}
