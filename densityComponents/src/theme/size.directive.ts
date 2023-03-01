@@ -8,7 +8,7 @@ export type Size = 'small' | 'medium' | 'large';
 export class SizeDirective implements OnChanges {
   constructor(private el: ElementRef<HTMLElement>) {}
 
-  @Input() size!: Size;
+  @Input() size !: Size ;
 
   ngOnChanges() {
     this.el.nativeElement.classList.add(this.size);

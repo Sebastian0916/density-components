@@ -25,13 +25,17 @@ import { MatButtonToggleModule    } from '@angular/material/button-toggle';
 import { MatExpansionModule       } from '@angular/material/expansion';
 import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
-import { MatMenuModule } from '@angular/material/menu';
+import { MatTableModule } from '@angular/material/table'
 
 const components = [
   MatMenuModule,
   MatAutocompleteModule,
   CommonModule,
+  MatTableModule,
   MatButtonModule,
+  MatListModule,
+  MatExpansionModule,
+  MatButtonToggleModule,
   MatProgressBarModule,
   MatToolbarModule,
   MatChipsModule,

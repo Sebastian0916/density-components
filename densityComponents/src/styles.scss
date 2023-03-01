@@ -1,6 +1,10 @@
-@use "@material/textfield" with($height: 52px);
-@use "@material/radio" with ($minimum-size: 16px, $ripple-size: 28px);
-@use "@material/switch/deprecated";
+// @use "@material/list/_variables" with ($deprecated-single-line-minimum-height: 36px);
+@use "@material/textfield" with($minimum-height-for-filled-label:32px, $minimum-height:32px);
+@use "@material/radio" with ($minimum-size: 16px, $ripple-size: 50px, $icon-size: 17px);
+@use "@material/checkbox/_checkbox-theme.scss" with($icon-size: 14px);
+@use "@material/data-table" with($row-height: 56px,$minimum-row-height: 28px);
+// @use "@material/data-table/_data-table-theme.scss" with($row-height:32px, $minimum-row-height: 0);
+@use "@material/button/_button-shared-theme.scss" with ($height: 42px, $minimum-height:30px);
 @import "./theme/theme";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 
@@ -8,7 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+};
 html {
   font-size: 0.875rem;
-}
+};

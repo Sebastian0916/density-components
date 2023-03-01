@@ -5,7 +5,7 @@ import { Colors, descripcionComponent, Sizes } from '../../assets/model/modelo.m
 import { MaterialModule               } from '../../../app/material.module';
 
 export default {
-    title: 'Mat-Radio-Button',
+    title: 'Angular Material/Components/Mat-Radio-Button',
     component: RadioButtonComponent,
       decorators: [
         moduleMetadata({
@@ -13,23 +13,23 @@ export default {
      }),
     ],
     argTypes: {
-      color: {
-        table: {
-          category: 'color',
-          defaultValue: { summary: 'Primary' },
-        }, 
-        description:'Radio button ' + descripcionComponent,
-        options: Colors,
-        control: { type: 'radio' },
-      },
+      // color: {
+      //   table: {
+      //     category: 'color',
+      //     defaultValue: { summary: 'Primary'  },
+      //   }, 
+      //   description:'Radio button ' + descripcionComponent,
+      //   options: Colors,
+      //   control: { type: 'radio' },
+      // },
       size: {
         table: {
         category: 'Sizes',
         defaultValue: { summary: 'Small' },
-        description:'Radio button' ,
-        options: Sizes,
-        control: { type: 'radio' },
+        options: ['small','medium'],
       },
+      description:'Radio button usa por defector el tamaño medium, para hacer uso de tamaño small' + descripcionComponent,
+      control: { type: 'radio' },
       }
     },
   } as Meta;
@@ -37,4 +37,6 @@ export default {
 const Template: Story<RadioButtonComponent> = ( args: RadioButtonComponent ) => ({ props: args });
 
 export const RadioButton = Template.bind({});
-RadioButton.args = {};
+RadioButton.args = {
+};
+
