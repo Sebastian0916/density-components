@@ -28,5 +28,3 @@ $bitakora-light-theme: mat.define-light-theme(
 
 @include mat.core-theme($bitakora-light-theme);
 @include mat.all-component-themes($bitakora-light-theme);
-
-@include mat.button-density(-1.5);
