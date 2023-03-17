@@ -251,7 +251,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "\r\n\r\n",
+                    "data": "\r\n:host{\r\ndisplay: flex;\r\n}\r\n",
                     "styleUrl": "./app.component.scss"
                 }
             ],
@@ -282,7 +282,7 @@
                     }
                 ]
             },
-            "templateData": "<div style=\"margin: 100px\">\r\n  <button color=\"primary\" mat-raised-button size=\"small\">\r\n    small\r\n    <mat-icon>favorite</mat-icon>\r\n  </button>\r\n  <button color=\"primary\" mat-raised-button size=\"medium\">\r\n    medium\r\n    <mat-icon>favorite</mat-icon>\r\n  </button>\r\n  <button color=\"primary\" mat-raised-button size=\"large\">\r\n    large\r\n    <mat-icon>favorite</mat-icon>\r\n  </button>\r\n  <button color=\"primary\" mat-icon-button size=\"small\">\r\n    <mat-icon>close</mat-icon>\r\n  </button>\r\n  <button color=\"primary\" mat-icon-button size=\"medium\">\r\n    <mat-icon>favorite</mat-icon>\r\n  </button>\r\n  <button color=\"primary\" mat-icon-button size=\"large\">\r\n    <mat-icon>favorite</mat-icon>\r\n  </button>\r\n  <mat-list role=\"list\" size=\"small\">\r\n    <mat-list-item role=\"listitem\">\r\n      Item 1\r\n      <button mat-icon-button matListItemMeta>\r\n        <mat-icon>folder</mat-icon>\r\n      </button>\r\n    </mat-list-item>\r\n    <mat-list-item role=\"listitem\">Item 2</mat-list-item>\r\n    <mat-list-item role=\"listitem\">Item 3</mat-list-item>\r\n  </mat-list>\r\n  <mat-toolbar color=\"primary\">\r\n    <button mat-icon-button>\r\n      <mat-icon>menu</mat-icon>\r\n    </button>\r\n    <span>My App</span>\r\n    <span class=\"example-spacer\"></span>\r\n    <button mat-icon-button>\r\n      <mat-icon>favorite</mat-icon>\r\n    </button>\r\n    <button mat-icon-button>\r\n      <mat-icon>share</mat-icon>\r\n    </button>\r\n  </mat-toolbar>\r\n  <mat-icon size=\"small\">folder</mat-icon>\r\n  <mat-icon size=\"medium\">folder</mat-icon>\r\n  <mat-icon size=\"large\">folder</mat-icon>\r\n\r\n</div>\r\n"
+            "templateData": "<!-- <mat-list role=\"list\" size=\"small\" >  <mat-list-item role=\"listitem\">    <p>Hello world</p>    <button mat-icon-button matListItemMeta >      <mat-icon >note</mat-icon>    </button>  </mat-list-item>  <mat-list-item role=\"listitem\">    <p>Hello world</p>    <button mat-icon-button matListItemMeta>      <mat-icon >note</mat-icon>    </button>  </mat-list-item>  <mat-list-item role=\"listitem\">    <p>Hello world</p>    <button mat-icon-button matListItemMeta>      <mat-icon >note</mat-icon>    </button>  </mat-list-item>  <mat-list />Contraer -->\r\n<mat-icon size=\"small\">home</mat-icon>\r\n<mat-icon>home</mat-icon>\r\n<mat-icon size=\"large\">home</mat-icon>\r\n<button mat-raised-button size=\"small\">\r\n  <mat-icon>home</mat-icon>\r\n  large\r\n</button>\r\n<button mat-raised-button >\r\n  <mat-icon>home</mat-icon>\r\n  large\r\n</button>\r\n<button mat-raised-button size=\"large\">\r\n  <mat-icon>home</mat-icon>\r\n  large\r\n</button>\r\n\r\n<button mat-icon-button size=\"small\">\r\n  <mat-icon>home</mat-icon>\r\n  <!-- large -->\r\n</button>\r\n<button mat-icon-button>\r\n  <mat-icon>home</mat-icon>\r\n  <!-- large -->\r\n</button>\r\n<button mat-icon-button size=\"large\">\r\n  <mat-icon>home</mat-icon>\r\n  <!-- large -->\r\n</button>\r\n<button mat-fab size=\"small\">\r\n  <mat-icon>home</mat-icon>\r\n  <!-- large -->\r\n</button>\r\n<button mat-fab>\r\n  <mat-icon>home</mat-icon>\r\n  <!-- large -->\r\n</button>\r\n<button mat-fab size=\"large\">\r\n  <mat-icon>home</mat-icon>\r\n  <!-- large -->\r\n</button>\r\n<button mat-fab extended size=\"small\">\r\n  <mat-icon>home</mat-icon>\r\n  large\r\n</button>\r\n<button mat-fab extended=\"\">\r\n  <mat-icon>home</mat-icon>\r\n  large\r\n</button>\r\n<button mat-fab extended size=\"large\">\r\n  <mat-icon>home</mat-icon>\r\n  large\r\n</button>\r\n"
         },
         {
             "name": "AutocompleteComponent",
@@ -438,7 +438,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import url(\"https://fonts.googleapis.com/icon?family=Material+Icons\");\r\n\r\n.button-small {\r\n  height: 26px;\r\n}\r\n.button-medium {\r\n  height: 32px;\r\n}\r\n.button-large {\r\n  height: 38px;\r\n}\r\n.button-primary {\r\n  background-color: #1e62a1 !important;\r\n  color: white !important;\r\n}\r\n.button-accent {\r\n  background-color: #0cbbe2 !important;\r\n  color: white !important;\r\n}\r\n.button-warn {\r\n  background-color: #d14343 !important;\r\n  color: white !important;\r\n}\r\n.button-success {\r\n  background-color: #8fc93a !important;\r\n  color: white !important;\r\n}\r\n\r\n.button-caution {\r\n  background-color: #fb8500 !important;\r\n  color: white !important;\r\n}\r\n.button-info {\r\n  background-color: #2d9fc5 !important;\r\n  color: white !important;\r\n}\r\n.small {\r\n  &::ng-depp {\r\n    .mdc-fab {\r\n      height: 10px;\r\n    }\r\n  }\r\n}\r\n/////////////// SMALL////////////////\r\n.small {\r\n  mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color {\r\n    margin-top: 2px !important  ;\r\n    font-size: 18px !important;\r\n    width: 20px !important;\r\n    height: 20px !important;\r\n  }\r\n  &.mat-mdc-icon-button.mat-mdc-button-base {\r\n    width: 2rem !important;\r\n    height: 2rem !important;\r\n    padding: 2px !important;\r\n  }\r\n  // ICON BUTTON\r\n  &.mat-mdc-button-base:not(.mdc-icon-button) > .mat-icon {\r\n    font-size: 1.285714285714286rem !important;\r\n    height: 1.285714285714286rem !important;\r\n    width: 1.285714285714286rem !important;\r\n  }\r\n  // MAT-ICON\r\n  &.mat-icon {\r\n    font-size: 1.428571428571429rem !important;\r\n    height: 1.428571428571429rem !important;\r\n    width: 1.428571428571429rem !important ;\r\n  }\r\n  // FAB\r\n  &.mdc-fab:not(.mdc-fab--extended) {\r\n    height: 2.857142857142857rem !important;\r\n    width: 2.857142857142857rem !important;\r\n  }\r\n  &.mat-mdc-extended-fab {\r\n    height: 2.428571428571429rem !important;\r\n  }\r\n}\r\n\r\n//////////////// MEDIUM ////////////////\r\n// ICON BUTTON\r\n.mat-mdc-button-base:not(.mdc-icon-button) > .mat-icon {\r\n  font-size: 22px !important;\r\n  height: 24px !important;\r\n  width: 24px !important;\r\n}\r\n// FAB\r\n.mat-mdc-extended-fab {\r\n  height: 2.857142857142857rem !important;\r\n}\r\n\r\n.mdc-fab:not(.mdc-fab--extended) {\r\n  height: 3.428571428571429rem !important;\r\n  width: 3.428571428571429rem !important;\r\n}\r\n//////////////// LARGE ////////////////\r\n.large {\r\n  // BUTTON TOGGLE\r\n  &.mat-mdc-button-base > .mat-icon {\r\n    font-size: 1.571428571428571rem !important;\r\n    height: 1.571428571428571rem !important;\r\n    width: 1.571428571428571rem !important;\r\n  }\r\n  // ICON\r\n  &.mat-icon.large {\r\n    font-size: 2.5rem !important;\r\n    height: 2.5rem !important;\r\n    width: 2.5rem !important ;\r\n  }\r\n  // FAB\r\n  &.mat-mdc-extended-fab {\r\n    height: 3.571428571428571rem !important;\r\n  }\r\n  &.mdc-fab:not(.mdc-fab--extended) {\r\n    height: 4rem !important;\r\n    width: 4rem !important;\r\n  }\r\n}\r\n",
+                    "data": "// @import url(\"https://fonts.googleapis.com/icon?family=Material+Icons\");\r\n\r\n// .button-small {\r\n//   height: 26px;\r\n// }\r\n// .button-medium {\r\n//   height: 32px;\r\n// }\r\n// .button-large {\r\n//   height: 38px;\r\n// }\r\n// .button-primary {\r\n//   background-color: #1e62a1 !important;\r\n//   color: white !important;\r\n// }\r\n// .button-accent {\r\n//   background-color: #0cbbe2 !important;\r\n//   color: white !important;\r\n// }\r\n// .button-warn {\r\n//   background-color: #d14343 !important;\r\n//   color: white !important;\r\n// }\r\n// .button-success {\r\n//   background-color: #8fc93a !important;\r\n//   color: white !important;\r\n// }\r\n\r\n// .button-caution {\r\n//   background-color: #fb8500 !important;\r\n//   color: white !important;\r\n// }\r\n// .button-info {\r\n//   background-color: #2d9fc5 !important;\r\n//   color: white !important;\r\n// }\r\n// .small {\r\n//   &::ng-depp {\r\n//     .mdc-fab {\r\n//       height: 10px;\r\n//     }\r\n//   }\r\n// }\r\n// /////////////// SMALL////////////////\r\n// .small {\r\n//   mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color {\r\n//     margin-top: 2px !important  ;\r\n//     font-size: 18px !important;\r\n//     width: 20px !important;\r\n//     height: 20px !important;\r\n//   }\r\n//   &.mat-mdc-icon-button.mat-mdc-button-base {\r\n//     width: 2rem !important;\r\n//     height: 2rem !important;\r\n//     padding: 2px !important;\r\n//   }\r\n//   // ICON BUTTON\r\n//   &.mat-mdc-button-base:not(.mdc-icon-button) > .mat-icon {\r\n//     font-size: 1.285714285714286rem !important;\r\n//     height: 1.285714285714286rem !important;\r\n//     width: 1.285714285714286rem !important;\r\n//   }\r\n//   // MAT-ICON\r\n//   &.mat-icon {\r\n//     font-size: 1.428571428571429rem !important;\r\n//     height: 1.428571428571429rem !important;\r\n//     width: 1.428571428571429rem !important ;\r\n//   }\r\n//   // FAB\r\n//   &.mdc-fab:not(.mdc-fab--extended) {\r\n//     height: 2.857142857142857rem !important;\r\n//     width: 2.857142857142857rem !important;\r\n//   }\r\n//   &.mat-mdc-extended-fab {\r\n//     height: 2.428571428571429rem !important;\r\n//   }\r\n// }\r\n\r\n// //////////////// MEDIUM ////////////////\r\n// // ICON BUTTON\r\n// .mat-mdc-button-base:not(.mdc-icon-button) > .mat-icon {\r\n//   font-size: 22px !important;\r\n//   height: 24px !important;\r\n//   width: 24px !important;\r\n// }\r\n// // FAB\r\n// .mat-mdc-extended-fab {\r\n//   height: 2.857142857142857rem !important;\r\n// }\r\n\r\n// .mdc-fab:not(.mdc-fab--extended) {\r\n//   height: 3.428571428571429rem !important;\r\n//   width: 3.428571428571429rem !important;\r\n// }\r\n// //////////////// LARGE ////////////////\r\n// .large {\r\n//   // BUTTON TOGGLE\r\n//   &.mat-mdc-button-base > .mat-icon {\r\n//     font-size: 1.571428571428571rem !important;\r\n//     height: 1.571428571428571rem !important;\r\n//     width: 1.571428571428571rem !important;\r\n//   }\r\n//   // ICON\r\n//   &.mat-icon.large {\r\n//     font-size: 2.5rem !important;\r\n//     height: 2.5rem !important;\r\n//     width: 2.5rem !important ;\r\n//   }\r\n//   // FAB\r\n//   &.mat-mdc-extended-fab {\r\n//     height: 3.571428571428571rem !important;\r\n//   }\r\n//   &.mdc-fab:not(.mdc-fab--extended) {\r\n//     height: 4rem !important;\r\n//     width: 4rem !important;\r\n//   }\r\n// }\r\n",
                     "styleUrl": "../../../theme/stylesStorybook/_button.component.scss"
                 }
             ],
@@ -789,7 +789,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import url(\"https://fonts.googleapis.com/icon?family=Material+Icons\");\r\n@import url(\"https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone\");\r\n\r\n.mat-icon--small {\r\n  font-size: 18px !important;\r\n  width: 20px !important;\r\n  height: 18px !important;\r\n}\r\n.mat-icon--medium {\r\n  font-size: 22px !important;\r\n  width: 24px !important;\r\n  height: 22px !important;\r\n}\r\n.mat-icon--large {\r\n  font-size: 33px !important;\r\n  width: 35px !important;\r\n  height: 33px !important;\r\n}\r\n.mat-icon--primary {\r\n  color: #1e62a1 !important;\r\n}\r\n.mat-icon--accent {\r\n  color: #0cbbe2 !important;\r\n}\r\n.mat-icon--warn {\r\n  color: #d14343 !important;\r\n}\r\n.mat-icon--success {\r\n  color: #8fc93a !important;\r\n}\r\n\r\n.mat-icon--caution {\r\n  color: #fb8500 !important;\r\n}\r\n.mat-icon--info {\r\n  color: #2d9fc5 !important;\r\n}\r\n///////////// SMALL////////////////\r\n.small {\r\n  // MAT-ICON\r\n  .mat-icon .mat-icon--small {\r\n    font-size: 18px !important;\r\n    height: 1.428571428571429rem !important;\r\n    width: 1.428571428571429rem !important ;\r\n  }\r\n}\r\n//////////////// LARGE ////////////////\r\n.large {\r\n  // ICON\r\n  &.mat-icon.large {\r\n    font-size: 33px !important;\r\n    height: 31px !important;\r\n    width: 35px !important ;\r\n  }\r\n}\r\n",
+                    "data": "// @import url(\"https://fonts.googleapis.com/icon?family=Material+Icons\");\r\n// @import url(\"https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone\");\r\n\r\n// .mat-icon--small {\r\n//   font-size: 18px !important;\r\n//   width: 20px !important;\r\n//   height: 18px !important;\r\n// }\r\n// .mat-icon--medium {\r\n//   font-size: 22px !important;\r\n//   width: 24px !important;\r\n//   height: 22px !important;\r\n// }\r\n// .mat-icon--large {\r\n//   font-size: 33px !important;\r\n//   width: 35px !important;\r\n//   height: 33px !important;\r\n// }\r\n// .mat-icon--primary {\r\n//   color: #1e62a1 !important;\r\n// }\r\n// .mat-icon--accent {\r\n//   color: #0cbbe2 !important;\r\n// }\r\n// .mat-icon--warn {\r\n//   color: #d14343 !important;\r\n// }\r\n// .mat-icon--success {\r\n//   color: #8fc93a !important;\r\n// }\r\n\r\n// .mat-icon--caution {\r\n//   color: #fb8500 !important;\r\n// }\r\n// .mat-icon--info {\r\n//   color: #2d9fc5 !important;\r\n// }\r\n// ///////////// SMALL////////////////\r\n// .small {\r\n//   // MAT-ICON\r\n//   .mat-icon .mat-icon--small {\r\n//     font-size: 18px !important;\r\n//     height: 1.428571428571429rem !important;\r\n//     width: 1.428571428571429rem !important ;\r\n//   }\r\n// }\r\n// //////////////// LARGE ////////////////\r\n// .large {\r\n//   // ICON\r\n//   &.mat-icon.large {\r\n//     font-size: 33px !important;\r\n//     height: 31px !important;\r\n//     width: 35px !important ;\r\n//   }\r\n// }\r\n",
                     "styleUrl": "../../../theme/stylesStorybook/_icon.component.scss"
                 }
             ],
@@ -2358,6 +2358,16 @@
                 "name": "configuracion",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/components/mat-icon/icon.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "configuracion",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/components/mat-chip/mat-chip.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2368,7 +2378,7 @@
                 "name": "configuracion",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/mat-icon/icon.component.stories.ts",
+                "file": "src/stories/components/mat-stepper/stepper.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2398,7 +2408,7 @@
                 "name": "configuracion",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/mat-stepper/stepper.component.stories.ts",
+                "file": "src/stories/components/mat-toggle-button/toggleButton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2409,16 +2419,6 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/components/mat-tabs/tabs.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "configuracion",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/components/mat-toggle-button/toggleButton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2678,16 +2678,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/mat-autocomplete/autocomplete.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/components/form-field/form-field.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2703,6 +2693,26 @@
                 "deprecationMessage": "",
                 "type": "Story<ButtonComponent>",
                 "defaultValue": "(args: ButtonComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/mat-autocomplete/autocomplete.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/mat-icon/icon.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<MatIconModule>",
+                "defaultValue": "(args: MatIconModule) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "Template",
@@ -2728,11 +2738,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/mat-icon/icon.component.stories.ts",
+                "file": "src/stories/components/mat-stepper/stepper.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<MatIconModule>",
-                "defaultValue": "(args: MatIconModule) => ({\r\n  props: args,\r\n})"
+                "type": "Story<StepperComponent>",
+                "defaultValue": "(args: StepperComponent) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "Template",
@@ -2758,11 +2768,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/mat-stepper/stepper.component.stories.ts",
+                "file": "src/stories/components/mat-toggle-button/toggleButton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<StepperComponent>",
-                "defaultValue": "(args: StepperComponent) => ({\r\n  props: args,\r\n})"
+                "type": "Story<TogglebuttonComponent>",
+                "defaultValue": "(\r\n  args: TogglebuttonComponent\r\n) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "Template",
@@ -2773,16 +2783,6 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/components/mat-toggle-button/toggleButton.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TogglebuttonComponent>",
-                "defaultValue": "(\r\n  args: TogglebuttonComponent\r\n) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "Template",
@@ -2808,6 +2808,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/components/table/table.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TableComponent>",
+                "defaultValue": "(args: TableComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/components/radio-button/radio-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2823,16 +2833,6 @@
                 "deprecationMessage": "",
                 "type": "Story<TipografiaComponent>",
                 "defaultValue": "(args: TipografiaComponent) => ({\r\n  props: args,\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/components/table/table.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TableComponent>",
-                "defaultValue": "(args: TableComponent) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "Template",
@@ -2858,21 +2858,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/Clases/responsive/responsive.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ResponsiveComponent>",
-                "defaultValue": "(args: ResponsiveComponent) => ({\r\n  props: args,\r\n  component: ResponsiveComponent,\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/components/Clases/layoutt/layout.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<LayoutComponent>",
                 "defaultValue": "(args: LayoutComponent) => ({\r\n  props: args,\r\n  component: LayoutComponent,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/Clases/responsive/responsive.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ResponsiveComponent>",
+                "defaultValue": "(args: ResponsiveComponent) => ({\r\n  props: args,\r\n  component: ResponsiveComponent,\r\n})"
             },
             {
                 "name": "Template",
@@ -3259,28 +3259,6 @@
                     "defaultValue": "(args) => ({\r\n  props: args,\r\n  styleUrls: ['./button.component.scss'],\r\n  template: `<button size=\"small\" mat-icon-button color=\"accent\" >\r\n  <mat-icon>home</mat-icon>\r\n</button>\r\n<button mat-icon-button color=\"accent\" >\r\n  <mat-icon>home</mat-icon>\r\n</button>`,\r\n})"
                 }
             ],
-            "src/stories/components/mat-chip/mat-chip.component.stories.ts": [
-                {
-                    "name": "configuracion",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/components/mat-chip/mat-chip.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/components/mat-chip/mat-chip.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<MatChipComponent>",
-                    "defaultValue": "(args: MatChipComponent) => ({\r\n  props: args,\r\n})"
-                }
-            ],
             "src/stories/components/mat-icon/icon.component.stories.ts": [
                 {
                     "name": "configuracion",
@@ -3363,6 +3341,50 @@
                     "defaultValue": "(args: MatIconModule) => ({\r\n  props: args,\r\n})"
                 }
             ],
+            "src/stories/components/mat-chip/mat-chip.component.stories.ts": [
+                {
+                    "name": "configuracion",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/mat-chip/mat-chip.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/mat-chip/mat-chip.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<MatChipComponent>",
+                    "defaultValue": "(args: MatChipComponent) => ({\r\n  props: args,\r\n})"
+                }
+            ],
+            "src/stories/components/mat-stepper/stepper.component.stories.ts": [
+                {
+                    "name": "configuracion",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/mat-stepper/stepper.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/mat-stepper/stepper.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<StepperComponent>",
+                    "defaultValue": "(args: StepperComponent) => ({\r\n  props: args,\r\n})"
+                }
+            ],
             "src/stories/components/mat-slide-toggle/slide.toggle.stories.ts": [
                 {
                     "name": "configuracion",
@@ -3407,12 +3429,12 @@
                     "defaultValue": "(args: SliderComponent) => ({\r\n  props: args,\r\n})"
                 }
             ],
-            "src/stories/components/mat-stepper/stepper.component.stories.ts": [
+            "src/stories/components/mat-toggle-button/toggleButton.stories.ts": [
                 {
                     "name": "configuracion",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/components/mat-stepper/stepper.component.stories.ts",
+                    "file": "src/stories/components/mat-toggle-button/toggleButton.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -3422,11 +3444,11 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/components/mat-stepper/stepper.component.stories.ts",
+                    "file": "src/stories/components/mat-toggle-button/toggleButton.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<StepperComponent>",
-                    "defaultValue": "(args: StepperComponent) => ({\r\n  props: args,\r\n})"
+                    "type": "Story<TogglebuttonComponent>",
+                    "defaultValue": "(\r\n  args: TogglebuttonComponent\r\n) => ({\r\n  props: args,\r\n})"
                 }
             ],
             "src/stories/components/mat-tabs/tabs.stories.ts": [
@@ -3449,28 +3471,6 @@
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
-                }
-            ],
-            "src/stories/components/mat-toggle-button/toggleButton.stories.ts": [
-                {
-                    "name": "configuracion",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/components/mat-toggle-button/toggleButton.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/components/mat-toggle-button/toggleButton.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<TogglebuttonComponent>",
-                    "defaultValue": "(\r\n  args: TogglebuttonComponent\r\n) => ({\r\n  props: args,\r\n})"
                 }
             ],
             "src/stories/assets/model/modelo.model.ts": [
