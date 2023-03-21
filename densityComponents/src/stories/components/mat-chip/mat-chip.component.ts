@@ -2,18 +2,14 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'Mat-chip',
-  template: `<mat-chip [ngClass]="sizes">{{ label }}</mat-chip>`,
-  styleUrls: ['../../../theme/main.scss'],
+  template: `<mat-chip color="primary" [ngClass]="sizes">{{
+    label
+  }}</mat-chip>`,
 })
 export class MatChipComponent {
   @Input() size!: string;
   @Input() label!: string;
-  @Input() color!: string;
   public get sizes(): string[] {
-    return [
-      'mat-chip',
-      `mat-chip--${this.size}` || 'mat-chip',
-      `mat-chip--${this.color}`,
-    ];
+    return [`${this.size}`];
   }
 }

@@ -16,12 +16,11 @@ import { Component, Input } from '@angular/core';
       <mat-icon>format_align_right</mat-icon>
     </mat-button-toggle>
   </mat-button-toggle-group> `,
-  styleUrls: ['../../../theme/stylesStorybook/_togglebutton.component.scss'],
 })
 export class TogglebuttonComponent {
   @Input() size!: string;
 
   public get sizes(): string[] {
-    return [`toggle-${this.size}`];
+    return [`${this.size}`];
   }
 }

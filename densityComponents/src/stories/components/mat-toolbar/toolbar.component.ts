@@ -27,7 +27,6 @@ import { Component, Input } from '@angular/core';
       <mat-icon>share</mat-icon>
     </button>
   </mat-toolbar>`,
-  styleUrls: ['../../../theme/stylesStorybook/_toolbar.component.scss'],
 })
 export class ToolbarComponent {
   @Input() color!: string;

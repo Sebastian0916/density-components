@@ -3,7 +3,6 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: ' mat-button',
   template: `<button mat-raised-button [ngClass]="sizes">{{ label }}</button>`,
-  styleUrls: ['../../../theme/stylesStorybook/_button.component.scss'],
 })
 export class ButtonComponent {
   @Input() size!: string;
@@ -11,6 +10,6 @@ export class ButtonComponent {
   @Input() color!: string;
 
   public get sizes(): string[] {
-    return ['mat-button', `button-${this.size}`, `button-${this.color}`];
+    return [`${this.size}`, `button-${this.color}`];
   }
 }

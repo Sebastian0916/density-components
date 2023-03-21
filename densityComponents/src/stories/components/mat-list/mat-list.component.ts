@@ -1,15 +1,16 @@
 import { Component, Input } from '@angular/core';
-
 @Component({
-  selector: 'app-mat-list',
-  templateUrl: './mat-list.component.html',
-  styleUrls: ['../../../theme/stylesStorybook/_mat-list.component.scss'],
+  selector: 'app-list',
+  template: `<mat-list role="list" [ngClass]="sizes">
+    <mat-list-item role="listitem">Item 1</mat-list-item>
+    <mat-list-item role="listitem">Item 2</mat-list-item>
+    <mat-list-item role="listitem">Item 3</mat-list-item>
+  </mat-list>`,
 })
 export class MatListComponent {
   @Input() size!: string;
 
   public get sizes(): string[] {
-    return [`list-${this.size}`];
+    return [`${this.size}`];
   }
 }
-  

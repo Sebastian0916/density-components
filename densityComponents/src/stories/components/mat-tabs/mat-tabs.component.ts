@@ -2,8 +2,11 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-mat-tabs',
-  templateUrl: './mat-tabs.component.html',
-  styleUrls: ['../../../theme/stylesStorybook/_mat-tabs.component.scss'],
+  template: `<mat-tab-group [ngClass]="colors">
+    <mat-tab label="First">Content 1</mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+  </mat-tab-group> `,
 })
 export class MatTabsComponent {
   @Input() color!: string;

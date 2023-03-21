@@ -1,9 +1,0 @@
-@use "sass:map";
-@use "@angular/material" as mat;
-.list-small {
-  @include mat.list-density(-1);
-}
-
-.small {
-  @include mat.list-density(-3);
-}

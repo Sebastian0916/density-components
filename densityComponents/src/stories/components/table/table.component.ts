@@ -14,7 +14,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
-  styleUrls: ['../../../theme/stylesStorybook/table.component.scss'],
 })
 export class TableComponent {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
@@ -22,6 +21,6 @@ export class TableComponent {
   @Input()
   size!: string;
   public get sizes(): string[] {
-    return [`table-${this.size}`];
+    return [`${this.size}`];
   }
 }

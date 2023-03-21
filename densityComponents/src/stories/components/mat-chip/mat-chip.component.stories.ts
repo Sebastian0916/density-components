@@ -37,16 +37,6 @@ export default {
       description:
         'Los atamaños de los chips los define su variante, la cual puede ser: `small` `medium` ',
     },
-    color: {
-      table: {
-        defaultValue: { summary: 'defaul' },
-        category: 'Color',
-      },
-      description:
-        'Los colores de los Chips los define su variante, la cual puede ser: `primary` `secondary` `warn` `warning` `caution` `info`',
-      options: ['primary', 'accent', 'warn', 'success', 'caution', 'info'],
-      control: { type: 'radio' },
-    },
   },
 } as Meta;
 
@@ -57,6 +47,5 @@ export const configuracion = Template.bind({});
 configuracion.args = {
   size: 'small',
   label: 'mat-Chip',
-  // color: 'primary',
 };
 configuracion.storyName = 'mat-chip';

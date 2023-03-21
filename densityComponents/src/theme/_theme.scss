@@ -1,10 +1,11 @@
 @use "sass:map";
+@use "@material/textfield"
+with($minimum-height-for-filled-label: 32px , $minimum-height: 32px);
 @use "@angular/material" as mat;
 @include mat.core();
 @import "./colors";
 @import "./typography";
 @import "./density.scss";
-@import "main.scss";
 
 // Define a light theme
 $light-primary: mat.define-palette($bitakora-primary);

@@ -5,7 +5,6 @@ import { Component, Input } from '@angular/core';
   template: `<mat-slide-toggle [ngClass]="sizes">{{
     label
   }}</mat-slide-toggle> `,
-  styleUrls: ['../../../theme/stylesStorybook/_slide-toggle.component.scss'],
 })
 export class SlideToggleComponent {
   @Input() size!: string;
@@ -13,6 +12,6 @@ export class SlideToggleComponent {
   @Input() color!: string;
 
   public get sizes(): string[] {
-    return [`slide-${this.size}`, `slide-${this.color}`];
+    return [`${this.size}`, `slide-${this.color}`];
   }
 }

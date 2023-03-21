@@ -6,7 +6,6 @@ import { map, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-stepper',
-  styleUrls: ['../../../theme/stylesStorybook/_stepper.component.scss'],
   template: `<mat-stepper
     class="example-stepper"
     [orientation]="(stepperOrientation | async)!"
@@ -87,6 +86,6 @@ export class StepperComponent {
 
   @Input() color!: string;
   public get sizes(): string[] {
-    return ['mat-stepper', `stepper--${this.color}`];
+    return [`stepper--${this.color}`];
   }
 }

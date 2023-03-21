@@ -2,8 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-progress-spinner',
-  templateUrl: './progress-spinner.component.html',
-  styleUrls: ['../../../theme/stylesStorybook/progress-spinner.component.scss'],
+  template: `<mat-spinner [ngClass]="colors"></mat-spinner> `,
 })
 export class ProgressSpinnerComponent {
   @Input()

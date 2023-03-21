@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-layout',
   templateUrl: './layout.component.html',
-  styleUrls: ['../../../../theme/stylesStorybook/_clases.scss'],
+  styleUrls: ['../../../../stories/stylesStorybook/_clases.scss'],
 })
 export class LayoutComponent {
   @Input() items!: string;
