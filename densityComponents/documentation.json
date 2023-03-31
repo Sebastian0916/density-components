@@ -367,7 +367,7 @@
                     }
                 ]
             },
-            "templateData": "<!-- <mat-list role=\"list\" size=\"small\" >  <mat-list-item role=\"listitem\">    <p>Hello world</p>    <button mat-icon-button matListItemMeta >      <mat-icon >note</mat-icon>    </button>  </mat-list-item>  <mat-list-item role=\"listitem\">    <p>Hello world</p>    <button mat-icon-button matListItemMeta>      <mat-icon >note</mat-icon>    </button>  </mat-list-item>  <mat-list-item role=\"listitem\">    <p>Hello world</p>    <button mat-icon-button matListItemMeta>      <mat-icon >note</mat-icon>    </button>  </mat-list-item>  <mat-list />Contraer -->\r\n<mat-icon size=\"small\">home</mat-icon>\r\n<mat-icon>home</mat-icon>\r\n<mat-icon size=\"large\">home</mat-icon>\r\n<button mat-raised-button size=\"small\">\r\n  <mat-icon>home</mat-icon>\r\n  large\r\n</button>\r\n<button mat-raised-button >\r\n  <mat-icon>home</mat-icon>\r\n  large\r\n</button>\r\n<button mat-raised-button size=\"large\">\r\n  <mat-icon>home</mat-icon>\r\n  large\r\n</button>\r\n\r\n<button mat-icon-button size=\"small\">\r\n  <mat-icon>home</mat-icon>\r\n  <!-- large -->\r\n</button>\r\n<button mat-icon-button>\r\n  <mat-icon>home</mat-icon>\r\n  <!-- large -->\r\n</button>\r\n<button mat-icon-button size=\"large\">\r\n  <mat-icon>home</mat-icon>\r\n  <!-- large -->\r\n</button>\r\n<button mat-fab size=\"small\">\r\n  <mat-icon>home</mat-icon>\r\n  <!-- large -->\r\n</button>\r\n<button mat-fab>\r\n  <mat-icon>home</mat-icon>\r\n  <!-- large -->\r\n</button>\r\n<button mat-fab size=\"large\">\r\n  <mat-icon>home</mat-icon>\r\n  <!-- large -->\r\n</button>\r\n<button mat-fab extended size=\"small\">\r\n  <mat-icon>home</mat-icon>\r\n  large\r\n</button>\r\n<button mat-fab extended=\"\">\r\n  <mat-icon>home</mat-icon>\r\n  large\r\n</button>\r\n<button mat-fab extended size=\"large\">\r\n  <mat-icon>home</mat-icon>\r\n  large\r\n</button>\r\n"
+            "templateData": "<div>\r\n  <mat-icon size=\"small\">home</mat-icon>\r\n  <mat-icon>home</mat-icon>\r\n  <mat-icon size=\"large\">home</mat-icon>\r\n</div>\r\n<button mat-raised-button size=\"small\">\r\n  <mat-icon>home</mat-icon>\r\n  large\r\n</button>\r\n<button mat-raised-button>\r\n  <mat-icon>home</mat-icon>\r\n  large\r\n</button>\r\n<button mat-raised-button size=\"large\">\r\n  <mat-icon>home</mat-icon>\r\n  large\r\n</button>\r\n\r\n<button mat-icon-button size=\"small\">\r\n  <mat-icon>home</mat-icon>\r\n  <!-- large -->\r\n</button>\r\n<button mat-icon-button>\r\n  <mat-icon>home</mat-icon>\r\n  <!-- large -->\r\n</button>\r\n<button mat-icon-button size=\"large\">\r\n  <mat-icon>home</mat-icon>\r\n  <!-- large -->\r\n</button>\r\n<button mat-fab size=\"small\">\r\n  <mat-icon>home</mat-icon>\r\n  <!-- large -->\r\n</button>\r\n<button mat-fab>\r\n  <mat-icon>home</mat-icon>\r\n  <!-- large -->\r\n</button>\r\n<button mat-fab size=\"large\">\r\n  <mat-icon>home</mat-icon>\r\n  <!-- large -->\r\n</button>\r\n<button mat-fab extended size=\"small\">\r\n  <mat-icon>home</mat-icon>\r\n  large\r\n</button>\r\n<button mat-fab extended=\"\">\r\n  <mat-icon>home</mat-icon>\r\n  large\r\n</button>\r\n<button mat-fab extended size=\"large\">\r\n  <mat-icon>home</mat-icon>\r\n  large\r\n</button>\r\n"
         },
         {
             "name": "ButtonComponent",
@@ -435,37 +435,6 @@
                     }
                 }
             }
-        },
-        {
-            "name": "ButtonToggleComponent",
-            "id": "component-ButtonToggleComponent-6750ad5bb56c5b780c4654b92aff2528f92620d28b6ef00be1727d737f7bad52a613dad478248c6a5d8d2b87b0c5db48654fcf6522dea5e580866409e3daf01b",
-            "file": "src/stories/components/button-toggle/button-toggle.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "app-button-toggle",
-            "styleUrls": [],
-            "styles": [],
-            "template": "",
-            "templateUrl": [],
-            "viewProviders": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-button-toggle',\r\n  template: ``,\r\n})\r\nexport class ButtonToggleComponent {}\r\n",
-            "assetsDirs": [],
-            "styleUrlsData": "",
-            "stylesData": ""
         },
         {
             "name": "CheckboxComponent",
@@ -667,103 +636,6 @@
             ],
             "stylesData": "",
             "templateData": "<div class=\"container mat-elevation-z1\">\n    <div class=\"pallete-color-container\">\n      <div class=\"pallete-color-container-text\">\n        <h5>primary-color</h5>\n        <span class=\"mat-h5\">color base: <span class=\"mat-h6\">#1e62a1</span></span>\n      </div>\n      <div class=\"pallete-color-container-color\">\n        <div\n          class=\"\n            container-matriz-color container-matriz-color-light\n            primary-color\n          \"\n        >\n          <span class=\"tone-50\">50</span>\n          <span class=\"tone-100\">100</span>\n          <span class=\"tone-200\">200</span>\n          <span class=\"tone-300\">300</span>\n          <span class=\"tone-400\">400</span>\n          <span class=\"tone-500\">500</span>\n          <span class=\"tone-600\">600</span>\n          <span class=\"tone-700\">700</span>\n          <span class=\"tone-800\">800</span>\n          <span class=\"tone-900\">900</span>\n          <span class=\"tone-A100\">A100</span>\n          <span class=\"tone-A200\">A200</span>\n          <span class=\"tone-A400\">A400</span>\n          <span class=\"tone-A700\">A700</span>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"pallete-color-container\">\n      <div class=\"pallete-color-container-text\">\n        <h5>accent-color</h5>\n        <span class=\"mat-h5\">color base: <span class=\"mat-h6\">#0cbbe2</span></span>\n\n      </div>\n      <div class=\"pallete-color-container-color\">\n        <div\n          class=\"container-matriz-color container-matriz-color-light accent-color\"\n        >\n          <span class=\"tone-50\">50</span>\n          <span class=\"tone-100\">100</span>\n          <span class=\"tone-200\">200</span>\n          <span class=\"tone-300\">300</span>\n          <span class=\"tone-400\">400</span>\n          <span class=\"tone-500\">500</span>\n          <span class=\"tone-600\">600</span>\n          <span class=\"tone-700\">700</span>\n          <span class=\"tone-800\">800</span>\n          <span class=\"tone-900\">900</span>\n          <span class=\"tone-A100\">A100</span>\n          <span class=\"tone-A200\">A200</span>\n          <span class=\"tone-A400\">A400</span>\n          <span class=\"tone-A700\">A700</span>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"pallete-color-container\">\n      <div class=\"pallete-color-container-text\">\n        <h5>warn-color</h5>\n        <span class=\"mat-h5\">color base: <span class=\"mat-h6\">#d14343</span></span>\n\n      </div>\n      <div class=\"pallete-color-container-color\">\n        <div\n          class=\"container-matriz-color container-matriz-color-light warn-color\"\n        >\n          <span class=\"tone-50\">50</span>\n          <span class=\"tone-100\">100</span>\n          <span class=\"tone-200\">200</span>\n          <span class=\"tone-300\">300</span>\n          <span class=\"tone-400\">400</span>\n          <span class=\"tone-500\">500</span>\n          <span class=\"tone-600\">600</span>\n          <span class=\"tone-700\">700</span>\n          <span class=\"tone-800\">800</span>\n          <span class=\"tone-900\">900</span>\n          <span class=\"tone-A100\">A100</span>\n          <span class=\"tone-A200\">A200</span>\n          <span class=\"tone-A400\">A400</span>\n          <span class=\"tone-A700\">A700</span>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"pallete-color-container\">\n      <div class=\"pallete-color-container-text\">\n        <h5>success-color</h5>\n        <span class=\"mat-h5\">color base: <span class=\"mat-h6\">#8fc93a</span></span>\n      </div>\n      <div class=\"pallete-color-container-color\">\n        <div\n          class=\"\n            container-matriz-color container-matriz-color-light\n            success-color\n          \"\n        >\n          <span class=\"tone-50\">50</span>\n          <span class=\"tone-100\">100</span>\n          <span class=\"tone-200\">200</span>\n          <span class=\"tone-300\">300</span>\n          <span class=\"tone-400\">400</span>\n          <span class=\"tone-500\">500</span>\n          <span class=\"tone-600\">600</span>\n          <span class=\"tone-700\">700</span>\n          <span class=\"tone-800\">800</span>\n          <span class=\"tone-900\">900</span>\n          <span class=\"tone-A100\">A100</span>\n          <span class=\"tone-A200\">A200</span>\n          <span class=\"tone-A400\">A400</span>\n          <span class=\"tone-A700\">A700</span>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"pallete-color-container\">\n      <div class=\"pallete-color-container-text\">\n        <h5>info-color</h5>\n        <span class=\"mat-h5\">color base: <span class=\"mat-h6\">#2d9fc5</span></span>\n      </div>\n      <div class=\"pallete-color-container-color\">\n        <div\n          class=\"container-matriz-color container-matriz-color-light info-color\"\n        >\n          <span class=\"tone-50\">50</span>\n          <span class=\"tone-100\">100</span>\n          <span class=\"tone-200\">200</span>\n          <span class=\"tone-300\">300</span>\n          <span class=\"tone-400\">400</span>\n          <span class=\"tone-500\">500</span>\n          <span class=\"tone-600\">600</span>\n          <span class=\"tone-700\">700</span>\n          <span class=\"tone-800\">800</span>\n          <span class=\"tone-900\">900</span>\n          <span class=\"tone-A100\">A100</span>\n          <span class=\"tone-A200\">A200</span>\n          <span class=\"tone-A400\">A400</span>\n          <span class=\"tone-A700\">A700</span>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"pallete-color-container\">\n      <div class=\"pallete-color-container-text\">\n        <h5>caution-color</h5>\n        <span class=\"mat-h5\">color base: <span class=\"mat-h6\">#fb8500</span></span>\n      </div>\n      <div class=\"pallete-color-container-color\">\n        <div\n          class=\"\n            container-matriz-color container-matriz-color-light\n            caution-color\n          \"\n        >\n          <span class=\"tone-50\">50</span>\n          <span class=\"tone-100\">100</span>\n          <span class=\"tone-200\">200</span>\n          <span class=\"tone-300\">300</span>\n          <span class=\"tone-400\">400</span>\n          <span class=\"tone-500\">500</span>\n          <span class=\"tone-600\">600</span>\n          <span class=\"tone-700\">700</span>\n          <span class=\"tone-800\">800</span>\n          <span class=\"tone-900\">900</span>\n          <span class=\"tone-A100\">A100</span>\n          <span class=\"tone-A200\">A200</span>\n          <span class=\"tone-A400\">A400</span>\n          <span class=\"tone-A700\">A700</span>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"pallete-color-container\">\n      <div class=\"pallete-color-container-text\">\n        <h5>grey-color</h5>\n        <span class=\"mat-h5\">color base: <span class=\"mat-h6\">#C1C4D6</span></span>\n      </div>\n      <div class=\"pallete-color-container-color\">\n        <div\n          class=\"container-matriz-color container-matriz-color-light grey-color\"\n        >\n          <span class=\"tone-50\">50</span>\n          <span class=\"tone-100\">100</span>\n          <span class=\"tone-200\">200</span>\n          <span class=\"tone-300\">300</span>\n          <span class=\"tone-400\">400</span>\n          <span class=\"tone-500\">500</span>\n          <span class=\"tone-600\">600</span>\n          <span class=\"tone-700\">700</span>\n          <span class=\"tone-800\">800</span>\n          <span class=\"tone-900\">900</span>\n          <span class=\"tone-A100\">A100</span>\n          <span class=\"tone-A200\">A200</span>\n          <span class=\"tone-A400\">A400</span>\n          <span class=\"tone-A700\">A700</span>\n        </div>\n      </div>\n    </div>\n</div>\n"
-        },
-        {
-            "name": "ExpansionPanelComponent",
-            "id": "component-ExpansionPanelComponent-f7b30dbdd84cb5a301706c3f0fc445aadb08c03305c5766c59dee5c444c8d7397b3af2d3fc8c6e8d5f4de25d8ead8a4be440af23d8116de892a798db5b499191",
-            "file": "src/stories/components/expansion-panel/expansion-panel.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "app-expansion-panel",
-            "styleUrls": [
-                "./expansion-panel.component.scss"
-            ],
-            "styles": [],
-            "templateUrl": [
-                "./expansion-panel.component.html"
-            ],
-            "viewProviders": [],
-            "inputsClass": [
-                {
-                    "name": "size",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 12,
-                    "type": "Sizes",
-                    "decorators": []
-                }
-            ],
-            "outputsClass": [],
-            "propertiesClass": [
-                {
-                    "name": "panelOpenState",
-                    "defaultValue": "false",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 9
-                }
-            ],
-            "methodsClass": [
-                {
-                    "name": "ngOnChanges",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 14,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component, Input, ElementRef, OnChanges } from '@angular/core';\r\nimport { Sizes } from '../../assets/model/modelo.model';\r\n@Component({\r\n  selector: 'app-expansion-panel',\r\n  templateUrl: './expansion-panel.component.html',\r\n  styleUrls: ['./expansion-panel.component.scss']\r\n})\r\nexport class ExpansionPanelComponent {\r\n  panelOpenState = false;\r\n  constructor(private el: ElementRef<HTMLElement>) {}\r\n  @Input()\r\n  size!: Sizes;\r\n\r\n  ngOnChanges() {\r\n    this.el.nativeElement.classList.add(this.size);\r\n  }\r\n\r\n}\r\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "",
-                    "styleUrl": "./expansion-panel.component.scss"
-                }
-            ],
-            "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [
-                    {
-                        "name": "el",
-                        "type": "ElementRef<HTMLElement>",
-                        "deprecated": false,
-                        "deprecationMessage": ""
-                    }
-                ],
-                "line": 9,
-                "jsdoctags": [
-                    {
-                        "name": "el",
-                        "type": "ElementRef<HTMLElement>",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "tagName": {
-                            "text": "param"
-                        }
-                    }
-                ]
-            },
-            "templateData": "<div class=\"example\">\r\n  <mat-accordion>\r\n    <mat-expansion-panel hideToggle>\r\n      <mat-expansion-panel-header size=\"small\">\r\n        <mat-panel-title> This is the expansion title </mat-panel-title>\r\n        <mat-panel-description>\r\n          This is a summary of the content\r\n        </mat-panel-description>\r\n      </mat-expansion-panel-header>\r\n      <p>This is the primary content of the panel.</p>\r\n    </mat-expansion-panel>\r\n    <mat-expansion-panel\r\n      (opened)=\"panelOpenState = true\"\r\n      (closed)=\"panelOpenState = false\"\r\n    >\r\n      <mat-expansion-panel-header>\r\n        <mat-panel-title> Self aware panel </mat-panel-title>\r\n        <mat-panel-description>\r\n          Currently I am {{ panelOpenState ? \"open\" : \"closed\" }}\r\n        </mat-panel-description>\r\n      </mat-expansion-panel-header>\r\n      <p>I'm visible because I am open</p>\r\n    </mat-expansion-panel>\r\n  </mat-accordion>\r\n</div>\r\n"
         },
         {
             "name": "FormFieldComponent",
@@ -2247,13 +2119,13 @@
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-9f7affbeedf21de0ad098697891f93da6419eb90e0c36d30a60e6da926cada8ff2e19beda81d926c17b97157b8a3ea3214f22df9f9feea786058bfa2f6f072b0",
+            "id": "module-AppModule-7888c5cbaf36218683a13137db65afb33cdee869fc0b22c7f0093b41710fe89ff0dfbecb4598d8389afbba7901ee5e48954d04495074c41e1038eacc44476d33",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\nimport { MatIconModule } from '@angular/material/icon';\r\nimport { MatListModule } from '@angular/material/list';\r\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\r\nimport { AppComponent } from './app.component';\r\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\r\nimport { MaterialModule } from './material.module';\r\nimport { SizeDirective } from 'src/theme/size.directive';\r\n\r\nimport { ButtonComponent } from 'src/stories/components/mat-button/button.component';\r\nimport { MatChipComponent } from 'src/stories/components/mat-chip/mat-chip.component';\r\nimport { IconComponent } from 'src/stories/components/mat-icon/icon.component';\r\nimport { SliderComponent } from 'src/stories/components/mat-slider/slider.component';\r\nimport { StepperComponent } from 'src/stories/components/mat-stepper/stepper.component';\r\nimport { ToolbarComponent } from 'src/stories/components/mat-toolbar/toolbar.component';\r\nimport { TogglebuttonComponent } from 'src/stories/components/mat-toggle-button/togglebutton.component';\r\nimport { SlideToggleComponent } from 'src/stories/components/mat-slide-toggle/slide-toggle.component';\r\nimport { MatTabsComponent } from 'src/stories/components/mat-tabs/mat-tabs.component';\r\nimport { RadioButtonComponent } from 'src/stories/components/radio-button/radio-button.component';\r\nimport { FormFieldComponent } from 'src/stories/components/form-field/form-field.component';\r\nimport { TipografiaComponent } from 'src/stories/components/tipografia/tipografia.component';\r\nimport { ProgressSpinnerComponent } from 'src/stories/components/progress-spinner/progress-spinner.component';\r\nimport { TableComponent } from 'src/stories/components/table/table.component';\r\nimport { ClasesGlobalesComponent } from 'src/stories/components/Clases/clases-globales/clases-globales.component';\r\nimport { CheckboxComponent } from 'src/stories/components/checkbox/checkbox.component';\r\nimport { LayoutComponent } from 'src/stories/components/Clases/layoutt/layout.component';\r\nimport { MatListComponent } from 'src/stories/components/mat-list/mat-list.component';\r\nimport { ExpansionPanelComponent } from 'src/stories/components/expansion-panel/expansion-panel.component';\r\nimport { MatMenuComponent } from 'src/stories/components/menu/menu.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    MatMenuComponent,\r\n    ExpansionPanelComponent,\r\n    LayoutComponent,\r\n    CheckboxComponent,\r\n    ClasesGlobalesComponent,\r\n    TableComponent,\r\n    ProgressSpinnerComponent,\r\n    TipografiaComponent,\r\n    FormFieldComponent,\r\n    RadioButtonComponent,\r\n    MatListComponent,\r\n    MatTabsComponent,\r\n    SlideToggleComponent,\r\n    TogglebuttonComponent,\r\n    ToolbarComponent,\r\n    StepperComponent,\r\n    SliderComponent,\r\n    ButtonComponent,\r\n    MatChipComponent,\r\n    IconComponent,\r\n    AppComponent,\r\n    SizeDirective,\r\n  ],\r\n  imports: [\r\n    MatListModule,\r\n    FormsModule,\r\n    ReactiveFormsModule,\r\n    MaterialModule,\r\n    BrowserModule,\r\n    BrowserAnimationsModule,\r\n    MatIconModule,\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent],\r\n})\r\nexport class AppModule {}\r\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\nimport { MatIconModule } from '@angular/material/icon';\r\nimport { MatListModule } from '@angular/material/list';\r\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\r\nimport { AppComponent } from './app.component';\r\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\r\nimport { MaterialModule } from './material.module';\r\nimport { SizeDirective } from 'src/theme/size.directive';\r\n\r\nimport { ButtonComponent } from 'src/stories/components/mat-button/button.component';\r\nimport { MatChipComponent } from 'src/stories/components/mat-chip/mat-chip.component';\r\nimport { IconComponent } from 'src/stories/components/mat-icon/icon.component';\r\nimport { SliderComponent } from 'src/stories/components/mat-slider/slider.component';\r\nimport { StepperComponent } from 'src/stories/components/mat-stepper/stepper.component';\r\nimport { ToolbarComponent } from 'src/stories/components/mat-toolbar/toolbar.component';\r\nimport { TogglebuttonComponent } from 'src/stories/components/mat-toggle-button/togglebutton.component';\r\nimport { SlideToggleComponent } from 'src/stories/components/mat-slide-toggle/slide-toggle.component';\r\nimport { MatTabsComponent } from 'src/stories/components/mat-tabs/mat-tabs.component';\r\nimport { RadioButtonComponent } from 'src/stories/components/radio-button/radio-button.component';\r\nimport { FormFieldComponent } from 'src/stories/components/form-field/form-field.component';\r\nimport { TipografiaComponent } from 'src/stories/components/tipografia/tipografia.component';\r\nimport { ProgressSpinnerComponent } from 'src/stories/components/progress-spinner/progress-spinner.component';\r\nimport { TableComponent } from 'src/stories/components/table/table.component';\r\nimport { ClasesGlobalesComponent } from 'src/stories/components/Clases/clases-globales/clases-globales.component';\r\nimport { CheckboxComponent } from 'src/stories/components/checkbox/checkbox.component';\r\nimport { LayoutComponent } from 'src/stories/components/Clases/layoutt/layout.component';\r\nimport { MatListComponent } from 'src/stories/components/mat-list/mat-list.component';\r\nimport { MatMenuComponent } from 'src/stories/components/menu/menu.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    MatMenuComponent,\r\n    LayoutComponent,\r\n    CheckboxComponent,\r\n    ClasesGlobalesComponent,\r\n    TableComponent,\r\n    ProgressSpinnerComponent,\r\n    TipografiaComponent,\r\n    FormFieldComponent,\r\n    RadioButtonComponent,\r\n    MatListComponent,\r\n    MatTabsComponent,\r\n    SlideToggleComponent,\r\n    TogglebuttonComponent,\r\n    ToolbarComponent,\r\n    StepperComponent,\r\n    SliderComponent,\r\n    ButtonComponent,\r\n    MatChipComponent,\r\n    IconComponent,\r\n    AppComponent,\r\n    SizeDirective,\r\n  ],\r\n  imports: [\r\n    MatListModule,\r\n    FormsModule,\r\n    ReactiveFormsModule,\r\n    MaterialModule,\r\n    BrowserModule,\r\n    BrowserAnimationsModule,\r\n    MatIconModule,\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent],\r\n})\r\nexport class AppModule {}\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -2273,9 +2145,6 @@
                         },
                         {
                             "name": "ClasesGlobalesComponent"
-                        },
-                        {
-                            "name": "ExpansionPanelComponent"
                         },
                         {
                             "name": "FormFieldComponent"
@@ -2439,16 +2308,6 @@
                 "name": "configuracion",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/mat-icon/icon.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "configuracion",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/components/mat-chip/mat-chip.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2459,7 +2318,7 @@
                 "name": "configuracion",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/mat-stepper/stepper.component.stories.ts",
+                "file": "src/stories/components/mat-icon/icon.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2480,6 +2339,16 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/components/mat-slider/slider.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "configuracion",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/mat-stepper/stepper.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2534,16 +2403,6 @@
                 "deprecationMessage": "",
                 "type": "PeriodicElement[]",
                 "defaultValue": "[\n  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },\n  { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },\n  { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },\n  { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },\n]"
-            },
-            {
-                "name": "ExpansionPanel",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/components/expansion-panel/expansion-panel.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "fabButton",
@@ -2789,16 +2648,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/expansion-panel/expansion-panel.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ExpansionPanelComponent>",
-                "defaultValue": "( args: ExpansionPanelComponent ) => ({ props: args })"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/components/form-field/form-field.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2819,16 +2668,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/mat-icon/icon.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<MatIconModule>",
-                "defaultValue": "(args: MatIconModule) => ({\r\n  props: args,\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/components/mat-chip/mat-chip.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2839,21 +2678,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/mat-list/mat-list.stories.ts",
+                "file": "src/stories/components/mat-icon/icon.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<MatListComponent>",
-                "defaultValue": "(args: MatListComponent) => ({\r\n  props: args,\r\n})"
+                "type": "Story<MatIconModule>",
+                "defaultValue": "(args: MatIconModule) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/mat-stepper/stepper.component.stories.ts",
+                "file": "src/stories/components/mat-list/mat-list.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<StepperComponent>",
-                "defaultValue": "(args: StepperComponent) => ({\r\n  props: args,\r\n})"
+                "type": "Story<MatListComponent>",
+                "defaultValue": "(args: MatListComponent) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "Template",
@@ -2874,6 +2713,16 @@
                 "deprecationMessage": "",
                 "type": "Story<SliderComponent>",
                 "defaultValue": "(args: SliderComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/mat-stepper/stepper.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<StepperComponent>",
+                "defaultValue": "(args: StepperComponent) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "Template",
@@ -2909,41 +2758,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/progress-spinner/progress-spinner.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ProgressSpinnerComponent>",
-                "defaultValue": "(\r\n  args: ProgressSpinnerComponent\r\n) => ({\r\n  props: args,\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/components/menu/menu.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<MatMenuComponent>",
                 "defaultValue": "(args: MatMenuComponent) => ({\r\n  props: args,\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/components/radio-button/radio-button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<RadioButtonComponent>",
-                "defaultValue": "(args: RadioButtonComponent) => ({\r\n  props: args,\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/components/tipografia/tipografia.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TipografiaComponent>",
-                "defaultValue": "(args: TipografiaComponent) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "Template",
@@ -2959,21 +2778,41 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/Clases/clases-globales/clases.stories.ts",
+                "file": "src/stories/components/radio-button/radio-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<ClasesGlobalesComponent>",
-                "defaultValue": "(\r\n  args: ClasesGlobalesComponent\r\n) => ({\r\n  props: args,\r\n  component: ClasesGlobalesComponent,\r\n})"
+                "type": "Story<RadioButtonComponent>",
+                "defaultValue": "(args: RadioButtonComponent) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/Clases/layoutt/layout.stories.ts",
+                "file": "src/stories/components/progress-spinner/progress-spinner.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<LayoutComponent>",
-                "defaultValue": "(args: LayoutComponent) => ({\r\n  props: args,\r\n  component: LayoutComponent,\r\n})"
+                "type": "Story<ProgressSpinnerComponent>",
+                "defaultValue": "(\r\n  args: ProgressSpinnerComponent\r\n) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/tipografia/tipografia.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TipografiaComponent>",
+                "defaultValue": "(args: TipografiaComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/Clases/clases-globales/clases.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ClasesGlobalesComponent>",
+                "defaultValue": "(\r\n  args: ClasesGlobalesComponent\r\n) => ({\r\n  props: args,\r\n  component: ClasesGlobalesComponent,\r\n})"
             },
             {
                 "name": "Template",
@@ -2989,11 +2828,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/Clases/spacing/spacing.stories.ts",
+                "file": "src/stories/components/Clases/layoutt/layout.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<SpacingComponent>",
-                "defaultValue": "(args: SpacingComponent) => ({\r\n  props: args,\r\n  component: SpacingComponent,\r\n})"
+                "type": "Story<LayoutComponent>",
+                "defaultValue": "(args: LayoutComponent) => ({\r\n  props: args,\r\n  component: LayoutComponent,\r\n})"
             },
             {
                 "name": "Template",
@@ -3004,6 +2843,16 @@
                 "deprecationMessage": "",
                 "type": "Story<ResponsiveComponent>",
                 "defaultValue": "(args: ResponsiveComponent) => ({\r\n  props: args,\r\n  component: ResponsiveComponent,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/Clases/spacing/spacing.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<SpacingComponent>",
+                "defaultValue": "(args: SpacingComponent) => ({\r\n  props: args,\r\n  component: SpacingComponent,\r\n})"
             },
             {
                 "name": "templateFabButton",
@@ -3380,6 +3229,28 @@
                     "defaultValue": "(args) => ({\r\n  props: args,\r\n  styleUrls: ['./button.component.scss'],\r\n  template: `<button size=\"small\" mat-icon-button color=\"accent\" >\r\n  <mat-icon>home</mat-icon>\r\n</button>\r\n<button mat-icon-button color=\"accent\" >\r\n  <mat-icon>home</mat-icon>\r\n</button>`,\r\n})"
                 }
             ],
+            "src/stories/components/mat-chip/mat-chip.component.stories.ts": [
+                {
+                    "name": "configuracion",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/mat-chip/mat-chip.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/mat-chip/mat-chip.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<MatChipComponent>",
+                    "defaultValue": "(args: MatChipComponent) => ({\r\n  props: args,\r\n})"
+                }
+            ],
             "src/stories/components/mat-icon/icon.component.stories.ts": [
                 {
                     "name": "configuracion",
@@ -3462,50 +3333,6 @@
                     "defaultValue": "(args: MatIconModule) => ({\r\n  props: args,\r\n})"
                 }
             ],
-            "src/stories/components/mat-chip/mat-chip.component.stories.ts": [
-                {
-                    "name": "configuracion",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/components/mat-chip/mat-chip.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/components/mat-chip/mat-chip.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<MatChipComponent>",
-                    "defaultValue": "(args: MatChipComponent) => ({\r\n  props: args,\r\n})"
-                }
-            ],
-            "src/stories/components/mat-stepper/stepper.component.stories.ts": [
-                {
-                    "name": "configuracion",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/components/mat-stepper/stepper.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/components/mat-stepper/stepper.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<StepperComponent>",
-                    "defaultValue": "(args: StepperComponent) => ({\r\n  props: args,\r\n})"
-                }
-            ],
             "src/stories/components/mat-slide-toggle/slide.toggle.stories.ts": [
                 {
                     "name": "configuracion",
@@ -3548,6 +3375,28 @@
                     "deprecationMessage": "",
                     "type": "Story<SliderComponent>",
                     "defaultValue": "(args: SliderComponent) => ({\r\n  props: args,\r\n})"
+                }
+            ],
+            "src/stories/components/mat-stepper/stepper.component.stories.ts": [
+                {
+                    "name": "configuracion",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/mat-stepper/stepper.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/mat-stepper/stepper.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<StepperComponent>",
+                    "defaultValue": "(args: StepperComponent) => ({\r\n  props: args,\r\n})"
                 }
             ],
             "src/stories/components/mat-tabs/tabs.stories.ts": [
@@ -3638,28 +3487,6 @@
                     "deprecationMessage": "",
                     "type": "PeriodicElement[]",
                     "defaultValue": "[\n  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },\n  { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },\n  { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },\n  { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },\n]"
-                }
-            ],
-            "src/stories/components/expansion-panel/expansion-panel.stories.ts": [
-                {
-                    "name": "ExpansionPanel",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/components/expansion-panel/expansion-panel.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/components/expansion-panel/expansion-panel.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ExpansionPanelComponent>",
-                    "defaultValue": "( args: ExpansionPanelComponent ) => ({ props: args })"
                 }
             ],
             "src/stories/components/Clases/icons/icon.stories.ts": [
@@ -4367,15 +4194,6 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/components/button-toggle/button-toggle.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "ButtonToggleComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
                 "filePath": "src/stories/components/checkbox/checkbox.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -4425,35 +4243,6 @@
             },
             {
                 "filePath": "src/stories/components/colors/colors.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/components/expansion-panel/expansion-panel.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "ExpansionPanelComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/5",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/components/expansion-panel/expansion-panel.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "ExpansionPanel",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/components/expansion-panel/expansion-panel.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",

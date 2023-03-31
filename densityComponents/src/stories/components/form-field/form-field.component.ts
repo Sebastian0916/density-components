@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-form-field',
+  selector: 'Mat-form-field',
   templateUrl: './form-field.component.html',
 })
 export class FormFieldComponent {

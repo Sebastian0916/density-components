@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-checkbox',
+  selector: 'Mat-checkbox',
   template: `<mat-checkbox [ngClass]="custom"></mat-checkbox>`,
 })
 export class CheckboxComponent {

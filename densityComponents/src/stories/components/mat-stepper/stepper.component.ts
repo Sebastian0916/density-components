@@ -5,7 +5,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { map, Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-stepper',
+  selector: 'Mat-stepper',
   template: `<mat-stepper
     class="example-stepper"
     [orientation]="(stepperOrientation | async)!"

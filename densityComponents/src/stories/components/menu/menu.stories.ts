@@ -5,20 +5,20 @@ import { SizeDirective } from 'src/theme/size.directive';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
 export default {
   title: 'Angular Material/Menu',
   component: MatMenuComponent,
   decorators: [
     moduleMetadata({
       declarations: [SizeDirective],
-      imports: [MatMenuModule,MatButtonModule ,BrowserAnimationsModule],
+      imports: [MatMenuModule, MatButtonModule, BrowserAnimationsModule],
     }),
   ],
   parameters: {
     docs: {
       description: {
-        component: `<span><mat-menu> es un panel flotante que contiene una lista de opciones.</span>`,
+        component:
+          '`<mat-menu>` es un panel flotante que contiene una lista de opciones',
       },
     },
   },

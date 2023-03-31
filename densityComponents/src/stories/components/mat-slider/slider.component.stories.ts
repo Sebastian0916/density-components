@@ -14,7 +14,7 @@ export default {
     docs: {
       description: {
         component:
-          'El paso a paso de Angular Material proporciona un flujo de trabajo similar a un asistente al dividir el contenido en pasos lógicos',
+          '`<mat-slider>` permite la selección de un valor de un rango a través del mouse, el tacto o el teclado, similar a un rango',
       },
     },
   },

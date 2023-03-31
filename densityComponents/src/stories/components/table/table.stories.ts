@@ -14,7 +14,7 @@ export default {
     docs: {
       description: {
         component:
-          '<mat-table> proporciona una tabla de datos con estilo Material Design que se puede utilizar para mostrar filas de datos.',
+          '`<mat-table>` proporciona una tabla de datos con estilo Material Design que se puede utilizar para mostrar filas de datos.',
       },
     },
   },

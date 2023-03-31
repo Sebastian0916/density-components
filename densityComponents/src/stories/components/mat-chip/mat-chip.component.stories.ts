@@ -14,7 +14,7 @@ export default {
     docs: {
       description: {
         component:
-          'Los chips permiten a los usuarios ver información, hacer selecciones, filtrar contenido e ingresar datos, manejando vairantes `size` como para manipular el tamaño y una varainte `color` que nos permitira tener diversos estilos de un chip  .',
+          'Los `mat-chip` permiten a los usuarios ver información, hacer selecciones, filtrar contenido e ingresar datos, manejando vairantes `size` como para manipular el tamaño y una varainte `color` que nos permitira tener diversos estilos de un chip  .',
       },
     },
   },

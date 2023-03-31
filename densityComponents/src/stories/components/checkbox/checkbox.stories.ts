@@ -15,7 +15,7 @@ export default {
     docs: {
       description: {
         component:
-          '<mat-checkbox> proporciona la misma funcionalidad que un <input"checkbox"> original mejorado con el estilo y las animaciones de Material Design',
+          '`<mat-checkbox>` proporciona la misma funcionalidad que un <input"checkbox"> original mejorado con el estilo y las animaciones de Material Design',
       },
     },
   },

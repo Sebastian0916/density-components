@@ -12,7 +12,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
 ];
 @Component({
-  selector: 'app-table',
+  selector: 'Mat-table',
   templateUrl: './table.component.html',
 })
 export class TableComponent {

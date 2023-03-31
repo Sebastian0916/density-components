@@ -13,7 +13,7 @@ export default {
     docs: {
       description: {
         component:
-          'Las tabs de material angular organizan el contenido en vistas separadas donde solo se puede ver una vista a la vez.',
+          'Las `<mat-tab>` de material angular organizan el contenido en vistas separadas donde solo se puede ver una vista a la vez.',
       },
     },
   },

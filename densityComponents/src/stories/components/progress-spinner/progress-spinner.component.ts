@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-progress-spinner',
+  selector: 'Mat-progress-spinner',
   template: `<mat-spinner [ngClass]="colors"></mat-spinner> `,
 })
 export class ProgressSpinnerComponent {

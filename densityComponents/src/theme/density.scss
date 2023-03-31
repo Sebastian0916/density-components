@@ -11,6 +11,9 @@
 }
 /////////////// SMALL////////////////
 .small {
+  .mat-button-toggle-group {
+    @include mat.button-toggle-density(-4);
+  }
   // Button icon
   &.mat-mdc-icon-button.mat-mdc-button-base {
     @include icon-size(2rem, null);
@@ -51,6 +54,7 @@
       min-height: 2.5714285714285716rem;
     }
   }
+
   // Componentes con pseudo-clase  :not()
   // Brinda dar mayor especificidad al aplicar densidad   ( BUTTONS , MAT-CHIP, MAT-CHIP-OPTION, TEXTFIELD )
   &:not(.large) {
@@ -264,9 +268,7 @@
   height: 3.571428571428571rem !important;
 }
 //BUTTON TOGGLE
-.mat-button-toggle-group {
-  @include mat.button-toggle-density(-3.5);
-}
+
 // EXPANSION PANEL
 .mat-expansion-panel-header {
   height: 3.714285714285714rem;
@@ -330,6 +332,16 @@
 }
 //////////////// LARGE ////////////////
 .large {
+  &.mat-button-toggle-group {
+    & .mat-button-toggle {
+      &-label-content {
+        line-height: calc(24px + 32px);
+      }
+      & .mat-icon {
+        @include icon-size(2.4rem !important, 2.2rem !important);
+      }
+    }
+  }
   // BUTTON ICON
   &.mat-mdc-icon-button.mat-mdc-button-base {
     @include icon-size(4.142857142857143rem, null);

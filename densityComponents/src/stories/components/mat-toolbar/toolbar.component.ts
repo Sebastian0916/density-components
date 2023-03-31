@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-toolbar',
+  selector: 'Mat-toolbar',
   template: ` <mat-toolbar [ngClass]="sizes" color="primary">
     <button
       mat-icon-button

@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: ' mat-button',
+  selector: 'mat-button',
   template: `<button mat-raised-button [ngClass]="sizes">{{ label }}</button>`,
 })
 export class ButtonComponent {

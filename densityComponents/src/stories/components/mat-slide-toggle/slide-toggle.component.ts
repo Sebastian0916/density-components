@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-slide-toggle',
+  selector: 'Mat-slide-toggle',
   template: `<mat-slide-toggle [ngClass]="sizes">{{
     label
   }}</mat-slide-toggle> `,

@@ -14,7 +14,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: `<span>Un Icono es una pieza de elemento visual muy flexible teniendo una variante 'size' que le de tres tipos de tamañaos, asi como tiene la variante  'color' para más diversidad al utilizarlos.</span>`,
+        component: " Un `<mat-icon>` es una pieza de elemento visual muy flexible teniendo una variante 'size' que le de tres tipos de tamañaos, asi como tiene la variante  'color' para más diversidad al utilizarlos.",
       },
     },
   },

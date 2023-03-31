@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-mat-tabs',
+  selector: 'Mat-tabs',
   template: `<mat-tab-group [ngClass]="colors">
     <mat-tab label="First">Content 1</mat-tab>
     <mat-tab label="Second">Content 2</mat-tab>

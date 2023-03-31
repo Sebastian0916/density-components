@@ -15,7 +15,7 @@ export default {
     docs: {
       description: {
         component:
-          'El paso a paso proporciona un flujo de trabajo similar a un asistente al dividir el contenido en pasos lógicos',
+          'El `<mat-stepper>` proporciona un flujo de trabajo similar a un asistente al dividir el contenido en pasos lógicos',
       },
     },
   },
